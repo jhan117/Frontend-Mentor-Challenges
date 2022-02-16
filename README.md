@@ -41,7 +41,7 @@ When your image is one folder down as in the following structure:
 
 html-project  
 ├── assets  
-│   └── image.jpeg  
+│        └── image.jpeg  
 └── index.html  
 
 Then you need to add the folder assets to the src attribute as follows:
