@@ -39,10 +39,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 When your image is one folder down as in the following structure:
 
-html-project
-├── assets
-│   └── image.jpeg
-└── index.html
+html-project  
+├── assets  
+│   └── image.jpeg  
+└── index.html  
 
 Then you need to add the folder assets to the src attribute as follows:
 
@@ -72,7 +72,7 @@ I like w3schools site... hahaha
 ## Author
 
 - Frontend Mentor - [@jhan117](https://www.frontendmentor.io/profile/jhan117)
-- GitHun - [@jhan117](https://github.com/jhan117)
+- GitHub - [@jhan117](https://github.com/jhan117)
 
 ## Acknowledgments
 
