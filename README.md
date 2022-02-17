@@ -34,6 +34,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS grid / flexbox
 
 ### What I learned
 
@@ -54,11 +55,19 @@ Ref : https://sebhastian.com/html-image-not-showing/
 ```css
 .center
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* flexbox */
+.container
+{
+  flex-direction: row | row-reverse | column | column-reverse;
+}   
+   
+letter-spacing: normal|length|initial|inherit;
 ```
 
 ### Continued development
