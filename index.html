@@ -11,10 +11,17 @@
   <main>
     <div class="card">
       <!-- 카드 이미지 시작 -->
-      <img class="card_img" src="./images/image-equilibrium.jpg"alt="equilibrium image">
+      <div class="overlay_container">
+        <img class="card_img" src="./images/image-equilibrium.jpg"alt="equilibrium image">
+        <a href="#view">
+          <div class="overlay"></div>
+          <img class="view_img" src="./images/icon-view.svg" alt="view icon">
+        </a>
+      </div>
       <!-- 카드 텍스트 시작 -->
       <div class="card_text">
-          <h1 class="card_heading">Equilibrium #3429</h1>
+          <h1><a class="header_link" href="#heading_link">Equilibrium #3429</a>
+          </h1>
           <div class="card_detail">
           Our Equilibrium collection promotes balance and calm.
           </div>
@@ -27,11 +34,13 @@
             </div>
           </div>
       </div>
-      <hr>
       <!-- 카드 사용자 정보 시작 -->
-      <div class="user_info">  
-          <img class="user_img" src="./images/image-avatar.png" alt="avater image">
-          <p>Creation of <a href="#Jules_Wyvern_site" target="_blank"> Jules Wyvern</a></p>
+      <div class="user_info_container">
+        <div class="user_info">
+          <img class="user_img" src="./images/image-avatar.png" alt="avatar image">
+          <p>Creation of <a href="#creator"> Jules Wyvern</a></p>
+        </div>
+        
       </div>
     </div>
   </main>
