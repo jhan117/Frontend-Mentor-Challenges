@@ -2,10 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-@mixin size($w, $h)
+@mixin size($w: 100%, $h: 100%)
 {
     width: $w;
-    height: $h;    
+    height: $h;
 }
 
 @mixin flex ($direction, $gap)
@@ -69,13 +69,13 @@ body
 
     .main-img
     {
-        @include size(100%, 100%);
+        @include size;
     }
 
     // 카드 오버레이
     .overlay
     {
-        @include size(100%, 100%);
+        @include size;
 
         background-color: $linkColor;
         border-radius: 10px;
@@ -325,5 +325,13 @@ body
         {
             display: none;
         }
+    }
+}
+
+@media only screen and (max-width: 300px)
+{
+    .attribution
+    {
+        display: none;
     }
 }

@@ -263,4 +263,10 @@ body {
     display: none;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  .attribution {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
