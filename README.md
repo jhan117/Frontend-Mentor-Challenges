@@ -27,9 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop design](./design/desktop-design.jpg)
-![mobile design](./design/mobile-design.jpg)
-![active states img](./design/active-states-img.jpg "active states image") ![active states header](./design/active-states-header.jpg "active states header") ![active states user](./design/active-states-user.jpg "active states user")
+![desktop design](./design/desktop-design.jpg "desktop design")
+![mobile design](./design/mobile-design.jpg "mobile design")
+![active states img](./design/active-states-img.jpg "active states image")
+![active states header](./design/active-states-header.jpg "active states header")
+![active states user](./design/active-states-user.jpg "active states user")
 
 ### Links
 
