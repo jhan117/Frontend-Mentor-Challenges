@@ -64,12 +64,13 @@ body
 .img-container
 {
     @include size(100%, 279px);
-
     position: relative;
 
     .main-img
     {
         @include size;
+        
+        border-radius: 10px;
     }
 
     // 카드 오버레이
