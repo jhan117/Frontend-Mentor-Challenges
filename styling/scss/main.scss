@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import "colors";
+
+@mixin set-size ($w: 100%, $h:100%)
+{
+    width: $w;
+    height: $h;
+}
+
+@mixin flex ($direction)
+{
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)    
+}
+
+// For mobile phones:
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font:
+    {
+        family: 'Red Hat Display', sans-serif;
+        size: 16px;
+    }
+
+    text-align: center;
+}
+
+body
+{
+    @include set-size(100vw, 100vh);
+
+    background:
+    {
+        image: url("/images/pattern-background-mobile.svg");
+        color: $PaleBlue;
+        repeat: no-repeat;
+    }
+}
+
+.card-container
+{
+    @include set-size(327px, 567px);
+    @include center;
+    @include flex(column);
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 15px 15px hsl(225, 100%, 90%);
+
+    .main-img
+    {
+        @include set-size(100%, 160px);
+        border-radius: 20px 20px 0px 0px;
+        margin-bottom: 32px;
+    }
+
+    .text-container
+    {
+        @include set-size(100%, auto);
+        @include flex(column);
+        padding: 0px 30px;
+ 
+        h1
+        {
+            margin-bottom: 8px;
+            font:
+            {
+                size: 22px;
+                weight: 900;
+            }
+            color: $DarkBlue;
+        }
+
+        p
+        {
+            margin-top: 8px;
+
+            font:
+            {
+                weight: 500;
+            }
+            line-height: 25px;
+            color: $DesaturatedBlue;
+        }
+    }
+
+    .plan-container
+    {
+        @include set-size(279px, 82px);
+        margin: 24px;
+
+        background-color: $VeryPaleBlue;
+        border-radius: 15px;
+
+        @include flex(row);
+        align-items: center;
+
+        img
+        {
+            @include set-size(48px, 48px);
+
+            margin: 16px;
+        }
+
+        div
+        {
+            width: 50%;
+
+            .plan
+            {
+                font:
+                {
+                    size: 15px;
+                    weight: 900;
+                }
+
+                color: $DarkBlue;
+
+                text-align: left;
+                margin-bottom: 3px;
+            }
+
+            .price
+            {
+                font:
+                {
+                    size: 15px;
+                    weight: 500;
+                }
+                
+                color: $DesaturatedBlue;
+                text-align: left;
+            }
+        }
+
+        a
+        {
+            font:
+            {
+                size: 13px;
+                weight: 700;
+            }
+
+            color: $BrightBlue;
+        }
+
+        a:hover
+        {
+            text-decoration: none;
+            opacity: 0.75;
+        }
+    }
+
+    .button
+    {
+        margin: 0px 24px;
+        padding: 15px 0px;
+
+        background-color: $BrightBlue;
+        border: none;
+        border-radius: 10px;
+        
+        color: white;
+        box-shadow: 0px 20px 20px hsl(245, 75%, 90%);
+
+        text-decoration: none;
+
+        font:
+        {
+            size: 15px;
+            weight: 700;
+        }
+    }
+
+    .button:hover
+    {
+        opacity: 0.75;
+    }
+
+    .cancel
+    {
+        margin: 21px 0px 30px;
+
+        text-decoration: none;
+
+        font:
+        {
+            size: 15px;
+            weight: 900;
+        }
+
+        color: $DesaturatedBlue;
+    }
+
+    .cancel:hover
+    {
+        color: $DarkBlue;
+    }
+}
+
+.attribution
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    p
+    {
+        font:
+        {
+            size: 11px;
+            weight: 500;
+        }
+
+        color: $DarkBlue;
+    }
+    
+    a
+    {
+        font:
+        {
+            size: 11px;
+            weight: 500;
+        }
+
+        color: $DesaturatedBlue;
+
+        text-decoration: none;
+    }
+
+    a:hover
+    {
+        color: hsl(24, 23%, 55%);
+    }
+}
+
+@media only screen and (max-height: 625px)
+{
+    .attribution
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 310px)
+{
+    .attribution
+    {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 375px)
+{
+    // For desktop
+    body
+    {
+        background-image: url("/images/pattern-background-desktop.svg");
+    }
+
+    .card-container
+    {
+        @include set-size(450px, 696px);
+
+        .main-img
+        {
+            @include set-size(100%, 220px);
+            margin-bottom: 46px;
+        }
+        .text-container
+        {
+            padding: 0px 50px;
+
+            h1
+            {
+                font-size: 28px;
+            }
+        }
+
+        .plan-container
+        {
+            @include set-size(354px, 98px);
+            margin: 16px 48px 32px;
+            
+            img
+            {
+                margin: 24px;
+            }
+
+            div
+            {
+                width: 53%;
+            }
+        }
+
+        .button
+        {
+            margin: 0px 48px;
+        }
+
+        .cancel
+        {
+            margin: 29px 0px 40px;
+        }
+    }
+    
+    @media only screen and (max-height: 750px)
+    {
+        .attribution
+        {
+            display: none;
+        }
+    }
+}
