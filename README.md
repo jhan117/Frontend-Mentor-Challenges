@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/nft-preview-card-using-sass-rwd-RlxqtrTi8)
 - Live Site URL: [Live site](https://jhan117.github.io/NFT-preview-card-component/)
 
 ## My process
