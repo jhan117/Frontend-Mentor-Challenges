@@ -58,11 +58,11 @@ Also i learned overlay!
 
 ### Useful resources
 
-- RWD tutorial site : RWD tutorial site](https://www.w3schools.com/css/css_rwd_intro.asp) - This helped me for RWD.
-- SASS(SCSS) tutorial site :
-[SASS tutorial site in w3schools](https://www.w3schools.com/sass/default.php) - This helped me for SASS
-[SASS tutorial site in official](https://sass-lang.com/guide)
-[SASS tutorial video in youtube](https://www.youtube.com/watch?v=_a5j7KoflTs&t=612s) - This helped me for SASS settings.
+- RWD tutorial site : [RWD tutorial site](https://www.w3schools.com/css/css_rwd_intro.asp) - This helped me for RWD.
+- SASS(SCSS) tutorial site :   
+[SASS tutorial site in w3schools](https://www.w3schools.com/sass/default.php) - This helped me for SASS   
+[SASS tutorial site in official](https://sass-lang.com/guide)   
+[SASS tutorial video in youtube](https://www.youtube.com/watch?v=_a5j7KoflTs&t=612s) - This helped me for SASS settings.   
 
 ## Author
 
