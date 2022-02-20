@@ -1,24 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 @import "colors";
 
-@mixin set-size ($w: 100%, $h:100%)
+@mixin set-size ($w, $h, $mw, $mh)
 {
     width: $w;
     height: $h;
+    max-width: $mw;
+    max-height: $mh;
 }
 
-@mixin flex ($direction)
+@mixin flex ($direction, $gap)
 {
     display: flex;
     flex-direction: $direction;
-}
-
-@mixin center
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)    
+    gap: $gap;
 }
 
 // For mobile phones:
@@ -33,13 +28,12 @@
         family: 'Red Hat Display', sans-serif;
         size: 16px;
     }
-
-    text-align: center;
 }
 
 body
 {
     @include set-size(100vw, 100vh);
+    text-align: center;
 
     background:
     {
@@ -49,32 +43,29 @@ body
     }
 }
 
+// card start
 .card-container
 {
-    @include set-size(327px, 567px);
-    @include center;
-    @include flex(column);
+    @include set-size(100%, 100%, 327px , 567px);
+    @include flex(column, 0);
 
     background-color: white;
+    box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.151826);
     border-radius: 20px;
-    box-shadow: 0px 15px 15px hsl(225, 100%, 90%);
 
     .main-img
     {
-        @include set-size(100%, 160px);
-        border-radius: 20px 20px 0px 0px;
-        margin-bottom: 32px;
+        @include set-size(100%, 100%, 100% , 160px);
+        border-radius: 20px 20px 0 0;
     }
 
     .text-container
     {
-        @include set-size(100%, auto);
-        @include flex(column);
-        padding: 0px 30px;
+        @include flex(column, 16px);
+        padding: 32px 32px 0;
  
         h1
         {
-            margin-bottom: 8px;
             font:
             {
                 size: 22px;
@@ -85,10 +76,9 @@ body
 
         p
         {
-            margin-top: 8px;
-
             font:
             {
+                size: 15px;
                 weight: 500;
             }
             line-height: 25px;
@@ -98,101 +88,122 @@ body
 
     .plan-container
     {
-        @include set-size(279px, 82px);
-        margin: 24px;
+        @include set-size(100%, 100%, 100% , 129px);
+        padding: 24px;
 
-        background-color: $VeryPaleBlue;
-        border-radius: 15px;
-
-        @include flex(row);
-        align-items: center;
-
-        img
+        .plan-box
         {
-            @include set-size(48px, 48px);
+            @include set-size(100%, 100%);
 
-            margin: 16px;
-        }
+            background-color: $VeryPaleBlue;
+            border-radius: 11px;
+            padding: 16px;
 
-        div
-        {
-            width: 50%;
-
-            .plan
+            .box-content
             {
+                @include set-size(100%, 100%, 247px , 48px);
+                @include flex(row, 20px);
+                align-items: center;
+                justify-content: space-between;
+
+                img
+                {
+                    @include set-size(100%, 100%, 48px , 48px);
+                }
+
+                div
+                {
+                    @include set-size(100%, 100%, none 40px);
+                    @include flex(column, 3px);
+
+                    .plan
+                    {
+                        font:
+                        {
+                            size: 14px;
+                            weight: 900;
+                        }
+
+                        color: $DarkBlue;
+                        text-align: left;
+                    }
+
+                    .price
+                    {
+                        font:
+                        {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        
+                        color: $DesaturatedBlue;
+                        text-align: left;
+                    } 
+                }
+
+                a
+                {
+                    @include set-size(100%, 100%, 48px , 17px);
+
+                    font:
+                    {
+                        size: 13px;
+                        weight: 700;
+                    }
+
+                    color: $BrightBlue;
+                }
+
+                a:hover
+                {
+                    text-decoration: none;
+                    color: hsla(245, 83%, 68%, 1);
+                }
+            }
+        
+        }
+        
+    }
+
+    .button-container
+    {
+        @include set-size(100%, 100%, none , 74px);
+        padding: 24px;
+        padding-top: 0;
+
+        .button-box
+        {
+            @include set-size(100%, 100%, 279px , 50px);
+            padding: 15px 0;
+
+            background-color: $BrightBlue;
+            border-radius: 11px;
+            box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+            border: none;
+            cursor: pointer;
+        
+            a
+            {
+                color: white;
+                text-decoration: none;
+                
                 font:
                 {
                     size: 15px;
                     weight: 900;
                 }
-
-                color: $DarkBlue;
-
-                text-align: left;
-                margin-bottom: 3px;
             }
-
-            .price
-            {
-                font:
-                {
-                    size: 15px;
-                    weight: 500;
-                }
-                
-                color: $DesaturatedBlue;
-                text-align: left;
-            }
+            
         }
 
-        a
+        .button-box:hover
         {
-            font:
-            {
-                size: 13px;
-                weight: 700;
-            }
-
-            color: $BrightBlue;
+            background-color: #766CF1;
         }
-
-        a:hover
-        {
-            text-decoration: none;
-            opacity: 0.75;
-        }
-    }
-
-    .button
-    {
-        margin: 0px 24px;
-        padding: 15px 0px;
-
-        background-color: $BrightBlue;
-        border: none;
-        border-radius: 10px;
-        
-        color: white;
-        box-shadow: 0px 20px 20px hsl(245, 75%, 90%);
-
-        text-decoration: none;
-
-        font:
-        {
-            size: 15px;
-            weight: 700;
-        }
-    }
-
-    .button:hover
-    {
-        opacity: 0.75;
     }
 
     .cancel
     {
-        margin: 21px 0px 30px;
-
         text-decoration: none;
 
         font:
@@ -255,13 +266,7 @@ body
     }
 }
 
-@media only screen and (max-width: 310px)
-{
-    .attribution
-    {
-        display: none;
-    }
-}
+
 
 @media only screen and (min-width: 375px)
 {
@@ -323,5 +328,13 @@ body
         {
             display: none;
         }
+    }
+}
+
+@media only screen and (max-width: 310px)
+{
+    .attribution
+    {
+        display: none;
     }
 }
