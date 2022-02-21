@@ -40,10 +40,20 @@
                     max-width: 306px;
                     max-height: 48px;
 
+                    div {
+                        .plan {
+                            font-size: 16px;
+                        }
+
+                        .price {
+                            font-size: 16px;
+                        }
+                    }
                     a
                     {
                         max-width: 52px;
                         max-height: 19px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -54,7 +64,7 @@
             padding: 32px 48px;
             padding-top: 0;
 
-            .button-box {
+            .button {
                 max-width: 354px;
                 max-height: 50px;
             }

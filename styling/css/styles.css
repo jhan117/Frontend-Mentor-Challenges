@@ -165,28 +165,24 @@ body {
   padding-top: 0;
 }
 
-.card-container .button-container .button-box {
+.card-container .button-container a {
   width: 100%;
   height: 100%;
-  max-width: 279px;
   max-height: 50px;
   padding: 15px 0;
+  display: block;
   background-color: #3829e0;
   border-radius: 11px;
   -webkit-box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
           box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
   border: none;
-  cursor: pointer;
-}
-
-.card-container .button-container .button-box a {
   font-size: 15px;
   font-weight: 900;
   color: white;
   text-decoration: none;
 }
 
-.card-container .button-container .button-box:hover {
+.card-container .button-container a:hover {
   background-color: #766CF1;
 }
 
@@ -243,16 +239,23 @@ body {
     max-width: 306px;
     max-height: 48px;
   }
+  .card-container .plan-container .plan-box .box-content div .plan {
+    font-size: 16px;
+  }
+  .card-container .plan-container .plan-box .box-content div .price {
+    font-size: 16px;
+  }
   .card-container .plan-container .plan-box .box-content a {
     max-width: 52px;
     max-height: 19px;
+    font-size: 14px;
   }
   .card-container .button-container {
     max-height: 82px;
     padding: 32px 48px;
     padding-top: 0;
   }
-  .card-container .button-container .button-box {
+  .card-container .button-container .button {
     max-width: 354px;
     max-height: 50px;
   }
