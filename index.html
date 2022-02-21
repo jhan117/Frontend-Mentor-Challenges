@@ -4,36 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" sizes="32x32">
-  <link rel="stylesheet" href="./styling/css/main.css">
+  <link rel="stylesheet" href="./styling/css/styles.css">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
   <main>
-    <div class="card">
+    <!-- card start -->
+    <div class="card-container">
       <!-- 카드 이미지 시작 -->
       <a class="img-container" href="#view">
-        <img class="main-img" src="./images/image-equilibrium.jpg"alt="equilibrium image">
-        <span class="overlay"></span>
-        <img class="view-img" src="./images/icon-view.svg" alt="view icon">
+        <img class="main-img" src="./images/image-equilibrium.jpg" alt="equilibrium image">
+        <div class="overlay"></div>
+        <img class="view-img" src="./images/icon-view.svg" aria-hidden="true">
       </a>
       
       <!-- 카드 텍스트 시작 -->
-      <div class="card-text">
-        <h1 class="header"><a href="#heading_link">Equilibrium #3429</a></h1>
-        <div class="card-detail">
-          Our Equilibrium collection promotes balance and calm.
+      <div class="content-container">
+        <!-- text container start -->
+        <div class="text-container">
+          <!-- header start -->
+          <a href="#heading_link"><h1>Equilibrium #3429</h1></a>
+          <!-- 의미 있는 요소는 div 보다 p -->
+          <p>Our Equilibrium collection promotes balance and calm.</p>
         </div>
-        <div class="card-info">
-          <div class="cost">
-            <img src="./images/icon-ethereum.svg" alt="ethereum icon">0.041 ETH
-          </div>
-          <div class="left-time">
-            <img src="./images/icon-clock.svg" alt="clock icon">3 days left
-          </div>
-        </div>
-        <div class="user-info-container">
-          <div class="user-info">
-            <img src="./images/image-avatar.png" alt="avatar image">
+        <!-- card info start, ul과 li을 사용하는 것도 괜츈~ -->
+        <ul class="info-container">
+          <li class="cost">
+            <img src="./images/icon-ethereum.svg" aria-hidden="true">
+            <p>0.041 ETH</p>
+          </li>
+          <li class="left-time">
+            <img src="./images/icon-clock.svg" aria-hidden="true">
+            <p>3 days left</p>
+          </li>
+        </ul>
+        <div class="line"></div>
+        <!-- user info start -->
+        <div class="creator-container">
+          <div class="creator">
+            <img src="./images/image-avatar.png">
             <p>Creation of <a href="#creator"> Jules Wyvern</a></p>
           </div>
         </div>

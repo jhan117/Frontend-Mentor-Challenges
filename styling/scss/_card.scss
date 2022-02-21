@@ -1,0 +1,180 @@
+@mixin flex ($d, $g) {
+    display: flex;
+    flex-direction: $d;
+    gap: $g;
+}
+
+@mixin font ($s, $w) {
+    font: {
+        size: $s;
+        weight: $w;
+    }
+}
+
+// For mobile:
+.card-container {
+    width: 100%;
+    height: 100%;
+    max-width: 20.4375rem;
+    max-height: 33.9375rem;
+    padding: 1.5rem;
+
+    background-color: $cardBG;
+    box-shadow: 0 1.5625rem 3.125rem rgba(0, 0, 0, 0.0952917);
+    border-radius: 0.9375rem;
+
+    @include flex(column, 1.5rem);
+
+    .img-container {
+        width: 100%;
+        height: 100%;
+        max-width: 17.375rem;
+        max-height: 17.375rem;
+
+        position: relative;
+
+        .main-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .overlay {
+            @extend .main-img;
+            background-color: $Cyan;
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+
+        .view-img {
+            width: fit-content;
+            height: fit-content;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+
+    .img-container:hover .overlay {
+        opacity: 0.5;
+    }
+
+    .img-container:hover .view-img {
+        opacity: 1;
+    }
+
+    .content-container {
+        width: 100%;
+        height: 100%;
+
+        .text-container {
+
+            @include flex(column, 0.75rem);
+                
+            a {
+                color: $White;
+                text-decoration: none;
+                h1 {
+                    @include font(1.375rem, 600);
+                }
+                
+            }
+                
+            a:hover {
+                color: $Cyan;
+            }
+                
+            p {
+                max-height: 3.25rem;
+
+                @include font(1.125rem, 300);
+                line-height: 1.625rem;
+                color: $SoftBlue;
+            }
+        }
+
+        .info-container {
+            
+            max-height: 3rem;
+            padding: 1rem 0;
+
+            @include flex(row, 0);
+            align-items: center;
+            justify-content: space-between;
+
+            list-style-type: none;
+
+            .cost {
+                @include flex(row, 0.405rem);
+                align-items: center;
+
+                p {
+                    @include font(1.0667rem, 600);
+                    color: $Cyan;
+
+                }
+            }
+
+            .left-time {
+                @include flex(row, 0.405rem);
+                align-items: center;
+
+                img {
+                    width: 1rem;
+                    height: 1rem;
+                }
+
+                p {
+                    @include font(1.0667rem, 400);
+                    color: $SoftBlue;
+                }
+            }
+        }
+
+        .line {
+            width: 100%;
+            height: 0.0625rem;
+            
+            background-color: $line;
+        }
+        
+        .creator-container
+        {
+            padding-top: 1rem;
+
+            .creator {
+                @include flex(row, 1rem);
+                align-items: center;
+
+                img {
+                    width: 2rem;
+                    height: 2rem;
+
+                    border: 1px solid $White;
+                    border-radius: 50%;
+                }
+
+                p {
+                    @include font(1.0667rem, 400);
+                    color: $SoftBlue;
+                }
+
+                a {
+                    @extend p;
+                    color: $White;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: $Cyan;
+                }
+            }
+        }
+    }
+}

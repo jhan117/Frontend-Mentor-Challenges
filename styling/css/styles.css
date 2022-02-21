@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0d192b;
+  display: grid;
+  grid-template: 1fr/1fr;
+  place-items: center;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  max-width: 20.4375rem;
+  max-height: 33.9375rem;
+  padding: 1.5rem;
+  background-color: #14253d;
+  box-shadow: 0 1.5625rem 3.125rem rgba(0, 0, 0, 0.0952917);
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card-container .img-container {
+  width: 100%;
+  height: 100%;
+  max-width: 17.375rem;
+  max-height: 17.375rem;
+  position: relative;
+}
+.card-container .img-container .main-img, .card-container .img-container .overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.card-container .img-container .overlay {
+  background-color: #00fff7;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.card-container .img-container .view-img {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.card-container .img-container:hover .overlay {
+  opacity: 0.5;
+}
+.card-container .img-container:hover .view-img {
+  opacity: 1;
+}
+.card-container .content-container {
+  width: 100%;
+  height: 100%;
+}
+.card-container .content-container .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.card-container .content-container .text-container a {
+  color: white;
+  text-decoration: none;
+}
+.card-container .content-container .text-container a h1 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+.card-container .content-container .text-container a:hover {
+  color: #00fff7;
+}
+.card-container .content-container .text-container p, .card-container .content-container .text-container .creator-container .creator a, .card-container .content-container .creator-container .creator .text-container a {
+  max-height: 3.25rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  color: #8bacda;
+}
+.card-container .content-container .info-container {
+  max-height: 3rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.card-container .content-container .info-container .cost {
+  display: flex;
+  flex-direction: row;
+  gap: 0.405rem;
+  align-items: center;
+}
+.card-container .content-container .info-container .cost p, .card-container .content-container .info-container .cost .creator-container .creator a, .card-container .content-container .creator-container .creator .info-container .cost a {
+  font-size: 1.0667rem;
+  font-weight: 600;
+  color: #00fff7;
+}
+.card-container .content-container .info-container .left-time {
+  display: flex;
+  flex-direction: row;
+  gap: 0.405rem;
+  align-items: center;
+}
+.card-container .content-container .info-container .left-time img {
+  width: 1rem;
+  height: 1rem;
+}
+.card-container .content-container .info-container .left-time p, .card-container .content-container .info-container .left-time .creator-container .creator a, .card-container .content-container .creator-container .creator .info-container .left-time a {
+  font-size: 1.0667rem;
+  font-weight: 400;
+  color: #8bacda;
+}
+.card-container .content-container .line {
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #2f415b;
+}
+.card-container .content-container .creator-container {
+  padding-top: 1rem;
+}
+.card-container .content-container .creator-container .creator {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.card-container .content-container .creator-container .creator img {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card-container .content-container .creator-container .creator p, .card-container .content-container .creator-container .creator a {
+  font-size: 1.0667rem;
+  font-weight: 400;
+  color: #8bacda;
+}
+.card-container .content-container .creator-container .creator a {
+  color: white;
+  text-decoration: none;
+}
+.card-container .content-container .creator-container .creator a:hover {
+  color: #00fff7;
+}
+
+@media only screen and (min-width: 23.5em) {
+  .card-container {
+    max-width: 21.875rem;
+    max-height: 37.25rem;
+  }
+  .card-container .img-container {
+    max-width: 18.875rem;
+    max-height: 18.875rem;
+  }
+  .card-container .content-container .text-container {
+    gap: 1rem;
+  }
+  .card-container .content-container .info-container {
+    max-height: 4.25rem;
+    padding: 1.5rem 0;
+  }
+  .card-container .content-container .info-container .cost p, .card-container .content-container .info-container .cost .creator-container .creator a, .card-container .content-container .creator-container .creator .info-container .cost a {
+    font-size: 1rem;
+  }
+  .card-container .content-container .info-container .left-time p, .card-container .content-container .info-container .left-time .creator-container .creator a, .card-container .content-container .creator-container .creator .info-container .left-time a {
+    font-size: 1rem;
+  }
+  .card-container .content-container .creator-container .creator p, .card-container .content-container .creator-container .creator a {
+    font-size: 1rem;
+  }
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.attribution p, .attribution .card-container .content-container .creator-container .creator a, .card-container .content-container .creator-container .creator .attribution a {
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+}
+.attribution a {
+  font-size: 11px;
+  font-weight: 500;
+  color: #8bacda;
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: #da9f8b;
+}
+
+@media only screen and (max-height: 36.875em) {
+  .attribution {
+    display: none;
+  }
+}
+@media only screen and (max-width: 18.75em) {
+  .attribution {
+    display: none;
+  }
+}
+@media only screen and (min-width: 23.5em) and (max-height: 40em) {
+  .attribution {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

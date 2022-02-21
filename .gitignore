@@ -15,5 +15,6 @@
 .DS_Store
 .prettierignore
 
-# ignore style guide
-style-guide.md
+# guide files
+guide/
+design/

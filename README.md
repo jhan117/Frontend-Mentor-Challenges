@@ -54,6 +54,29 @@ Users should be able to:
 I used SASS(SCSS) for the first time. and i learned about RWD more.
 Also i learned overlay!
 
+- HTML Page Width and Height Settings:
+```CSS
+/* CSS Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+```
+- Using Rem units:
+10px = 0.625rem
+16px = 1rem
+```CSS
+body {
+  font-size: 62.5%; /* = 10px */
+}
+```
+Creating a base font-size that you don’t actually need means you have to redefine nigh on every element to take on the size you do want–you’re creating a rule that you don’t even want and it’s causing you work…
+
 ### Continued development
 
 - CSS advanced
@@ -65,6 +88,8 @@ Also i learned overlay!
 [SASS tutorial site in w3schools](https://www.w3schools.com/sass/default.php) - This helped me for SASS   
 [SASS tutorial site in official](https://sass-lang.com/guide)   
 [SASS tutorial video in youtube](https://www.youtube.com/watch?v=_a5j7KoflTs&t=612s) - This helped me for SASS settings.   
+- HTML Page Width and Height Settings : [Youtube](https://www.youtube.com/watch?v=dpuKVjX6BJ8&t=161s)
+- px to rem : [Pixel to REM conversion table](https://www.croydon.gov.uk/design-and-content-guidelines/resources/pixel-rem-conversion-table)
 
 ## Author
 

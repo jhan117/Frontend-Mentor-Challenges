@@ -1,0 +1,44 @@
+// For desktop:
+@media only screen and (min-width: 23.5em)
+{
+    .card-container {
+        max-width: 21.875rem;
+        max-height: 37.25rem;
+
+        .img-container {
+            max-width: 18.875rem;
+            max-height: 18.875rem;
+        }
+
+        .content-container {
+            .text-container {
+                gap: 1rem;
+            }
+
+            .info-container {
+                max-height: 4.25rem;
+                padding: 1.5rem 0;
+
+                .cost {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+
+                .left-time {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .creator-container {
+                .creator {
+                    p, a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
