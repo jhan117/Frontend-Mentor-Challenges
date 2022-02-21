@@ -1,0 +1,67 @@
+// For desktop:
+@media only screen and (min-width: 375px) {
+    
+    body {
+        background-image: url("/images/pattern-background-desktop.svg");
+    }
+
+    .card-container {
+        max-width: 450px;
+        max-height: 697px;
+
+        .main-img {
+            max-height: 220px;
+        }
+
+        .text-container {
+            gap: 17px;
+            padding: 45px 48px 0;
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+
+        .plan-container {
+            max-height: 150px;
+            padding: 20px 48px 32px;
+
+            .plan-box {
+                max-width: 354px;
+                max-height: 98px;
+                padding: 25px 24px;
+
+                .box-content {
+                    max-width: 306px;
+                    max-height: 48px;
+
+                    a
+                    {
+                        max-width: 52px;
+                        max-height: 19px;
+                    }
+                }
+            }
+        }
+
+        .button-container {
+            max-height: 82px;
+            padding: 32px 48px;
+            padding-top: 0;
+
+            .button-box {
+                max-width: 354px;
+                max-height: 50px;
+            }
+        }
+
+        .cancel-container {
+            padding-bottom: 48px;
+        }
+    }
+}
