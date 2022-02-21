@@ -16,7 +16,7 @@ body {
   -ms-grid-columns: 1fr;
       grid-template: 1fr / 1fr;
   place-items: center;
-  background-image: url("/images/pattern-background-mobile.svg");
+  background-image: url("./images/pattern-background-mobile.svg");
   background-color: #e0e8ff;
   background-repeat: no-repeat;
   background-size: 100%;
