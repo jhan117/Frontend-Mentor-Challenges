@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../assets/bg-main-mobile.png") no-repeat left 0.5rem top -17.5rem;
+}
+
+.content-container {
+  max-width: 23.4375rem;
+  height: 38.875rem;
+  padding: 2.5rem 1.5rem 10.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.content-container img {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: 2rem;
+}
+
+.content-container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.content-container .content h1 {
+  max-width: 100%;
+  height: 9rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #191826;
+  line-height: 3rem;
+  letter-spacing: -0.028125rem;
+}
+
+.content-container .content p {
+  max-width: 100%;
+  height: 9.75rem;
+  font-weight: 400;
+  color: #191826;
+  line-height: 1.625rem;
+}
+
+.design-container {
+  max-width: 23.4375rem;
+  height: 57.875rem;
+}
+
+.design-container .BG-container {
+  max-width: 100%;
+  height: 37.5rem;
+  background-color: #191826;
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.design-container .BG-container .pattern {
+  width: 17.5rem;
+  height: 26.25rem;
+  position: absolute;
+  left: 12.8%;
+}
+
+.design-container .BG-container .phone {
+  width: 13.0625rem;
+  height: 25.1875rem;
+  position: absolute;
+  top: -16.33%;
+  left: 22.13%;
+}
+
+.design-container .BG-container .premium-card {
+  max-width: 100%;
+  height: 34.125rem;
+  background-color: #fa7352;
+  border-radius: 0.75rem;
+  position: absolute;
+  top: 63.33%;
+}
+
+.design-container .BG-container .premium-card .card-content {
+  max-width: 100%;
+  height: 17.25rem;
+  padding: 3rem 2.3125rem 2.25rem 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+}
+
+.design-container .BG-container .premium-card .card-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fcf9f8;
+  line-height: 2.5rem;
+}
+
+.design-container .BG-container .premium-card .card-content p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #fcf9f8;
+  line-height: 1.75rem;
+}
+
+.design-container .BG-container .premium-card .price {
+  padding: 0 2.4375rem 0 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design-container .BG-container .premium-card .price .dollar {
+  font-size: 4.0625rem;
+  font-weight: 700;
+  color: #fcf9f8;
+  line-height: 3.25rem;
+}
+
+.design-container .BG-container .premium-card .price .period {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fcf9f8;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+}
+
+.design-container .BG-container .premium-card .buttons {
+  max-width: 100%;
+  height: 13.625rem;
+  padding: 2rem 2.4375rem 3rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.design-container .BG-container .premium-card .buttons .ios-btn, .design-container .BG-container .premium-card .buttons .android-btn {
+  max-width: 18.5rem;
+  height: 3.8125rem;
+  background-color: #191826;
+  border-radius: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.495rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.design-container .BG-container .premium-card .buttons .ios-btn img, .design-container .BG-container .premium-card .buttons .android-btn img {
+  max-width: 1.0625rem;
+  height: 1.25rem;
+}
+
+.design-container .BG-container .premium-card .buttons .ios-btn p, .design-container .BG-container .premium-card .buttons .android-btn p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fcf9f8;
+  letter-spacing: -0.01125rem;
+}
+
+.design-container .BG-container .premium-card .buttons .android-btn {
+  background-color: #fcf9f8;
+  gap: 0.46875rem;
+}
+
+.design-container .BG-container .premium-card .buttons .android-btn p {
+  color: #191826;
+}
+
+.design-container .BG-container .premium-card .buttons .ios-btn:hover, .design-container .BG-container .premium-card .buttons .android-btn:hover {
+  background-color: #65e2db;
+}
+
+.design-container .BG-container .premium-card .buttons .android-btn:hover {
+  background-color: #ffba66;
+}
+
+footer {
+  max-width: 100%;
+  height: 24.8125rem;
+  padding: 4rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+footer img {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: 2rem;
+}
+
+footer .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+footer .contact-container p {
+  max-width: 100%;
+  height: 6.5625rem;
+  font-weight: 400;
+  color: #191826;
+  line-height: 1.625rem;
+}
+
+footer .contact-container p span {
+  font-weight: 700;
+  color: #191826;
+  line-height: 1.625rem;
+}
+
+footer .contact-container .sns {
+  max-width: 6.25rem;
+  height: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.25rem;
+}
+
+footer .contact-container .sns a {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+footer .contact-container .sns .facebook {
+  background: url(../../assets/icon-facebook.svg) no-repeat center;
+}
+
+footer .contact-container .sns .facebook:hover {
+  background: url(../../assets/icon-facebook-hover.svg) no-repeat center;
+}
+
+footer .contact-container .sns .instagram {
+  background: url(../../assets/icon-instagram.svg) no-repeat center;
+}
+
+footer .contact-container .sns .instagram:hover {
+  background: url(../../assets/icon-instagram-hover.svg) no-repeat center;
+}
+
+footer .contact-container .sns .twitter {
+  background: url(../../assets/icon-twitter.svg) no-repeat center;
+}
+
+footer .contact-container .sns .twitter:hover {
+  background: url(../../assets/icon-twitter-hover.svg) no-repeat center;
+}
+
+@media only screen and (min-width: 23.5em) {
+  body {
+    background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-tablet.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 19.3125rem top -2rem, left -25.25rem top -15.875rem;
+    background-size: auto 25rem, auto;
+  }
+  .content-container {
+    max-width: 48rem;
+    height: 48.125rem;
+    padding: 3.875rem 0 15.5625rem 2.4375rem;
+    gap: 5.9375rem;
+  }
+  .content-container .content {
+    gap: 1.75rem;
+  }
+  .content-container .content h1 {
+    max-width: 32.5rem;
+    height: 12rem;
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 0.045625rem;
+  }
+  .content-container .content p {
+    max-width: 32.125rem;
+    height: 7rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .design-container {
+    max-width: 48rem;
+    height: 43.5rem;
+    padding: 0 2.25rem;
+  }
+  .design-container .BG-container .pattern {
+    top: 5.17%;
+    left: 32.9%;
+  }
+  .design-container .BG-container .phone {
+    width: 16.875rem;
+    height: 34.75rem;
+    top: -23%;
+    left: 9.2%;
+  }
+  .design-container .BG-container .premium-card {
+    max-width: 24.9375rem;
+    top: 25%;
+    left: 34.34%;
+  }
+  .design-container .BG-container .premium-card .card-content {
+    padding-right: 2.4375rem;
+    padding-left: 3rem;
+  }
+  .design-container .BG-container .premium-card .price {
+    padding-right: 0;
+    padding-left: 3.25rem;
+  }
+  .design-container .BG-container .premium-card .buttons {
+    padding-left: 3.1875rem;
+    padding-right: 3.25rem;
+  }
+  footer {
+    height: 19.6875rem;
+    padding: 5.4375rem 2.25rem 5.3125rem;
+  }
+  footer .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .contact-container p {
+    max-width: 22.875rem;
+    height: 4.9375rem;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  body {
+    background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 70.5rem top -2.5rem, left -18.5rem top -16.375rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

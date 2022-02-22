@@ -1,0 +1,14 @@
+// Colors
+$Cyan: hsl(177, 68, 64);
+$Red-Orange: hsl(12, 94, 65);
+$Yellow: hsl(33, 100, 70);
+$white: hsl(20, 33, 98);
+$black: hsl(244, 23, 12);
+
+@import "1.general";
+@import "2.content";
+@import "3.design";
+@import "4.contact";
+
+@import "media-tablet";
+@import "media-desktop";

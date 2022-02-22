@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+// For mobile:
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background: url("../../assets/bg-main-mobile.png") no-repeat left 0.5rem top -17.5rem;
+}

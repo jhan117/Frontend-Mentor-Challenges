@@ -1,0 +1,13 @@
+// For desktop:
+@media only screen and (min-width: 48.0625em) {
+    // 1. general
+    body {
+        background-image:url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: left 70.5rem top -2.5rem, left -18.5rem top -16.375rem;
+    }
+    // 2. content
+    .content-container {
+        
+    }
+}
