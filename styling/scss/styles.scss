@@ -12,3 +12,9 @@ $black: hsl(244, 23, 12);
 
 @import "media-tablet";
 @import "media-desktop";
+
+// [내 디자인 기준]
+// ─ container: size, *padding (왼쪽만)
+// └ content: size, gap
+//     └ detail: size
+// 100%를 자주 쓰도록 노력하자

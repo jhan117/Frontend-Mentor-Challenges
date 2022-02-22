@@ -1,13 +1,131 @@
 // For desktop:
 @media only screen and (min-width: 48.0625em) {
+
     // 1. general
     body {
-        background-image:url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
+        background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
         background-repeat: no-repeat, no-repeat;
-        background-position: left 70.5rem top -2.5rem, left -18.5rem top -16.375rem;
+        background-position: 100% -3.5%, 60% 95%;
+        background-size: 19.5rem 29.25rem, auto;
     }
+
     // 2. content
+    // size: 1440 x 860
+    // padding: 62 450 321 160
     .content-container {
-        
+        height: 53.75rem;
+        padding: 3.875rem 0 20.0625rem 10rem;
+
+        // logo ~ content: 127
+        gap: 7.9375rem;
+
+        // 1015 x 318
+        .content {
+            max-width: 63.4375rem;
+            height: 19.875rem;
+
+            // header ~ paragraph: 40
+            gap: 2.5rem;
+
+            // 1015 x 176
+            h1 {
+                max-width: 63.4375rem;
+                height: 11rem;
+
+                font-size: 5.5rem;
+                line-height: 5.5rem;
+                letter-spacing: -0.0625rem;
+            }
+
+            // 825 x 102
+            p {
+                max-width: 51.5625rem;
+                height: 6.375rem;
+
+                font-size: 1.25rem;
+                line-height: 2.125rem;
+            }
+        }
+    }
+
+    // 3. design [black mask top ~ premium card bottom]
+    // width: 1440px height: 715px
+    // padding top 0 right 165px bottom 0 left 165px
+    .design-container {
+        height: 44.6875rem;
+        padding: 0 10.3125rem;
+
+        // background: width 1110px height 600px
+        .BG-container {
+            max-width: 69.375rem;
+
+            // pattern: width 312px height 468px
+            .pattern {
+                max-width: 19.5rem;
+                height: 29.25rem;
+
+                top: -6.67%; // -40px
+                left: 30.27%; // 336px
+            }
+
+            // phone: width 312px height 642px
+            .phone {
+                max-width: 19.5rem;
+                height: 40.125rem;
+
+                top: -33.18%; // -213px
+                left: 9.2%; // 102px
+            }
+
+            // premium card: width 446px height 625px
+            // padding: T 58px B 48px L 54px
+            .premium-card {
+                max-width: 27.875rem;
+                height: 39.0625rem;
+                padding: 3.625rem 0 3rem 3.375rem;
+
+                top: 15%; // 90px
+                left: 51.26%; // 569px
+
+                // width: 333px height: 244px
+                .card-content {
+                    max-width: 20.8125rem;
+                    height: 15.25rem;
+
+                    // header ~ paragraph: 22px
+                    gap: 1.375rem;
+
+                    // 333 x 52
+                    h2 {
+                        max-width: 20.8125rem;
+                        height: 3.25rem;
+
+                        font-size: 2.5rem;
+                        line-height: 3.25rem;
+                    }
+
+                    // 333 x 170
+                    p {
+                        max-width: 20.8125rem;
+                        height: 10.625rem;
+
+                        font-size: 1.25rem;
+                        line-height: 2.125rem;
+                    }
+                }
+
+                // padding: top 0px right 180px bottom 0px left 52px
+                .price {
+                    padding-right: 0; // empty space
+                    padding-left: 3.25rem;
+                }
+
+                // padding: top 32px right 51px bottom 48px left 52px
+                .buttons {
+                    padding-left: 3.1875rem;
+                    padding-right: 3.25rem;
+                }
+            }
+        }
     }
 }

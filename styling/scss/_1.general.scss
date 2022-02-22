@@ -15,5 +15,6 @@ body {
     width: 100%;
     min-height: 100vh;
 
-    background: url("../../assets/bg-main-mobile.png") no-repeat left 0.5rem top -17.5rem;
+    background: url("../../assets/bg-main-mobile.png") no-repeat;
+    background-position: 0% -20%;
 }

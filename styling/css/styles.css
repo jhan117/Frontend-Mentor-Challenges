@@ -13,13 +13,14 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  background: url("../../assets/bg-main-mobile.png") no-repeat left 0.5rem top -17.5rem;
+  background: url("../../assets/bg-main-mobile.png") no-repeat;
+  background-position: 0% -20%;
 }
 
 .content-container {
-  max-width: 23.4375rem;
+  max-width: 100%;
   height: 38.875rem;
-  padding: 2.5rem 1.5rem 10.375rem;
+  padding: 2.5rem 0 10.375rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +39,8 @@ body {
 }
 
 .content-container .content {
+  max-width: 23.4375rem;
+  height: 38.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +70,7 @@ body {
 }
 
 .design-container {
-  max-width: 23.4375rem;
+  max-width: 100%;
   height: 57.875rem;
 }
 
@@ -80,14 +83,14 @@ body {
 }
 
 .design-container .BG-container .pattern {
-  width: 17.5rem;
+  max-width: 17.5rem;
   height: 26.25rem;
   position: absolute;
   left: 12.8%;
 }
 
 .design-container .BG-container .phone {
-  width: 13.0625rem;
+  max-width: 13.0625rem;
   height: 25.1875rem;
   position: absolute;
   top: -16.33%;
@@ -106,7 +109,6 @@ body {
 .design-container .BG-container .premium-card .card-content {
   max-width: 100%;
   height: 17.25rem;
-  padding: 3rem 2.3125rem 2.25rem 2.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +134,7 @@ body {
 }
 
 .design-container .BG-container .premium-card .price {
-  padding: 0 2.4375rem 0 2.5rem;
+  padding-left: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,7 +166,7 @@ body {
 .design-container .BG-container .premium-card .buttons {
   max-width: 100%;
   height: 13.625rem;
-  padding: 2rem 2.4375rem 3rem 2.5rem;
+  padding: 2rem 0 3rem 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,24 +320,24 @@ footer .contact-container .sns .twitter:hover {
   body {
     background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-tablet.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: left 19.3125rem top -2rem, left -25.25rem top -15.875rem;
-    background-size: auto 25rem, auto;
+    background-position: 107% -2.5%, 75% -40%;
+    background-size: 16.6875rem 25rem, auto;
   }
   .content-container {
-    max-width: 48rem;
     height: 48.125rem;
     padding: 3.875rem 0 15.5625rem 2.4375rem;
     gap: 5.9375rem;
   }
   .content-container .content {
+    max-width: 32.5rem;
+    height: 20.75rem;
     gap: 1.75rem;
   }
   .content-container .content h1 {
-    max-width: 32.5rem;
     height: 12rem;
     font-size: 4rem;
     line-height: 4rem;
-    letter-spacing: 0.045625rem;
+    letter-spacing: -0.045625rem;
   }
   .content-container .content p {
     max-width: 32.125rem;
@@ -344,16 +346,18 @@ footer .contact-container .sns .twitter:hover {
     line-height: 1.75rem;
   }
   .design-container {
-    max-width: 48rem;
     height: 43.5rem;
     padding: 0 2.25rem;
   }
+  .design-container .BG-container {
+    max-width: 43.5rem;
+  }
   .design-container .BG-container .pattern {
-    top: 5.17%;
+    top: -5.17%;
     left: 32.9%;
   }
   .design-container .BG-container .phone {
-    width: 16.875rem;
+    max-width: 16.875rem;
     height: 34.75rem;
     top: -23%;
     left: 9.2%;
@@ -364,25 +368,19 @@ footer .contact-container .sns .twitter:hover {
     left: 34.34%;
   }
   .design-container .BG-container .premium-card .card-content {
-    padding-right: 2.4375rem;
-    padding-left: 3rem;
+    height: 12rem;
   }
   .design-container .BG-container .premium-card .price {
-    padding-right: 0;
-    padding-left: 3.25rem;
+    padding-left: 3.375rem;
   }
   .design-container .BG-container .premium-card .buttons {
-    padding-left: 3.1875rem;
-    padding-right: 3.25rem;
+    padding-left: 3.375rem;
   }
   footer {
     height: 19.6875rem;
     padding: 5.4375rem 2.25rem 5.3125rem;
   }
   footer .contact-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -404,7 +402,82 @@ footer .contact-container .sns .twitter:hover {
   body {
     background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: left 70.5rem top -2.5rem, left -18.5rem top -16.375rem;
+    background-position: 100% -3.5%, 60% 95%;
+    background-size: 19.5rem 29.25rem, auto;
+  }
+  .content-container {
+    height: 53.75rem;
+    padding: 3.875rem 0 20.0625rem 10rem;
+    gap: 7.9375rem;
+  }
+  .content-container .content {
+    max-width: 63.4375rem;
+    height: 19.875rem;
+    gap: 2.5rem;
+  }
+  .content-container .content h1 {
+    max-width: 63.4375rem;
+    height: 11rem;
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.0625rem;
+  }
+  .content-container .content p {
+    max-width: 51.5625rem;
+    height: 6.375rem;
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+  .design-container {
+    height: 44.6875rem;
+    padding: 0 10.3125rem;
+  }
+  .design-container .BG-container {
+    max-width: 69.375rem;
+  }
+  .design-container .BG-container .pattern {
+    max-width: 19.5rem;
+    height: 29.25rem;
+    top: -6.67%;
+    left: 30.27%;
+  }
+  .design-container .BG-container .phone {
+    max-width: 19.5rem;
+    height: 40.125rem;
+    top: -33.18%;
+    left: 9.2%;
+  }
+  .design-container .BG-container .premium-card {
+    max-width: 27.875rem;
+    height: 39.0625rem;
+    padding: 3.625rem 0 3rem 3.375rem;
+    top: 15%;
+    left: 51.26%;
+  }
+  .design-container .BG-container .premium-card .card-content {
+    max-width: 20.8125rem;
+    height: 15.25rem;
+    gap: 1.375rem;
+  }
+  .design-container .BG-container .premium-card .card-content h2 {
+    max-width: 20.8125rem;
+    height: 3.25rem;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+  .design-container .BG-container .premium-card .card-content p {
+    max-width: 20.8125rem;
+    height: 10.625rem;
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+  .design-container .BG-container .premium-card .price {
+    padding-right: 0;
+    padding-left: 3.25rem;
+  }
+  .design-container .BG-container .premium-card .buttons {
+    padding-left: 3.1875rem;
+    padding-right: 3.25rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

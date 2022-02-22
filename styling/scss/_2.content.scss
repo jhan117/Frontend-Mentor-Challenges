@@ -1,31 +1,33 @@
-// top ~ black mask (I changed the location of the logo)
-// - logo: width 146.09px height 32px
-// - header: width 327px height 144px
-// - paragraph: width 327px height 156px
-// width: 375px height: 622px
-// padding: top 40px right 24px bottom 166px left 24px
-// logo ~ header: 64px
-// header ~ paragraph: 20px
-
+// 맨 위부터 검은색 전까지
+// size: 375 x 622
+// padding: 40 24 166 24
 .content-container {
-    max-width: 23.4375rem;
+    max-width: 100%;
     height: 38.875rem;
-    padding: 2.5rem 1.5rem 10.375rem;
+    padding: 2.5rem 0 10.375rem 1.5rem;
 
+    // logo ~ content: 64
     display: flex;
     flex-direction: column;
     gap: 4rem;
 
+    // 146.09 x 32
     img {
         max-width: fit-content;
         height: 2rem;
     }
 
+    // 327 x 320
     .content {
+        max-width: 23.4375rem;
+        height: 38.875rem;
+
+        // header ~ paragraph: 20
         display: flex;
         flex-direction: column;
         gap: 1.25rem;
 
+        // 327 x 144
         h1 {
             max-width: 100%;
             height: 9rem;
@@ -40,6 +42,7 @@
             letter-spacing: -0.028125rem;
         }
 
+        // 327 x 156
         p {
             max-width: 100%;
             height: 9.75rem;
