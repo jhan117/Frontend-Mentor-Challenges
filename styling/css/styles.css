@@ -322,28 +322,8 @@ footer .contact-container .sns a {
   height: 1.25rem;
 }
 
-footer .contact-container .sns .facebook {
-  background: url(../../assets/icon-facebook.svg) no-repeat center;
-}
-
-footer .contact-container .sns .facebook:hover {
-  background: url(../../assets/icon-facebook-hover.svg) no-repeat center;
-}
-
-footer .contact-container .sns .instagram {
-  background: url(../../assets/icon-instagram.svg) no-repeat center;
-}
-
-footer .contact-container .sns .instagram:hover {
-  background: url(../../assets/icon-instagram-hover.svg) no-repeat center;
-}
-
-footer .contact-container .sns .twitter {
-  background: url(../../assets/icon-twitter.svg) no-repeat center;
-}
-
-footer .contact-container .sns .twitter:hover {
-  background: url(../../assets/icon-twitter-hover.svg) no-repeat center;
+footer .contact-container .sns a:hover path {
+  fill: #FA7453;
 }
 
 @media only screen and (min-width: 23.5em) {

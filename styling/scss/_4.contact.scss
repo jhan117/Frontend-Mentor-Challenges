@@ -61,29 +61,9 @@ footer {
                 height: 1.25rem;
             }
 
-            // it doesn't work... fill... think about it
-            .facebook {
-                background: url(../../assets/icon-facebook.svg) no-repeat center;
-            }
-
-            .facebook:hover {
-                background: url(../../assets/icon-facebook-hover.svg) no-repeat center;
-            }
-
-            .instagram {
-                background: url(../../assets/icon-instagram.svg) no-repeat center;
-            }
-
-            .instagram:hover {
-                background: url(../../assets/icon-instagram-hover.svg) no-repeat center;
-            }
-
-            .twitter {
-                background: url(../../assets/icon-twitter.svg) no-repeat center;
-            }
-
-            .twitter:hover {
-                background: url(../../assets/icon-twitter-hover.svg) no-repeat center;
+            // solve
+            a:hover path {
+                fill: #FA7453;
             }
         }
     }
