@@ -5,7 +5,7 @@
     body {
         background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-tablet.png");
         background-repeat: no-repeat, no-repeat;
-        background-position: 107% -2.5%, 75% -40%;
+        background-position: 107% -2.7828125rem, 82.5% -33.39375%;
         background-size: 16.6875rem 25rem, auto;
     }
 
@@ -48,71 +48,66 @@
     }
 
     // 3. design
-    // width: 768px height: 696px
-    // padding top 0 right 36px bottom 0 left 36px
+    // size: 768 x 696
+    // padding: 0 39 0 33
     .design-container {
-        height: 43.5rem;
-        padding: 0 2.25rem;
+        height: 57.875rem;
+        padding-left: 2.0625rem;
+        padding-right: 2.4375rem; // set right
 
-        // background: width 696px height 600px
-        .BG-container {
+        // 696 x 600
+        .background {
             max-width: 43.5rem;
 
-            .pattern {
-                top: -5.17%; // -31px
-                left: 32.9%; // 229px
+            img {
+                // position(x, y): 262 -31
+                left: 16.375rem;
+                top: -1.9375rem;
             }
+        }
 
-            // phone: width 270px height 556px
-            .phone {
-                max-width: 16.875rem;
-                height: 34.75rem;
+        // 270.21 x 556
+        .phone {
+            max-width: 16.875rem;
+            height: 34.75rem;
 
-                top: -23%; // -138px
-                left: 9.2%; // 64px
-            }
+            // position(x, y): 97 -138
+            left: 6.0625rem;
+            top: -8.625rem;
+        }
 
-            // premium card: width 399px height 546px
-            .premium-card {
-                max-width: 24.9375rem;
+        // 399 x 546
+        // padding: 48 49 48 48
+        .premium-card {
+            max-width: 24.9375rem;
 
-                top: 25%; // 150px
-                left: 34.34%; // 239px
+            padding-left: 3rem;
+            padding-right: 3.0625rem;
 
-                // 302 x 192px
-                // padding: top 48px right 39px bottom 36px left 48px
-                .card-content {
-                    height: 12rem;
-                    // padding-left: 3rem;
-                }
-
-                // padding: top 0px right 180px bottom 0px left 54px
-                .price {
-                    padding-left: 3.375rem;
-                }
-
-                // padding: top 32px right 51px bottom 48px left 54px
-                .buttons {
-                    padding-left: 3.375rem;
-                }
-            }
+            // position(x, y): 272 150
+            left: 17rem;
+            top: 9.375rem;
         }
     }
 
     // 4. contact
-    // width: 768px height: 315px
-    // padding: top 87px right 36px bottom 85px left 36px
+    // 768 x 315
+    // padding: 87 39 85 33
     footer {
         height: 19.6875rem;
-        padding: 5.4375rem 2.25rem 5.3125rem;
+        padding: 5.4375rem 0 5.3125rem 2.0625rem;
 
+        // 696 x 79
         .contact-container {
-            // content ~ sns: 230px
+            max-width: 43.5rem;
+            height: 4.9375rem;
+
+            // content ~ sns: 240 (not set)
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
 
-            // width: 366px height: 79px
+            // 366 x 79
             p {
                 max-width: 22.875rem;
                 height: 4.9375rem;

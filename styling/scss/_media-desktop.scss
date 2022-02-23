@@ -5,7 +5,7 @@
     body {
         background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
         background-repeat: no-repeat, no-repeat;
-        background-position: 100% -3.5%, 60% 95%;
+        background-position: 100% -2.75rem, 65% -16rem;
         background-size: 19.5rem 29.25rem, auto;
     }
 
@@ -48,84 +48,115 @@
         }
     }
 
-    // 3. design [black mask top ~ premium card bottom]
-    // width: 1440px height: 715px
-    // padding top 0 right 165px bottom 0 left 165px
+    // 3. design
+    // size: 1440 x 715
+    // padding: 0 165 0 165
     .design-container {
         height: 44.6875rem;
         padding: 0 10.3125rem;
 
-        // background: width 1110px height 600px
-        .BG-container {
+        // 1110 x 600
+        .background {
             max-width: 69.375rem;
 
-            // pattern: width 312px height 468px
-            .pattern {
+            // 312 x 468
+            img {
                 max-width: 19.5rem;
-                height: 29.25rem;
+                height: 26.25rem;
 
-                top: -6.67%; // -40px
-                left: 30.27%; // 336px
+                // position(x, y): 501 -40
+                left: 31.3125rem;
+                top: -2.5rem;
             }
+        }
 
-            // phone: width 312px height 642px
-            .phone {
-                max-width: 19.5rem;
-                height: 40.125rem;
+        // 312 x 642
+        .phone {
+            max-width: 19.5rem;
+            height: 40.125rem;
 
-                top: -33.18%; // -213px
-                left: 9.2%; // 102px
-            }
+            // position(x, y): 267 -213
+            left: 16.6875rem;
+            top: -13.3125rem;
+        }
 
-            // premium card: width 446px height 625px
-            // padding: T 58px B 48px L 54px
-            .premium-card {
-                max-width: 27.875rem;
-                height: 39.0625rem;
-                padding: 3.625rem 0 3rem 3.375rem;
+        // 446 x 625
+        // padding: 58 59 48 54
+        .premium-card {
+            max-width: 27.875rem;
+            height: 39.0625rem;
 
-                top: 15%; // 90px
-                left: 51.26%; // 569px
+            padding: 3.625rem 3.6875rem 3rem 3.375rem;
 
-                // width: 333px height: 244px
-                .card-content {
-                    max-width: 20.8125rem;
-                    height: 15.25rem;
+            // content ~ buttons: 46px
+            gap: 2.875rem;
 
-                    // header ~ paragraph: 22px
-                    gap: 1.375rem;
+            // position(x, y): 734 90
+            left: 45.875rem;
+            top: 5.625rem;
 
-                    // 333 x 52
-                    h2 {
-                        max-width: 20.8125rem;
-                        height: 3.25rem;
+            // 333 x 335
+            .card-content {
+                max-width: 20.8125rem;
+                height: 20.9375rem;
 
-                        font-size: 2.5rem;
-                        line-height: 3.25rem;
-                    }
+                // header ~ paragraph: 22
+                // paragraph ~ subscription: 39
+                gap: 1.375rem;
 
-                    // 333 x 170
-                    p {
-                        max-width: 20.8125rem;
-                        height: 10.625rem;
-
-                        font-size: 1.25rem;
-                        line-height: 2.125rem;
-                    }
+                // 333 x 52
+                h2 {
+                    height: 3.25rem;
+                    font-size: 2.5rem;
+                    line-height: 3.25rem;
                 }
 
-                // padding: top 0px right 180px bottom 0px left 52px
-                .price {
-                    padding-right: 0; // empty space
-                    padding-left: 3.25rem;
+                // 333 x 170
+                p {
+                    height: 10.625rem;
+                    font-size: 1.25rem;
+                    line-height: 2.125rem;
                 }
 
-                // padding: top 32px right 51px bottom 48px left 52px
-                .buttons {
-                    padding-left: 3.1875rem;
-                    padding-right: 3.25rem;
+                // + margin: top 17 left 0
+                .subscription {
+                    margin-top: 1.0625rem;
+                    margin-left: 0;
                 }
             }
+
+            // 333 x 138
+            // + margin: left 0
+            .download-btns {
+                max-width: 20.8125rem;
+                margin-left: 0;
+            }
+        }
+    }
+
+    // 4. contact
+    // 1440 x 257
+    // padding: 87 165 91 165
+    footer {
+        height: 16.0625rem;
+        padding-bottom: 5.6875rem;
+        padding-left: 10.3125rem;
+
+        // logo ~ text: 137.91
+        flex-direction: row;
+        gap: 8.619375rem;
+
+        // margin left 0
+        img {
+            margin-left: 0;
+        }
+
+        // 825 x 79
+        .contact-container {
+            max-width: 51.5625rem;
+
+            // content ~ sns: 359 (not set)
+            gap: 22.4375rem;
         }
     }
 }

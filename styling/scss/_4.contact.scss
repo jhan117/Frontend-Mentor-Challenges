@@ -1,30 +1,35 @@
-// premium card bottom ~ bottom
-// width: 375px height: 397px
-// padding: top 64px right 24px bottom 80px left 24px
+// 주황색 밑부터 끝까지
+// 375 x 397
+// padding: 64 24 80 24
 footer {
     max-width: 100%;
     height: 24.8125rem;
-    padding: 4rem 1.5rem;
+    padding: 4rem 0rem 5rem 1.5rem;
 
     // logo ~ text: 32px
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
+    // 146.09 x 32
+    // margin left 1
     img {
         max-width: fit-content;
         height: 2rem;
+        margin-left: 0.0625rem;
     }
 
-    // width: 327px height: 189px
+    // 327 x 189
     .contact-container {
+        max-width: 20.4375rem;
+        height: 11.8125rem;
 
         // content ~ sns: 64px
         display: flex;
         flex-direction: column;
         gap: 4rem;
 
-        // width: 327px height: 105px
+        // 327 x 105
         p {
             max-width: 100%;
             height: 6.5625rem;
@@ -40,20 +45,23 @@ footer {
             }
         }
 
-        // width: 100px height: 20px
+        // 100 x 20
         .sns {
             max-width: 6.25rem;
             height: 1.25rem;
 
+            // img ~ img ~ img: 20
             display: flex;
             flex-direction: row;
-            gap: 1.25rem; // 20px
+            gap: 1.25rem;
 
+            // 20 x 20
             a {
                 width: 1.25rem;
                 height: 1.25rem;
             }
 
+            // it doesn't work... fill... think about it
             .facebook {
                 background: url(../../assets/icon-facebook.svg) no-repeat center;
             }
