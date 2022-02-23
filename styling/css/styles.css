@@ -315,11 +315,18 @@ footer .contact-container .sns {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .contact-container .sns a {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+footer .contact-container .sns .twitter {
+  height: 1.015625rem;
 }
 
 footer .contact-container .sns a:hover path {
