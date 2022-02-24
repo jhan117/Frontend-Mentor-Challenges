@@ -1,0 +1,79 @@
+@function rem ($px) {
+    $remValue: ($px / 16) + rem;
+    @return $remValue;
+}
+
+@media only screen and (min-width: 48em) {
+
+    // card
+    .cardContainer {
+        max-width: rem(1110);
+        flex-direction: row-reverse;
+        margin: rem(177) rem(165);
+
+        .imgContainer {
+            width: 50%;
+            margin-left: rem(15);
+            border-radius: 0 rem(8) rem(8) 0;
+
+            .imgMobile {
+                display: none;
+            }
+
+            .imgDesktop {
+                display: initial;
+                // set size
+                width: 100%;
+                height: 100%;
+                display: block;
+
+                // color blend
+                mix-blend-mode: multiply;
+                opacity: 0.75;
+            }
+        }
+
+        .contentContainer {
+            width: 50%;
+            margin-right: rem(15);
+            text-align: left;
+
+            h1 {
+                margin: rem(71) rem(65) rem(25) rem(72);
+                font-size: rem(36);
+                line-height: rem(44);
+            }
+
+            .detail {
+                margin: 0 rem(94.5) rem(72) rem(71.5);
+            }
+
+            .statsContainer {
+                flex-flow: row wrap;
+                row-gap: rem(60);
+
+                margin: 0 rem(117) rem(59) rem(71.5);
+
+                .company {
+                    margin-right: rem(3);
+
+                    .co {
+                        width: rem(82);
+                    }
+                }
+
+                .template {
+                    .tpl {
+                        width: rem(78);
+                    }
+                }
+
+                .query {
+                    .qry {
+                        width: rem(61);
+                    }
+                }
+            }
+        }
+    }
+}

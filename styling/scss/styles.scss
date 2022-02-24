@@ -1,0 +1,14 @@
+// Colors
+// Primary
+$mainBG: hsl(233, 47%, 7%);
+$cardBG: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+
+// Neutral
+$mainH-S: hsl(0, 0%, 100%); // main heading, stats
+$mainP: hsla(0, 0%, 100%, 0.75);
+$statH: hsla(0, 0%, 100%, 0.6);
+
+@import 'general';
+@import 'card';
+@import 'mediaDesktop';
