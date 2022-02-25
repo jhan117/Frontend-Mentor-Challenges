@@ -17,8 +17,9 @@ body {
     width: 100%;
     min-height: 100vh;
 
-    // Background color and set card center
+    // Background color
     background-color: $mainBG;
-    display: grid;
-    place-items: center;
+
+    // set center
+    padding: rem(88) rem(24);
 }

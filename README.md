@@ -76,11 +76,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## Plan
 
-- ~~Use css grid for RWD~~ Use flexbox
-It needs wrap and reverse. Flex has wrap.   
-but grid uses `grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));`
-i think grid is more complicated...
-- Breakpoint: 768px
+- RWD
+1. float & percentage
+2. flex with wrap
+3. grid with wrap
+4. **grid with 12 columns** - This version uses this
+
+- Breakpoint: 1440px
 - Use mix-blend-mode for image
 
 [card grid list]
@@ -96,3 +98,10 @@ i think grid is more complicated...
 [grid layout]
 For mobile (375px): 100%
 For desktop (1440px): 50% 50%
+
+## RWD
+
+Desktop card width: 1110px
+12 columns : 92.5px
+content : 555px 1 ~ 7
+image : 555px 1 ~ 7

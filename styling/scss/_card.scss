@@ -1,45 +1,32 @@
-// px to rem
-@function rem ($px) {
-    $remValue: ($px / 16) + rem;
-    @return $remValue;
-}
-
 // card
 .cardContainer {
-    margin: rem(88) rem(24);
-
     // card color and shape, shadow
     background-color: $cardBG;
     box-shadow: 0 rem(20) rem(20) rem(-10) rgba(23, 25, 41, 0.203087);
     border-radius: rem(8);
 
-    // Layout 100%
-    display: flex;
-    flex-direction: column;
-
-    // image
-    .imgContainer {
-        // Layout 100%
+    // image header
+    .background {
+        // Layout 100% and set height
         width: 100%;
 
-        // image shape and blend color
+        // shape and color
         border-radius: rem(8) rem(8) 0 0;
         background-color: $accent;
+        background-clip: content-box;
 
         // image
-        .imgMobile {
-            // set size
-            width: 100%;
-            height: 100%;
-            display: block;
+        .imgContainer {
+            // set height
+            height: rem(240);
+
+            // image
+            background: url("../../images/image-header-mobile.jpg") no-repeat top;
+            background-size: cover;
 
             // color blend
             mix-blend-mode: multiply;
             opacity: 0.75;
-        }
-
-        .imgDesktop {
-            display: none;
         }
     }
 
@@ -51,17 +38,16 @@
         // content of main frame
         display: flex;
         flex-flow: column nowrap;
+        gap: rem(16);
         text-align: center;
         align-items: center;
 
         // header
         h1 {
-            margin: rem(40) rem(31.5) rem(16);
-            font-size: rem(28);
-            font-weight: 700;
-            line-height: rem(32);
-            color: $mainH-S;
+            // set font
+            @include font ($mainH-S, rem(28), 700, rem(32));
 
+            // set color
             span {
                 color: $accent;
             }
@@ -69,80 +55,40 @@
 
         // detail
         .detail {
-            color: $mainP;
-            font-weight: 400;
-            font-size: rem(15);
-            line-height: rem(25);
-
-            margin: 0 rem(32) rem(40) rem(31);
+            // set font
+            @include font ($mainP, rem(15), 400, rem(25));
         }
+    }
 
-        // stats
-        .statsContainer {
-            margin: 0 rem(32) rem(32) rem(31);
+    // stats
+    .statsContainer {
+        // Layout 100%
+        width: 100%;
 
-            // content of stats frame
+        // content of stats frame
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+        align-items: center;
+        text-align: center;
+
+        div {
+            // content of detail
             display: flex;
             flex-direction: column;
-            gap: rem(24);
+            gap: rem(2);
 
-            .company {
-                // content of detail
-                display: flex;
-                flex-direction: column;
-                gap: rem(2);
-
-                .coNum {
-                    color: $mainH-S;
-                    font-size: rem(24);
-                    font-weight: 700;
-                    line-height: rem(29);
-                }
-
-                .co {
-                    color: $statH;
-                    font-family: 'Lexend Deca', sans-serif;
-                    font-weight: 400;
-                    font-size: rem(12);
-                    line-height: rem(25);
-                    letter-spacing: rem(1);
-                    text-transform: uppercase;
-                }
+            .Number {
+                // set font
+                @include font ($mainH-S, rem(24), 700, rem(29));
             }
 
-            .template {
-                display: flex;
-                flex-direction: column;
-                gap: rem(2);
-
-                .tplNum {
-                    color: $mainH-S;
-                    font-size: rem(24);
-                    font-weight: 700;
-                    line-height: rem(29);
-                }
-
-                .tpl {
-                    color: $statH;
-                    font-family: 'Lexend Deca', sans-serif;
-                    font-weight: 400;
-                    font-size: rem(12);
-                    line-height: rem(25);
-                    letter-spacing: rem(1);
-                    text-transform: uppercase;
-                }
-            }
-
-            .query {
-                @extend .template;
-
-                .qryNum {
-                    @extend .tplNum;
-                }
-
-                .qry {
-                    @extend .tpl;
-                }
+            .Head {
+                // set font
+                font-family: 'Lexend Deca', sans-serif;
+                @include font ($statH, rem(12), 400, rem(25));
+                letter-spacing: rem(1);
+                text-transform: uppercase;
             }
         }
     }

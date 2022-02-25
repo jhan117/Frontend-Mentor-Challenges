@@ -1,0 +1,71 @@
+// For mobile:
+.cardContainer {
+    // RWD with 12 columns
+    display: grid;
+
+    // image header
+    .background {
+        // set grid
+        grid-row: 1 / 1;
+
+        // set padding
+        padding-bottom: rem(20);
+    }
+
+    // content
+    .contentContainer {
+        // set grid
+        grid-row: 2 / 2;
+
+        // set padding
+        padding: rem(20) rem(31.5) rem(20) rem(31.5);
+    }
+
+    // stats
+    .statsContainer {
+        // set grid
+        grid-row: 3 / 3;
+
+        // set padding
+        padding: rem(20) rem(31.5) rem(32) rem(31.5);
+    }
+}
+
+// For Desktop: 1440px
+@media only screen and (min-width: 90em) {
+    .cardContainer {
+        // Make grid 12 column for desktop
+        grid-template-columns: repeat(12, 1fr);
+
+        // image header
+        .background {
+            // set grid
+            grid-column: 7 / 13;
+            grid-row: 1 / 1;
+
+            // set padding
+            padding-bottom: 0;
+            padding-left: rem(15);
+        }
+
+        // content
+        .contentContainer {
+            // set grid
+            grid-column: 1 / 7;
+            grid-row: 1 / 1;
+
+            // set padding
+            padding: rem(71) rem(80) rem(187) rem(72);
+        }
+
+        // stats
+        .statsContainer {
+            // set grid
+            grid-column: 1 / 7;
+            grid-row: 1 / 1;
+
+            // set padding
+            padding: rem(331) rem(114) rem(59) rem(72);
+        }
+    }
+}

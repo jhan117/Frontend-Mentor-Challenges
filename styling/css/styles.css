@@ -15,42 +15,84 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: #090b1a;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  padding: 5.5rem 1.5rem;
 }
 
 .cardContainer {
-  margin: 5.5rem 1.5rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cardContainer .background {
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  padding-bottom: 1.25rem;
+}
+
+.cardContainer .contentContainer {
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+  padding: 1.25rem 1.96875rem 1.25rem 1.96875rem;
+}
+
+.cardContainer .statsContainer {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+  padding: 1.25rem 1.96875rem 2rem 1.96875rem;
+}
+
+@media only screen and (min-width: 90em) {
+  .cardContainer {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+  }
+  .cardContainer .background {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7 / 13;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+    padding-bottom: 0;
+    padding-left: 0.9375rem;
+  }
+  .cardContainer .contentContainer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+    padding: 4.4375rem 5rem 11.6875rem 4.5rem;
+  }
+  .cardContainer .statsContainer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+    padding: 20.6875rem 7.125rem 3.6875rem 4.5rem;
+  }
+}
+
+.cardContainer {
   background-color: #1b1938;
   -webkit-box-shadow: 0 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
           box-shadow: 0 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
   border-radius: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.cardContainer .imgContainer {
+.cardContainer .background {
   width: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
   background-color: #aa5cdb;
+  background-clip: content-box;
 }
 
-.cardContainer .imgContainer .imgMobile {
-  width: 100%;
-  height: 100%;
-  display: block;
+.cardContainer .background .imgContainer {
+  height: 15rem;
+  background: url("../../images/image-header-mobile.jpg") no-repeat top;
+  background-size: cover;
   mix-blend-mode: multiply;
   opacity: 0.75;
-}
-
-.cardContainer .imgContainer .imgDesktop {
-  display: none;
 }
 
 .cardContainer .contentContainer {
@@ -62,6 +104,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  gap: 1rem;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -69,11 +112,10 @@ body {
 }
 
 .cardContainer .contentContainer h1 {
-  margin: 2.5rem 1.96875rem 1rem;
+  color: white;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 2rem;
-  color: white;
 }
 
 .cardContainer .contentContainer h1 span {
@@ -82,14 +124,13 @@ body {
 
 .cardContainer .contentContainer .detail {
   color: rgba(255, 255, 255, 0.75);
-  font-weight: 400;
   font-size: 0.9375rem;
+  font-weight: 400;
   line-height: 1.5625rem;
-  margin: 0 2rem 2.5rem 1.9375rem;
 }
 
-.cardContainer .contentContainer .statsContainer {
-  margin: 0 2rem 2rem 1.9375rem;
+.cardContainer .statsContainer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,9 +139,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.cardContainer .contentContainer .statsContainer .company {
+.cardContainer .statsContainer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,108 +156,57 @@ body {
   gap: 0.125rem;
 }
 
-.cardContainer .contentContainer .statsContainer .company .coNum {
+.cardContainer .statsContainer div .Number {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.8125rem;
 }
 
-.cardContainer .contentContainer .statsContainer .company .co {
-  color: rgba(255, 255, 255, 0.6);
+.cardContainer .statsContainer div .Head {
   font-family: 'Lexend Deca', sans-serif;
-  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 0.75rem;
+  font-weight: 400;
   line-height: 1.5625rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
 
-.cardContainer .contentContainer .statsContainer .template, .cardContainer .contentContainer .statsContainer .query {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 0.125rem;
-}
-
-.cardContainer .contentContainer .statsContainer .template .tplNum, .cardContainer .contentContainer .statsContainer .query .tplNum, .cardContainer .contentContainer .statsContainer .query .qryNum {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.8125rem;
-}
-
-.cardContainer .contentContainer .statsContainer .template .tpl, .cardContainer .contentContainer .statsContainer .query .tpl, .cardContainer .contentContainer .statsContainer .query .qry {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.5625rem;
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 48em) {
-  .cardContainer {
-    max-width: 69.375rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    margin: 11.0625rem 10.3125rem;
+@media only screen and (min-width: 90em) {
+  body {
+    padding: 11.0625rem 10.3125rem;
   }
-  .cardContainer .imgContainer {
-    width: 50%;
-    margin-left: 0.9375rem;
+  .cardContainer .background {
     border-radius: 0 0.5rem 0.5rem 0;
   }
-  .cardContainer .imgContainer .imgMobile {
-    display: none;
-  }
-  .cardContainer .imgContainer .imgDesktop {
-    display: initial;
-    width: 100%;
-    height: 100%;
-    display: block;
-    mix-blend-mode: multiply;
-    opacity: 0.75;
+  .cardContainer .background .imgContainer {
+    height: 27.875rem;
+    background-image: url("../../images/image-header-desktop.jpg");
   }
   .cardContainer .contentContainer {
-    width: 50%;
-    margin-right: 0.9375rem;
+    gap: 1.5625rem;
     text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .cardContainer .contentContainer h1 {
-    margin: 4.4375rem 4.0625rem 1.5625rem 4.5rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
-  .cardContainer .contentContainer .detail {
-    margin: 0 5.90625rem 4.5rem 4.46875rem;
-  }
-  .cardContainer .contentContainer .statsContainer {
+  .cardContainer .statsContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     row-gap: 3.75rem;
-    margin: 0 7.3125rem 3.6875rem 4.46875rem;
-  }
-  .cardContainer .contentContainer .statsContainer .company {
-    margin-right: 0.1875rem;
-  }
-  .cardContainer .contentContainer .statsContainer .company .co {
-    width: 5.125rem;
-  }
-  .cardContainer .contentContainer .statsContainer .template .tpl, .cardContainer .contentContainer .statsContainer .query .tpl, .cardContainer .contentContainer .statsContainer .query .qry {
-    width: 4.875rem;
-  }
-  .cardContainer .contentContainer .statsContainer .query .qry {
-    width: 3.8125rem;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=styles.css.map */
