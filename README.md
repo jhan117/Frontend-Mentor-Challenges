@@ -77,10 +77,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## Plan
 
 - RWD
-1. float & percentage
+1. **float & percentage** - This version uses this
 2. flex with wrap
 3. grid with wrap
-4. **grid with 12 columns** - This version uses this
+4. grid with 12 columns
 
 - Breakpoint: 1440px
 - Use mix-blend-mode for image
@@ -95,13 +95,24 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ├ template(+ number)
 └ query(+ number)
 
-[grid layout]
-For mobile (375px): 100%
-For desktop (1440px): 50% 50%
-
 ## RWD
 
-Desktop card width: 1110px
-12 columns : 92.5px
-content : 555px 1 ~ 7
-image : 555px 1 ~ 7
+content : left
+image : right
+
+problem: float div height 0
+1. `overflow: auto (or hidden);`
+
+2. 
+```HTML
+<div id="outer">
+    <div id="left">
+         ...
+    <div id="right">
+    <div style="clear:both"></div>
+</div>
+```
+
+3. set height
+4. display : inline-block
+5. set float

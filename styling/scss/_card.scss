@@ -7,9 +7,6 @@
 
     // image header
     .background {
-        // Layout 100% and set height
-        width: 100%;
-
         // shape and color
         border-radius: rem(8) rem(8) 0 0;
         background-color: $accent;
@@ -32,9 +29,6 @@
 
     // content
     .contentContainer {
-        // Layout 100%
-        width: 100%;
-
         // content of main frame
         display: flex;
         flex-flow: column nowrap;
@@ -62,9 +56,6 @@
 
     // stats
     .statsContainer {
-        // Layout 100%
-        width: 100%;
-
         // content of stats frame
         display: flex;
         flex-direction: column;
