@@ -223,13 +223,10 @@ footer a:hover {
   }
 }
 
-body {
-  padding: 0 1.5rem;
-}
-
 .card {
   display: -ms-grid;
   display: grid;
+  max-width: 20.4375rem;
 }
 
 .card .heroImage {
@@ -262,8 +259,8 @@ body {
 }
 
 @media only screen and (min-width: 64em) {
-  body {
-    padding: 0 30.9375rem;
+  .card {
+    max-width: 28.125rem;
   }
   .card .content {
     padding: 2.8125rem 3rem 0.625rem;

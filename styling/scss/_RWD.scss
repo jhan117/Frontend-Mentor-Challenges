@@ -1,12 +1,10 @@
 // For mobile:
-body {
-    // set padding
-    padding: 0 rem(24);
-}
-
 .card {
     // RWD with grid
     display: grid;
+
+    // set max width
+    max-width: rem(327);
 
     // image
     .heroImage {
@@ -61,12 +59,12 @@ body {
 
 // For Desktop
 @media only screen and (min-width: 64em) {
-    body {
-        // set padding
-        padding: 0 rem(495);
-    }
 
+    // card
     .card {
+        // set max width
+        max-width: rem(450);
+
         // content
         .content {
             // set padding
