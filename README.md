@@ -9,12 +9,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -32,38 +27,32 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/order-summary-HpW1zvHOH)
-- Live Site URL: [Live site](https://jhan117.github.io/Order-summary-component/)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/order-summary-HpW1zvHOH)
+- Live Site URL: [live site](https://jhan117.github.io/Order-summary-component/)
 
 ## My process
 
-### Built with
+Updated 2022.Feb.25   
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- RWD
-
-### What I learned
-
-- background-image
+[List]
+- card
+- image
+- content
+- plan
 - button
+- cancel
+   
+Use RWD for
 
-### Continued development
+[순서]
+1. 카드 구성 파악
+2. grid로 카드 중앙 정렬
+3. 반응형을 grid로
 
-I think I need to learn more about RWD...
-
-### Useful resources
-
-- background-image - [w3schools](https://www.w3schools.com/cssref/pr_background-image.asp)
+[끄적끄적]
+padding으로만 반응형을 만들기에는 조금씩 문제가 보이는 것 같다... 물론 breakpoint를 적게 줘서 그런 것 같기도 한데 조금은 어렵다. 특히 width 값을 어떻게 줘야 하는지가 어렵다. 적당히 여백도 있으면서 어떻게 넣으라는거지??? %로 해볼까 했는데 디자인대로 정확히 하고 싶어서 계산해봤는데 오차가 심해서... 음... 역시... 카드라서 그런가 싶기도 하고... 경험이 필요할 것 같다. 계속해서 연구해보자.
 
 ## Author
 
 - Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
 - Twitter - [@2001Kaye](https://github.com/jhan117)
-
-## Acknowledgments
-
-- button
-- background-image

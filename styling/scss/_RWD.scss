@@ -1,0 +1,99 @@
+// For mobile:
+body {
+    // set padding
+    padding: 0 rem(24);
+}
+
+.card {
+    // RWD with grid
+    display: grid;
+
+    // image
+    .heroImage {
+        // RWD
+        width: 100%;
+    }
+
+    // content
+    .content {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(32) rem(32) rem(12);
+    }
+
+    // plan
+    .planBox {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(12) rem(24);
+
+        .plan {
+            // RWD
+            width: 100%;
+
+            // set padding
+            padding: rem(16.5) rem(16);
+        }
+    }
+
+    // button
+    .button {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(12) rem(24);
+    }
+
+    // cancel
+    .cancel {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(12) rem(115.5) rem(32);
+    }
+}
+
+// For Desktop
+@media only screen and (min-width: 64em) {
+    body {
+        // set padding
+        padding: 0 rem(495);
+    }
+
+    .card {
+        // content
+        .content {
+            // set padding
+            padding: rem(45) rem(48) rem(10);
+        }
+
+        // plan
+        .planBox {
+            // set padding
+            padding: rem(10) rem(48) rem(16);
+
+            .plan {
+                // set padding
+                padding: rem(25) rem(24);
+            }
+        }
+
+        // button
+        .button {
+            // set padding
+            padding: rem(16) rem(48);
+        }
+
+        // cancel
+        .cancel {
+            // set padding
+            padding: rem(16) rem(177) rem(48);
+        }
+    }
+}

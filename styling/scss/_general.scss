@@ -1,35 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
-
-*
-{
-    box-sizing: border-box;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body
-{
-    width: 100vw;
-    height: 100vh;
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
 
-    text-align: center;
+body {
+    // full screen
+    width: 100%;
+    min-height: 100vh;
 
+    // center
     display: grid;
-    grid-template: 1fr / 1fr;
-    place-items: center;
+    place-content: center;
 
-    background:
-    {
-        image: url("../../images/pattern-background-mobile.svg");
+    // background
+    background: {
+        image: url('../../images/pattern-background-mobile.svg');
         color: $PaleBlue;
         repeat: no-repeat;
-        size: 100%;
+        size: contain;
         position: top;
     };
+}
 
-    font:
-    {
-        family: 'Red Hat Display', sans-serif;
-        size: 16px;
+// attribution
+footer {
+    // set center
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    // font
+    @include font (700, rem(11), auto, $DarkBlue);
+    text-align: center;
+
+    // set link color
+    a {
+        color: $DesaturatedBlue;
+        text-decoration: none;
+
+        &:hover {
+            color: hsl(20, 15%, 55%);
+        }
     }
 }

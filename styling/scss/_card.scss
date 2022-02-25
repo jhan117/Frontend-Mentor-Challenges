@@ -1,124 +1,93 @@
-@mixin font ($s, $w) {
-    font:
-    {
-        size: $s;
-        weight: $w;
-    }    
-}
-
-// For Mobile:
-.card-container
-{
-    width: 100%;
-    height: 100%;
-    max-width: 327px;
-    max-height: 567px;
-
+.card {
+    // card shape and color
+    box-shadow: 0 rem(40) rem(40) rem(-20) rgba(13, 48, 189, 0.151826);
+    border-radius: rem(20);
     background-color: white;
-    box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.151826);
-    border-radius: 20px;
 
-    display: flex;
-    flex-direction: column;
+    // all text align
+    text-align: center;
 
-    .main-img
-    {
-        width: 100%;
-        max-height: 160px;
+    // image
+    .heroImage {
+        // fixed height
+        height: rem(160);
 
-        border-radius: 20px 20px 0 0;
+        // shape
+        border-radius: rem(20) rem(20) 0 0;
+
+        // background
+        background: {
+            image: url('../../images/illustration-hero.svg');
+            position: top;
+            repeat: no-repeat;
+            size: cover;
+        }
+
+        ;
     }
 
-    .text-container
-    {
+    // content
+    .content {
+        // make flex
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: rem(16);
 
-        padding: 32px 32px 0;
-
+        // header
         h1 {
-            @include font(22px, 900);
-            color: $DarkBlue;
+            @include font (900, rem(22), rem(29), $DarkBlue);
         }
 
+        // detail
         p {
-            @include font(15px, 500);
-            color: $DesaturatedBlue;
-            line-height: 25px;
+            @include font (500, rem(15), rem(25), $DesaturatedBlue);
         }
     }
 
-    .plan-container
-    {
-        width: 100%;
-        max-height: 129px;
-        padding: 24px;
+    // plan
+    .planBox {
+        .plan {
+            // make flex
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: rem(50);
 
-        .plan-box
-        {
-            width: 100%;
-            height: 100%;
-            max-width: 279px;
-            max-height: 81px;
-
+            // color and shape
             background-color: $VeryPaleBlue;
-            border-radius: 11px;
-            padding: 16px;
+            border-radius: rem(11);
 
-            .box-content
-            {
-                width: 100%;
-                height: 100%;
-                max-width: 247px;
-                max-height: 48px;
-
+            .front {
+                // make flex
                 display: flex;
                 flex-direction: row;
-                gap: 20px;
-                align-items: center;
-                justify-content: space-between;
+                gap: rem(20);
 
-                img
-                {
-                    max-width: 48px;
-                    max-height: 48px;
-                }
-
-                div
-                {
-                    width: 100%;
-                    max-height: 40px;
-
+                // plan text
+                div {
+                    // make flex
                     display: flex;
                     flex-direction: column;
-                    gap: 3px;
+                    gap: rem(3);
 
-                    .plan{
-                        @include font(14px, 900);
-                        color: $DarkBlue;
-                        text-align: left;
+                    // name
+                    .name {
+                        @include font (900, rem(14), rem(19), $DarkBlue);
                     }
 
-                    .price{
-                        @include font(14px, 500);
-                        color: $DesaturatedBlue;
-                        text-align: left;
+                    // price
+                    .price {
+                        @include font (500, rem(14), rem(19), $DesaturatedBlue);
                     }
                 }
+            }
 
-                a
-                {
-                    width: 100%;
-                    height: 100%;
-                    max-width: 48px;
-                    max-height: 17px;
+            // change
+            a {
+                @include font (700, rem(13), rem(17), $BrightBlue);
 
-                    @include font(13px, 700);
-                    color: $BrightBlue;
-                }
-
-                a:hover{
+                &:hover {
                     text-decoration: none;
                     color: hsla(245, 83%, 68%, 1);
                 }
@@ -126,51 +95,44 @@
         }
     }
 
-    .button-container
-    {
-        width: 100%;
-        max-height: 74px;
-        padding: 24px;
-        padding-top: 0;
+    // button
+    .button {
 
+        // text
         a {
-            width: 100%;
-            height: 100%;
-            max-height: 50px;
-            padding: 15px 0;
-
             display: block;
+
+            // fixed height and padding
+            height: rem(50);
+            padding: rem(15) 0;
+
+            // background shape and color
             background-color: $BrightBlue;
-            border-radius: 11px;
-            box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
-            border: none;
+            border-radius: rem(11);
+            box-shadow: 0px rem(20) rem(20) rgba(56, 42, 225, 0.190291);
 
-            @include font(15px, 900);
-            color: white;
+            // font
+            @include font (900, rem(15), rem(20), white);
             text-decoration: none;
-        }
 
-        a:hover{
-            background-color: #766CF1;
+            &:hover {
+                background-color: #766CF1;
+            }
         }
     }
 
-    .cancel-container
-    {
-        width: 100%;
-        padding-bottom: 32px;
+    // cancel
+    .cancel {
 
-        .cancel {
-            max-width: 96px;
-            max-height: 20px;
-
-            @include font(15px, 900);
-            color: $DesaturatedBlue;
+        // text
+        a {
+            // font
+            @include font (900, rem(15), rem(20), $DesaturatedBlue);
             text-decoration: none;
-        }
-    }
 
-    .cancel:hover{
-        color: $DarkBlue;
+            &:hover {
+                color: $DarkBlue;
+            }
+        }
     }
 }
