@@ -7,82 +7,37 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [My process](#my-process)
 
 ## Overview
 
 ### Screenshot
 
-![alt desktop design](images/desktop-design.jpg)
-![alt desktop design](images/mobile-design.jpg)
+![](./design/desktop-design.jpg)
+![](./design/mobile-design.jpg)
 
 ### Links
 
 - Solution URL: [solution](https://www.frontendmentor.io/solutions/qr-code-pages-using-css-position-and-transform-bKkcYkyZT)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- CSS grid / flexbox
-
-### What I learned
-
-When your image is one folder down as in the following structure:
-
-html-project  
-├── assets  
-│        └── image.jpeg  
-└── index.html  
-
-Then you need to add the folder assets to the src attribute as follows:
-
-```html
-<img src="assets/image.jpeg" />
-```
-Ref : https://sebhastian.com/html-image-not-showing/
-
-```css
-.center
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* flexbox */
-.container
-{
-  flex-direction: row | row-reverse | column | column-reverse;
-}   
-   
-letter-spacing: normal|length|initial|inherit;
-```
-
-### Continued development
-
-I will continue the easy projects. Because i need time to organize the knowledge i have learned so far.
-
-### Useful resources
-
-I like w3schools site... hahaha
+- Live Site URL: [live site](https://jhan117.github.io/QR-code/)
 
 ## Author
 
-- Frontend Mentor - [@jhan117](https://www.frontendmentor.io/profile/jhan117)
-- GitHub - [@jhan117](https://github.com/jhan117)
+- Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
+- GitHub - [@2001Kaye](https://github.com/jhan117)
 
-## Acknowledgments
+## My process
 
-It's easy if you can put the component in the center.
+Updated 2022.Feb.5   
+[List]
+- card
+- image
+- content
+   
+Use fixed size
+
+[순서]
+1. 카드 구성 파악
+2. grid로 카드 중앙 정렬
+3. 고정 값이므로 flex를 이용해서 내용물 정렬
