@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    // full screen
+    width: 100%;
+    min-height: 100vh;
+
+    // set center
+    padding: rem(146.5) rem(24.5);
+
+    // screen background setting
+    background: url('../../images/bg-pattern-top.svg') no-repeat, url('../../images/bg-pattern-bottom.svg') no-repeat;
+    background-color: $DarkCyan;
+    background-position: rem(-400) rem(-400), rem(200) rem(300);
+    background-size: rem(622), rem(622);
+}
+
+// attribution
+footer {
+    // set center
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    // font
+    @include font (700, rem(11), auto, $VeryDarkDesaturatedBlue);
+    text-align: center;
+
+    // set link color
+    a {
+        color: $DarkGrayishBlue;
+        text-decoration: none;
+
+        &:hover {
+            color: hsl(27, 10%, 46%);
+        }
+    }
+}

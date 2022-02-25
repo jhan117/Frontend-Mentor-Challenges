@@ -1,0 +1,121 @@
+.card {
+    // Make card grid
+    display: grid;
+
+    // set size
+    width: rem(326);
+    height: rem(374);
+
+    // Set the card shape and color
+    background-color: white;
+    box-shadow: 0 rem(50) rem(100) rem(-20) rgba(8, 70, 94, 0.504835);
+    border-radius: rem(15);
+
+    // all text position
+    text-align: center;
+
+    // image header and profile
+    .heroImg {
+        // Set size
+        height: rem(140);
+
+        // Set the card background pattern
+        background: url('../../images/bg-pattern-card.svg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: rem(15) rem(15) 0 0;
+
+        // For profile image
+        position: relative;
+
+        // profile
+        img {
+            height: rem(96);
+
+            // make border
+            border: rem(5) solid white;
+            border-radius: 50%;
+
+            // set position
+            position: absolute;
+            bottom: -50%;
+            left: 50%;
+            transform: translate(-50%, -15%);
+        }
+    }
+
+    // content
+    .content {
+        // set size
+        max-width: rem(135);
+        height: rem(49);
+
+        // set padding
+        margin: rem(72) rem(95.5) rem(24);
+
+        // Make flex
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: rem(8.5);
+            align-items: flex-end;
+
+            // header
+            h1 {
+                // set size
+                width: rem(104);
+                height: rem(22);
+
+                // font
+                @include font (700, rem(18), rem(22), $VeryDarkDesaturatedBlue);
+                height: fit-content
+            }
+
+            // age
+            p {
+                // set size
+                width: rem(22);
+
+                @include font (400, rem(22), rem(22), $DarkGrayishBlue);
+            }
+        }
+
+
+        // 
+        p {
+            @include font (400, rem(14), rem(17), $DarkGrayishBlue);
+        }
+    }
+
+    .line {
+        border: rem(1) solid $DarkGray;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        // Set padding
+        padding: rem(24) rem(42);
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: rem(9);
+
+            .number {
+                @include font (700, rem(18), rem(22), $VeryDarkDesaturatedBlue);
+            }
+
+            .head {
+                @include font (400, rem(10), rem(12), $DarkGrayishBlue);
+                letter-spacing: rem(1.5);
+            }
+        }
+    }
+}

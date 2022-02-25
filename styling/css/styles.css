@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 9.15625rem 1.53125rem;
+  background: url("../../images/bg-pattern-top.svg") no-repeat, url("../../images/bg-pattern-bottom.svg") no-repeat;
+  background-color: #19a2ae;
+  background-position: -25rem -25rem, 12.5rem 18.75rem;
+  background-size: 38.875rem, 38.875rem;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: auto;
+  color: #2d3248;
+  text-align: center;
+}
+
+footer a {
+  color: #6a6f81;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #81746a;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  width: 20.375rem;
+  height: 23.375rem;
+  background-color: white;
+  -webkit-box-shadow: 0 3.125rem 6.25rem -1.25rem rgba(8, 70, 94, 0.504835);
+          box-shadow: 0 3.125rem 6.25rem -1.25rem rgba(8, 70, 94, 0.504835);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+
+.card .heroImg {
+  height: 8.75rem;
+  background: url("../../images/bg-pattern-card.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  position: relative;
+}
+
+.card .heroImg img {
+  height: 6rem;
+  border: 0.3125rem solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -15%);
+          transform: translate(-50%, -15%);
+}
+
+.card .content {
+  max-width: 8.4375rem;
+  height: 3.0625rem;
+  margin: 4.5rem 5.96875rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card .content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.53125rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card .content div h1 {
+  width: 6.5rem;
+  height: 1.375rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #2d3248;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card .content div p {
+  width: 1.375rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.375rem;
+  color: #6a6f81;
+}
+
+.card .content p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #6a6f81;
+}
+
+.card .line {
+  border: 0.0625rem solid #e9e9ec;
+}
+
+.card .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 2.625rem;
+}
+
+.card .stats div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5625rem;
+}
+
+.card .stats div .number {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #2d3248;
+}
+
+.card .stats div .head {
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #6a6f81;
+  letter-spacing: 0.09375rem;
+}
+
+@media only screen and (min-width: 90em) {
+  body {
+    padding: 10.8125rem 34.0625rem;
+    background-position: -65% -31.25rem, 150% 23.125rem;
+    background-size: 61.125rem, 61.125rem;
+  }
+  .card {
+    width: 21.875rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
