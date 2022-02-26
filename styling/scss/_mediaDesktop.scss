@@ -1,0 +1,74 @@
+// For Desktop, breakpoint:768px
+@media only screen and (min-width: 48em) {
+
+    // card
+    .card {
+
+        // image container
+        .imgContainer {
+
+            // main image
+            a {
+                // fixed height
+                height: rem(302);
+
+                // overlay
+                .overlay {
+                    // fixed height
+                    height: rem(302);
+                }
+
+                // view image
+                .viewImg {
+                    // fixed height
+                    height: rem(302);
+                }
+            }
+        }
+
+        // content
+        .content {
+            gap: rem(16);
+        }
+
+        // info
+        .info {
+
+            // cost
+            .cost {
+
+                // text
+                p {
+                    font-size: rem(16);
+                    line-height: rem(20);
+                }
+            }
+
+            // left time
+            .leftTime {
+
+                // text
+                p {
+                    font-size: rem(16);
+                    line-height: rem(20);
+                }
+            }
+        }
+
+        // creator
+        .creator {
+
+            // text
+            p {
+                font-size: rem(16);
+                line-height: rem(20);
+
+                // name
+                a {
+                    font-size: rem(16);
+                    line-height: rem(20);
+                }
+            }
+        }
+    }
+}

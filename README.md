@@ -9,12 +9,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -27,75 +22,35 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop design](./design/desktop-design.jpg "desktop design")
-![mobile design](./design/mobile-design.jpg "mobile design")
-![active states img](./design/active-states-img.jpg "active states image")
-![active states header](./design/active-states-header.jpg "active states header")
-![active states user](./design/active-states-user.jpg "active states user")
+![](./design/desktop-design.jpg)
+![](./design/mobile-design.jpg)
+![](./design/active-states-img.jpg "active states guide")
 
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/nft-preview-card-using-sass-rwd-RlxqtrTi8)
-- Live Site URL: [Live site](https://jhan117.github.io/NFT-preview-card-component/)
+- Live Site URL: [Live site](https://jhan117.github.io/NFT-preview-card/)
 
 ## My process
 
-### Built with
+**Updated 2022.Feb.26**
+[Card]
+- image container
+- content
+- info
+- horizontal bar
+- creator
+   
+[순서]
+1. 카드 구성 파악
+2. grid로 카드 중앙 정렬
+3. 반응형을 flex로
+   
+---
 
-- HTML
-- SASS(SCSS)
-- CSS Flexbox
-- CSS Grid
-- Mobile-first workflow
-- Responsive Web Design(RWD)
-
-### What I learned
-
-I used SASS(SCSS) for the first time. and i learned about RWD more.
-Also i learned overlay!
-
-- HTML Page Width and Height Settings:
-```CSS
-/* CSS Reset  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-}
-```
-- Using Rem units:
-10px = 0.625rem
-16px = 1rem
-```CSS
-body {
-  font-size: 62.5%; /* = 10px */
-}
-```
-Creating a base font-size that you don’t actually need means you have to redefine nigh on every element to take on the size you do want–you’re creating a rule that you don’t even want and it’s causing you work…
-
-### Continued development
-
-- CSS advanced
-
-### Useful resources
-
-- RWD tutorial site : [RWD tutorial site](https://www.w3schools.com/css/css_rwd_intro.asp) - This helped me for RWD.
-- SASS(SCSS) tutorial site :   
-[SASS tutorial site in w3schools](https://www.w3schools.com/sass/default.php) - This helped me for SASS   
-[SASS tutorial site in official](https://sass-lang.com/guide)   
-[SASS tutorial video in youtube](https://www.youtube.com/watch?v=_a5j7KoflTs&t=612s) - This helped me for SASS settings.   
-- HTML Page Width and Height Settings : [Youtube](https://www.youtube.com/watch?v=dpuKVjX6BJ8&t=161s)
-- px to rem : [Pixel to REM conversion table](https://www.croydon.gov.uk/design-and-content-guidelines/resources/pixel-rem-conversion-table)
+음... main image를 image로 넣었다가 a tag 때문에 일부러 background image로 넣었는데 상관 없겠지...? ㅎㅎ; 가로 선은 따로 div로 넣는 게 편한 것 같다.
 
 ## Author
 
 - Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
 - GitHub - [@2001Kaye](https://github.com/jhan117)
-
-## Acknowledgments
-
-I think overlay and RWD were the key.
