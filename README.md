@@ -24,7 +24,7 @@ Users should be able to:
 
 ![](./design/desktop-design.jpg)
 ![](./design/mobile-design.jpg)
-![](./design/active-states-img.jpg "active states guide")
+![](./design/active-states.jpg "active states guide")
 
 ### Links
 
