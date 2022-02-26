@@ -33,7 +33,7 @@ Users should be able to:
 
 ## My process
 
-**Updated 2022.Feb.26**
+**Updated 2022.Feb.26**   
 [Card]
 - image container
 - content
