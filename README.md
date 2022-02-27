@@ -52,4 +52,4 @@ background image 위치 조정이 어렵네.. 어떻게 하면 더 좋을까? %�
 ## Author
 
 - Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
-- Twitter - [@2001Kaye](https://github.com/jhan117)
+- GitHub - [@2001Kaye](https://github.com/jhan117)
