@@ -59,4 +59,4 @@ padding으로만 반응형을 만들기에는 조금씩 문제가 보이는 것 
 ## Author
 
 - Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
-- Twitter - [@2001Kaye](https://github.com/jhan117)
+- GitHub - [@2001Kaye](https://github.com/jhan117)
