@@ -19,12 +19,13 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/mobile-design.jpg)
+![](./design/desktop-design.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/profile-card-CtYYIHGFM)
+- Live Site URL: [live site](https://jhan117.github.io/Profile-card/)
 
 ## My process
 
@@ -45,7 +46,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 background image 위치 조정이 어렵네.. 어떻게 하면 더 좋을까? %로 했더니 높이가 안 맞아서 조금만 길어지면 사라짐 ㅠㅠ
 
-**Updated 2022.Feb.26**   
+**Updated 2022.Feb.27**   
 는 offset으로 했더니 원하는 결과물이 나왔다~
 
 ## Author
