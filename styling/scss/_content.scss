@@ -1,0 +1,40 @@
+// content
+#content {
+    // text align
+    text-align: center;
+
+    // make flex
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+    align-items: center;
+
+    // Selects header group
+    div {
+        // make flex
+        display: flex;
+        flex-direction: column;
+        gap: rem(1);
+
+        // all header
+        h1,
+        h2 {
+            @include font (275, rem(24), rem(36), $VeryDarkBlue);
+            letter-spacing: rem(0.17);
+        }
+
+        // header 2
+        h2 {
+            font-weight: 600;
+        }
+    }
+
+    // detail
+    p {
+        @include font (400, rem(15), rem(25), $VeryDarkBlue);
+        letter-spacing: rem(0.1);
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}
