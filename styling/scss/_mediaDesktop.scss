@@ -1,15 +1,7 @@
-@media only screen and (min-width: 90em) {
-
+@media only screen and (min-width: 48em) {
     body {
-        // set center
-        padding: rem(173) rem(545);
-
         // screen background setting
-        background-position: -65% rem(-500), 150% rem(370);
-        background-size: rem(978), rem(978);
-    }
-
-    .card {
-        width: rem(350);
+        background-position: left -18rem top -32rem, right -14rem bottom -40rem;
+        background-size: rem(978) rem(976), rem(978) rem(976);
     }
 }

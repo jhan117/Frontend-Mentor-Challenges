@@ -9,13 +9,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-- [Plan]
 
 ## Overview
 
@@ -34,37 +28,27 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## My process
 
-### Built with
+**Updated 2022.Feb.26**   
+[List]
+- card
+- hero image
+- profile image
+- content
+- horizontal bar
+- stats
+   
+[Feature]
+1. Card
+2. RWD using max-width and grid
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- SASS
+---
 
-### What I learned
+background image 위치 조정이 어렵네.. 어떻게 하면 더 좋을까? %로 했더니 높이가 안 맞아서 조금만 길어지면 사라짐 ㅠㅠ
 
-### Continued development
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+**Updated 2022.Feb.26**   
+는 offset으로 했더니 원하는 결과물이 나왔다~
 
 ## Author
 
 - Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
 - Twitter - [@2001Kaye](https://github.com/jhan117)
-
-## Acknowledgments
-
-## Plan
-
-1. background - "_general.scss → body"
-2. card
-3. card image header
-4. card profile
-5. content
-6. horizontal bar
-7. stats

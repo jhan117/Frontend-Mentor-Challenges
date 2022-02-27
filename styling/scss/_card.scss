@@ -1,22 +1,18 @@
 .card {
-    // Make card grid
-    display: grid;
-
-    // set size
-    width: rem(326);
-    height: rem(374);
-
     // Set the card shape and color
     background-color: white;
     box-shadow: 0 rem(50) rem(100) rem(-20) rgba(8, 70, 94, 0.504835);
     border-radius: rem(15);
 
-    // all text position
+    // all text align
     text-align: center;
 
-    // image header and profile
+    // For profile image
+    position: relative;
+
+    // hero image
     .heroImg {
-        // Set size
+        // Fixed height
         height: rem(140);
 
         // Set the card background pattern
@@ -24,92 +20,98 @@
         background-position: center;
         background-size: cover;
         border-radius: rem(15) rem(15) 0 0;
+    }
 
-        // For profile image
-        position: relative;
+    // profile image
+    img {
+        // Fixed size
+        width: rem(96);
+        height: rem(96);
 
-        // profile
-        img {
-            height: rem(96);
+        // make border
+        border: rem(5) solid white;
+        border-radius: 50%;
 
-            // make border
-            border: rem(5) solid white;
-            border-radius: 50%;
-
-            // set position
-            position: absolute;
-            bottom: -50%;
-            left: 50%;
-            transform: translate(-50%, -15%);
-        }
+        // set position
+        position: absolute;
+        left: 50%;
+        top: rem(92);
+        transform: translateX(-50%);
     }
 
     // content
     .content {
-        // set size
-        max-width: rem(135);
-        height: rem(49);
-
-        // set padding
-        margin: rem(72) rem(95.5) rem(24);
-
-        // Make flex
+        // make flex
         display: flex;
         flex-direction: column;
         gap: rem(8);
 
+        // name and age
         div {
             display: flex;
             flex-direction: row;
-            gap: rem(8.5);
-            align-items: flex-end;
+
+            // Fixed size
+            width: rem(135);
+            height: rem(23);
+
+            // for age
+            position: relative;
+
+            // text align
+            text-align: left;
 
             // header
             h1 {
-                // set size
-                width: rem(104);
-                height: rem(22);
-
                 // font
                 @include font (700, rem(18), rem(22), $VeryDarkDesaturatedBlue);
-                height: fit-content
+
+                // set position
+                position: absolute;
+                bottom: 0;
             }
 
             // age
             p {
-                // set size
-                width: rem(22);
+                // font
+                @include font (400, rem(18), rem(18), $DarkGrayishBlue);
 
-                @include font (400, rem(22), rem(22), $DarkGrayishBlue);
+                // set position
+                position: absolute;
+                right: 0;
+                top: 0;
             }
         }
 
-
-        // 
-        p {
+        // city
+        .city {
             @include font (400, rem(14), rem(17), $DarkGrayishBlue);
         }
     }
 
+    // line
     .line {
-        border: rem(1) solid $DarkGray;
+        // Fixed height
+        height: rem(1);
+
+        // color
+        background-color: $DarkGray;
     }
 
+    // stats
     .stats {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        // Set padding
-        padding: rem(24) rem(42);
-
+        // text
         div {
             display: flex;
             flex-direction: column;
             gap: rem(9);
 
             .number {
-                @include font (700, rem(18), rem(22), $VeryDarkDesaturatedBlue);
+                @include font (700, rem(18), rem(18), $VeryDarkDesaturatedBlue);
             }
 
             .head {

@@ -14,13 +14,15 @@ body {
     min-height: 100vh;
 
     // set center
-    padding: rem(146.5) rem(24.5);
+    display: grid;
+    place-content: center;
 
     // screen background setting
     background: url('../../images/bg-pattern-top.svg') no-repeat, url('../../images/bg-pattern-bottom.svg') no-repeat;
     background-color: $DarkCyan;
-    background-position: rem(-400) rem(-400), rem(200) rem(300);
-    background-size: rem(622), rem(622);
+    // Edge offset value
+    background-position: left rem(-400) top rem(-368), right rem(-416) bottom rem(-304);
+    background-size: rem(622) rem(621), rem(622) rem(621);
 }
 
 // attribution

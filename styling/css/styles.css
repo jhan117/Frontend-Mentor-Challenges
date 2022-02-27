@@ -13,11 +13,13 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  padding: 9.15625rem 1.53125rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
   background: url("../../images/bg-pattern-top.svg") no-repeat, url("../../images/bg-pattern-bottom.svg") no-repeat;
   background-color: #19a2ae;
-  background-position: -25rem -25rem, 12.5rem 18.75rem;
-  background-size: 38.875rem, 38.875rem;
+  background-position: left -25rem top -23rem, right -26rem bottom -19rem;
+  background-size: 38.875rem 38.8125rem, 38.875rem 38.8125rem;
 }
 
 footer {
@@ -43,15 +45,12 @@ footer a:hover {
 }
 
 .card {
-  display: -ms-grid;
-  display: grid;
-  width: 20.375rem;
-  height: 23.375rem;
   background-color: white;
   -webkit-box-shadow: 0 3.125rem 6.25rem -1.25rem rgba(8, 70, 94, 0.504835);
           box-shadow: 0 3.125rem 6.25rem -1.25rem rgba(8, 70, 94, 0.504835);
   border-radius: 0.9375rem;
   text-align: center;
+  position: relative;
 }
 
 .card .heroImg {
@@ -60,24 +59,21 @@ footer a:hover {
   background-position: center;
   background-size: cover;
   border-radius: 0.9375rem 0.9375rem 0 0;
-  position: relative;
 }
 
-.card .heroImg img {
+.card img {
+  width: 6rem;
   height: 6rem;
   border: 0.3125rem solid white;
   border-radius: 50%;
   position: absolute;
-  bottom: -50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -15%);
-          transform: translate(-50%, -15%);
+  top: 5.75rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .card .content {
-  max-width: 8.4375rem;
-  height: 3.0625rem;
-  margin: 4.5rem 5.96875rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,33 +92,32 @@ footer a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 0.53125rem;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  width: 8.4375rem;
+  height: 1.4375rem;
+  position: relative;
+  text-align: left;
 }
 
 .card .content div h1 {
-  width: 6.5rem;
-  height: 1.375rem;
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #2d3248;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  position: absolute;
+  bottom: 0;
 }
 
 .card .content div p {
-  width: 1.375rem;
   font-weight: 400;
-  font-size: 1.375rem;
-  line-height: 1.375rem;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
   color: #6a6f81;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.card .content p {
+.card .content .city {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.0625rem;
@@ -130,7 +125,8 @@ footer a:hover {
 }
 
 .card .line {
-  border: 0.0625rem solid #e9e9ec;
+  height: 0.0625rem;
+  background-color: #e9e9ec;
 }
 
 .card .stats {
@@ -144,7 +140,6 @@ footer a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5rem 2.625rem;
 }
 
 .card .stats div {
@@ -161,7 +156,7 @@ footer a:hover {
 .card .stats div .number {
   font-weight: 700;
   font-size: 1.125rem;
-  line-height: 1.375rem;
+  line-height: 1.125rem;
   color: #2d3248;
 }
 
@@ -173,14 +168,42 @@ footer a:hover {
   letter-spacing: 0.09375rem;
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 48em) {
   body {
-    padding: 10.8125rem 34.0625rem;
-    background-position: -65% -31.25rem, 150% 23.125rem;
-    background-size: 61.125rem, 61.125rem;
+    background-position: left -18rem top -32rem, right -14rem bottom -40rem;
+    background-size: 61.125rem 61rem, 61.125rem 61rem;
   }
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  max-width: 20.375rem;
+}
+
+.card .heroImg {
+  width: 100%;
+}
+
+.card .content {
+  width: 100%;
+  padding: 4.5rem 5.96875rem 1.5rem;
+}
+
+.card .stats {
+  width: 100%;
+  padding: 1.5rem 3.25rem 1.5rem 2.5625rem;
+}
+
+@media only screen and (min-width: 48em) {
   .card {
-    width: 21.875rem;
+    max-width: 21.875rem;
+  }
+  .card .content {
+    padding: 4.5rem 6.71875rem 1.75rem;
+  }
+  .card .stats {
+    padding: 1.5rem 3.375rem 1.5rem 2.9375rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
