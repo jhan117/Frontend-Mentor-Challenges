@@ -137,12 +137,16 @@ body {
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
+  .cardContainer .contentContainer .detail {
+    max-width: 23.375rem;
+  }
   .cardContainer .statsContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    row-gap: 3.75rem;
+    -webkit-column-gap: 3.75rem;
+            column-gap: 3.75rem;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;

@@ -9,14 +9,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-- [Plan](#plan)
-- [RWD](#rwd)
 
 ## Overview
 
@@ -28,8 +21,8 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](./design/desktop-design.jpg)
-![mobile](./design/mobile-design.jpg)
+![](./design/desktop-design.jpg)
+![](./design/mobile-design.jpg)
 
 ### Links
 
@@ -38,53 +31,19 @@ Users should be able to:
 
 ## My process
 
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- SASS
-- float
-
-### What I learned
-
-- mix-blend-mode
-[CSS mix-blend-mode Property](https://www.w3schools.com/csSref/pr_mix-blend-mode.asp)
-
-### Continued development
-
-### Useful resources
-
-## Author
-
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-## Plan
-
-- RWD
-1. float & percentage
-2. flex with wrap
-3. grid with wrap
-4. grid with 12 columns
+**Updated 2022.Feb.24**   
 
 - Breakpoint: 1440px
 - Use mix-blend-mode for image
-
+   
 [card list]
 1. image
 2. content
 3. stats
-
-## RWD
-
+   
 content : left
 image : right
-
+   
 problem: float div height 0
 1. `overflow: auto (or hidden);`
 
@@ -101,3 +60,11 @@ problem: float div height 0
 3. set height
 4. display : inline-block
 5. set float
+
+**Updated 2022.Feb.27**   
+그냥 조금 정리했다. 배열도 맞추고? 위치 조정함
+
+## Author
+
+- Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
+- Twitter - [@2001Kaye](https://github.com/jhan117)

@@ -37,13 +37,19 @@
                 font-size: rem(36);
                 line-height: rem(44);
             }
+
+            // detail
+            .detail {
+                // set width
+                max-width: rem(374);
+            }
         }
 
         // stats
         .statsContainer {
             // content of stats frame
             flex-flow: row wrap;
-            row-gap: rem(60);
+            column-gap: rem(60);
             align-items: initial;
             align-content: flex-end;
             text-align: left;
