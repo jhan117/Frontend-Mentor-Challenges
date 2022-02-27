@@ -38,6 +38,7 @@ main {
     // make grid
     display: grid;
     row-gap: rem(76);
+    justify-items: center;
 }
 
 // footer

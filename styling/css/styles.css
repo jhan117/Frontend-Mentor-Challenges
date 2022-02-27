@@ -37,6 +37,7 @@ main {
   display: -ms-grid;
   display: grid;
   row-gap: 4.75rem;
+  justify-items: center;
 }
 
 footer {
@@ -225,6 +226,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
+    max-width: 69.375rem;
   }
   #cards div {
     padding: 2rem 2rem 8.5rem;
