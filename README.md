@@ -67,4 +67,4 @@ problem: float div height 0
 ## Author
 
 - Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
-- Twitter - [@2001Kaye](https://github.com/jhan117)
+- GitHub - [@2001Kaye](https://github.com/jhan117)
