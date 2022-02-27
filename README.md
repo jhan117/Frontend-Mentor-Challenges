@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site]()
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/four-card-feature-section-using-gird-D2FBfnbgZ)
+- Live Site URL: [live site](https://jhan117.github.io/Four-card-feature-section/)
 
 ## My process
 
