@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-proof-section-using-grid-ePe2POgan)
 - Live Site URL: [Live site](https://jhan117.github.io/Social-proof-section/)
 
 ## My process
