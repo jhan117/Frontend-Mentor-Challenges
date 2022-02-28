@@ -1,0 +1,65 @@
+// Selects all elements
+* {
+  box-sizing: border-box;
+
+  // reset
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+// Selects html
+html {
+  font-family: "Spartan", sans-serif;
+}
+
+// Selects body
+body {
+  // full screen
+  width: 100%;
+  min-height: 100vh;
+
+  // color
+  background-color: white;
+
+  // background image
+  background-image: url("../../images/bg-pattern-top-mobile.svg"),
+    url("../../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+
+  // For footer
+  position: relative;
+}
+
+// footer
+footer {
+  // bottom center
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  // font
+  @include font(500, rem(11), auto, $VeryDarkMagenta);
+
+  // text align
+  text-align: center;
+
+  // set link color
+  a {
+    color: $DarkGrayishMagenta;
+    text-decoration: none;
+
+    &:hover {
+      color: hsl(103, 10%, 53%);
+    }
+  }
+}

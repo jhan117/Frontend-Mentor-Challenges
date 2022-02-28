@@ -1,0 +1,33 @@
+// Primary
+$VeryDarkMagenta: hsl(300, 43%, 22%); // header
+$SoftPink: hsl(333, 80%, 67%);
+
+// Neutral
+$DarkGrayishMagenta: hsl(303, 10%, 53%); // detail
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"); // font-family: 'Spartan', sans-serif;
+
+// set font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// import
+@import "general";
+@import "content";
+@import "rateCards";
+@import "reviewCards";
+@import "RWD";
+@import "mediaDesktop";

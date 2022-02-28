@@ -1,0 +1,22 @@
+#rateCards {
+  // box
+  .box {
+    // box shape
+    background-color: $LightGrayishMagenta;
+    border-radius: rem(8);
+
+    // stars
+    .stars {
+      // Fixed size
+      width: rem(117);
+      height: rem(16);
+    }
+
+    // text
+    p {
+      // font
+      text-align: center;
+      @include font(700, rem(13), rem(15), $VeryDarkMagenta);
+    }
+  }
+}
