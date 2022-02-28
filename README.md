@@ -31,7 +31,7 @@ Users should be able to:
 
 ## My process
 
-**2022.02.08** - First
+**2022.02.08** - First   
 wrap이 더 이쁠까? grid가 이쁠까? wrap이 더 이쁠 것 같아서 flex로 반응형을 만들어보자. main은 grid로 해야겠네 wrap으로 해도 되지만... grid가 편하긴 해~ 그래도 flex 연습 해야 하니 flex로 전부 해보자~  
 카드 위치가 좀 달라서 걱정이 되긴 하는데... position으로 위치 대충 하면 되긴 하지만 다른 방법은 없나...?   
 
