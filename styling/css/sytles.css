@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: auto;
+  color: #e38826;
+  text-align: center;
+}
+
+footer a {
+  color: #006970;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #004241;
+}
+
+#sedans-card, #suvs-card, #luxury-card {
+  background: url("../../images/icon-sedans.svg") no-repeat;
+  background-position: top 3rem left 3.0625rem;
+  background-color: #e38826;
+  border-radius: 0.5rem;
+}
+
+#sedans-card h1, #suvs-card h1, #luxury-card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+#sedans-card p, #suvs-card p, #luxury-card p {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#sedans-card a, #suvs-card a, #luxury-card a {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #e38826;
+  text-decoration: none;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 1.5625rem;
+  width: 9.125rem;
+  height: 3rem;
+}
+
+#sedans-card a:hover, #suvs-card a:hover, #luxury-card a:hover {
+  border: 0.125rem solid white;
+  background-color: transparent;
+  color: white;
+}
+
+#suvs-card {
+  background-image: url("../../images/icon-suvs.svg");
+  background-color: #006970;
+}
+
+#suvs-card a {
+  color: #006970;
+}
+
+#luxury-card {
+  background-image: url("../../images/icon-luxury.svg");
+  background-color: #004241;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#luxury-card a {
+  color: #004241;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  max-width: 20.4375rem;
+  padding: 5.5rem 0;
+}
+
+main #sedans-card, main #suvs-card, main #luxury-card {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  padding: 7.6875rem 2.96875rem 58.25rem 3.03125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1.5625rem;
+}
+
+main #sedans-card a, main #suvs-card a, main #luxury-card a {
+  padding: 0.6875rem 0 0.75rem 0;
+}
+
+main #sedans-card a:hover, main #suvs-card a:hover, main #luxury-card a:hover {
+  padding: 0.5625rem 0 0.625rem 0;
+}
+
+main #suvs-card {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  padding-bottom: 3rem;
+}
+
+main #luxury-card {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: 64em) {
+  main {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    max-width: 57.5rem;
+    padding: 10.6875rem 0 8.0625rem 0;
+  }
+  main #sedans-card, main #suvs-card, main #luxury-card {
+    background-position: top 3rem left 3rem;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    padding-right: 2.96875rem;
+    padding-bottom: 3rem;
+  }
+  main #sedans-card p, main #suvs-card p, main #luxury-card p {
+    max-width: 13.25rem;
+  }
+  main #sedans-card a, main #suvs-card a, main #luxury-card a {
+    margin-top: 3.625rem;
+  }
+  main #suvs-card {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+  main #luxury-card {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
