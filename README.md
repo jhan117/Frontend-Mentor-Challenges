@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/single-price-grid-gPLiwKrNv)
 - Live Site URL: [Live site](https://jhan117.github.io/Single-price-grid/)
 
 ## My process

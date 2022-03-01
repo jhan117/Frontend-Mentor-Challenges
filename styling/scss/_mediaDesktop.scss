@@ -15,6 +15,24 @@
       h1 {
         // set margin
         margin-bottom: rem(13);
+
+        // font
+        font-size: rem(24);
+        line-height: rem(28);
+        letter-spacing: rem(-0.3);
+      }
+
+      // heading 2
+      h2 {
+        font-size: rem(18);
+        line-height: rem(21);
+        letter-spacing: rem(-0.22);
+      }
+
+      // paragraph
+      p {
+        font-size: rem(16);
+        letter-spacing: rem(-0.2);
       }
     }
 
@@ -40,7 +58,7 @@
 
         // Fixed width
         width: rem(318);
-        
+
         // content
         .content3 {
           // set padding

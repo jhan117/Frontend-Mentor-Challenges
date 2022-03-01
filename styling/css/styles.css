@@ -267,6 +267,18 @@ footer a:hover {
   }
   #card-frame1 .content1 h1 {
     margin-bottom: 0.8125rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.01875rem;
+  }
+  #card-frame1 .content1 h2 {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    letter-spacing: -0.01375rem;
+  }
+  #card-frame1 .content1 p {
+    font-size: 1rem;
+    letter-spacing: -0.0125rem;
   }
   #card-frame1 .card-frame2 .content2 {
     -ms-grid-column: 1;
