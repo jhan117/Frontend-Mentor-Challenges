@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+
+  // reset
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+html {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  // full screen
+  width: 100%;
+  min-height: 100vh;
+
+  // center
+  display: grid;
+  place-content: center;
+
+  // background
+  background-color: $LightGray;
+
+  // for footer
+  position: relative;
+}
+
+// attribution
+footer {
+  // set center
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  // font
+  @include font(700, rem(11), auto, $Cyan);
+  text-align: center;
+
+  // set link color
+  a {
+    color: $BrightYellow;
+    text-decoration: none;
+
+    &:hover {
+      color: $GrayishBlue;
+    }
+  }
+}
