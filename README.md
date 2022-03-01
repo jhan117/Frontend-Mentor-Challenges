@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/3-column-preview-card-using-grid-yaxZpYw2A)
 - Live Site URL: [Live site](https://jhan117.github.io/3-column-preview-card/)
 
 ## My process
