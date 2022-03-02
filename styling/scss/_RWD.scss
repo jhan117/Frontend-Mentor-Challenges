@@ -1,0 +1,106 @@
+// main content
+#main-content {
+  // set padding
+  padding: rem(136) rem(24) rem(166);
+
+  // for align of main content
+  display: flex;
+  flex-flow: column nowrap;
+  gap: rem(20);
+}
+
+// designs
+#designs {
+  // phone
+  .phone {
+    width: 100%;
+    width: auto;
+    max-height: rem(430);
+
+    // set position
+    position: absolute;
+    top: rem(-98);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  // premium card
+  .premium-card {
+    // set position
+    position: absolute;
+    top: rem(380);
+    right: 0;
+
+    // content
+    .card-content {
+      // for align of card content
+      display: flex;
+      flex-flow: column nowrap;
+      gap: rem(12);
+
+      // set padding
+      padding: rem(48) rem(37) rem(18) rem(36);
+    }
+
+    // cost
+    .cost {
+      // set padding
+      padding: rem(18) rem(168) rem(16) rem(42);
+
+      // for align of text and period
+      display: flex;
+      flex-flow: row nowrap;
+      gap: rem(16);
+      align-items: center;
+    }
+
+    // buttons
+    .download-btns {
+      // set padding
+      padding: rem(16) rem(37) rem(48) rem(42);
+
+      // for align of between buttons
+      display: flex;
+      flex-flow: column nowrap;
+      gap: rem(16);
+
+      // all buttons
+      a {
+        // set padding
+        padding: rem(15) 0 rem(14);
+
+        // for align of text and image
+        display: flex;
+        flex-flow: row nowrap;
+        gap: rem(7.8);
+        justify-content: center;
+        align-items: center;
+      }
+
+      //ios
+      .ios {
+        // for align of text and image
+        gap: rem(7.92);
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  // set padding
+  padding: rem(454) rem(24) rem(80);
+
+  // for align of content and sns
+  display: grid;
+  row-gap: rem(64);
+
+  //sns
+  .sns {
+    // for align of between images
+    display: flex;
+    flex-flow: row nowrap;
+    gap: rem(20);
+    align-items: center;
+  }
+}

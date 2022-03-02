@@ -1,0 +1,17 @@
+#main-content {
+  // background
+  background: url("../../assets/logo.svg") no-repeat;
+  background-size: rem(146.09) rem(32);
+  background-position: rem(24.15) rem(39.99);
+
+  // heading
+  h1 {
+    @include font(700, rem(40), rem(48), $black);
+    letter-spacing: rem(-0.45);
+  }
+
+  // paragraph
+  p {
+    @include font(400, rem(16), rem(26), $black);
+  }
+}

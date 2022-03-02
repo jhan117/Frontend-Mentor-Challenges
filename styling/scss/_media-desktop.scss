@@ -1,162 +1,111 @@
-// For desktop:
-@media only screen and (min-width: 48.0625em) {
+// breakpoint 1024px
+@media only screen and (min-width: 64em) {
+  // _general.scss
+  body {
+    background: url("../../assets/bg-pattern-1.svg") no-repeat,
+      url("../../assets/bg-main-desktop.png") no-repeat;
+    background-position: top rem(-40) right, rem(-280) rem(-280);
+    background-size: auto, auto;
+  }
 
-    // 1. general
-    body {
-        background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
-        background-repeat: no-repeat, no-repeat;
-        background-position: 100% -2.75rem, 65% -16rem;
-        background-size: 19.5rem 29.25rem, auto;
+  // _content.scss
+  #main-content {
+    // background
+    background-position: rem(166.15) rem(61.99);
+
+    // set padding
+    padding: rem(221) rem(260) rem(321) rem(164.5);
+    gap: rem(28);
+
+    // for align of main content
+    gap: rem(40);
+
+    // heading
+    h1 {
+      // font
+      font-size: rem(88);
+      line-height: rem(88);
+      letter-spacing: rem(-1);
     }
 
-    // 2. content
-    // size: 1440 x 860
-    // padding: 62 450 321 160
-    .content-container {
-        height: 53.75rem;
-        padding: 3.875rem 0 20.0625rem 10rem;
+    // paragraph
+    p {
+      // font
+      font-size: rem(20);
+      line-height: rem(34);
 
-        // logo ~ content: 127
-        gap: 7.9375rem;
+      // for content line
+      max-width: rem(825);
+    }
+  }
 
-        // 1015 x 318
-        .content {
-            max-width: 63.4375rem;
-            height: 19.875rem;
+  // _design.scss
+  #designs {
+    // set margin
+    margin: 0 rem(165);
 
-            // header ~ paragraph: 40
-            gap: 2.5rem;
+    // background image
+    background-size: auto;
+    background-position: rem(336) rem(-40);
 
-            // 1015 x 176
-            h1 {
-                max-width: 63.4375rem;
-                height: 11rem;
+    // phone
+    .phone {
+      max-height: rem(642);
 
-                font-size: 5.5rem;
-                line-height: 5.5rem;
-                letter-spacing: -0.0625rem;
-            }
-
-            // 825 x 102
-            p {
-                max-width: 51.5625rem;
-                height: 6.375rem;
-
-                font-size: 1.25rem;
-                line-height: 2.125rem;
-            }
-        }
+      // set position
+      top: rem(-213);
+      left: rem(102);
     }
 
-    // 3. design
-    // size: 1440 x 715
-    // padding: 0 165 0 165
-    .design-container {
-        height: 44.6875rem;
-        padding: 0 10.3125rem;
+    // premium card
+    .premium-card {
+      max-width: rem(446);
 
-        // 1110 x 600
-        .background {
-            max-width: 69.375rem;
+      // set position
+      top: rem(90);
+      right: rem(95);
 
-            // 312 x 468
-            img {
-                max-width: 19.5rem;
-                height: 26.25rem;
+      // for align of card content
+      gap: rem(22);
 
-                // position(x, y): 501 -40
-                left: 31.3125rem;
-                top: -2.5rem;
-            }
+      // content
+      .card-content {
+        // set padding
+        padding: rem(58) rem(59) rem(19.5) rem(54);
+
+        // heading
+        h2 {
+          font-size: rem(40);
+          line-height: erm(52);
         }
 
-        // 312 x 642
-        .phone {
-            max-width: 19.5rem;
-            height: 40.125rem;
-
-            // position(x, y): 267 -213
-            left: 16.6875rem;
-            top: -13.3125rem;
+        // paragraph
+        p {
+          font-size: rem(20);
+          line-height: erm(34);
         }
+      }
 
-        // 446 x 625
-        // padding: 58 59 48 54
-        .premium-card {
-            max-width: 27.875rem;
-            height: 39.0625rem;
+      // cost
+      .cost {
+        // set padding
+        padding: rem(19.5) rem(227) rem(23) rem(54);
+      }
 
-            padding: 3.625rem 3.6875rem 3rem 3.375rem;
-
-            // content ~ buttons: 46px
-            gap: 2.875rem;
-
-            // position(x, y): 734 90
-            left: 45.875rem;
-            top: 5.625rem;
-
-            // 333 x 335
-            .card-content {
-                max-width: 20.8125rem;
-                height: 20.9375rem;
-
-                // header ~ paragraph: 22
-                // paragraph ~ subscription: 39
-                gap: 1.375rem;
-
-                // 333 x 52
-                h2 {
-                    height: 3.25rem;
-                    font-size: 2.5rem;
-                    line-height: 3.25rem;
-                }
-
-                // 333 x 170
-                p {
-                    height: 10.625rem;
-                    font-size: 1.25rem;
-                    line-height: 2.125rem;
-                }
-
-                // + margin: top 17 left 0
-                .subscription {
-                    margin-top: 1.0625rem;
-                    margin-left: 0;
-                }
-            }
-
-            // 333 x 138
-            // + margin: left 0
-            .download-btns {
-                max-width: 20.8125rem;
-                margin-left: 0;
-            }
-        }
+      // buttons
+      .download-btns {
+        // set padding
+        padding: rem(23) rem(59) rem(48) rem(54);
+      }
     }
+  }
 
-    // 4. contact
-    // 1440 x 257
-    // padding: 87 165 91 165
-    footer {
-        height: 16.0625rem;
-        padding-bottom: 5.6875rem;
-        padding-left: 10.3125rem;
+  // footer
+  footer {
+    // background
+    background-position: rem(166.15) rem(201.99);
 
-        // logo ~ text: 137.91
-        flex-direction: row;
-        gap: 8.619375rem;
-
-        // margin left 0
-        img {
-            margin-left: 0;
-        }
-
-        // 825 x 79
-        .contact-container {
-            max-width: 51.5625rem;
-
-            // content ~ sns: 359 (not set)
-            gap: 22.4375rem;
-        }
-    }
+    // set padding
+    padding: rem(202) rem(165) rem(91) rem(450);
+  }
 }

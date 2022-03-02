@@ -1,0 +1,30 @@
+footer {
+  // background
+  background: url("../../assets/logo.svg") no-repeat;
+  background-size: rem(146.09) rem(32);
+  background-position: rem(25.15) rem(389.99);
+
+  // footer content
+  .footer-content {
+    // paragraph
+    p {
+      // text
+      @include font(400, rem(16), rem(26), $black);
+
+      // email
+      span {
+        display: block;
+        // text
+        font-weight: 700;
+      }
+    }
+  }
+
+  // sns
+  .sns {
+    // action
+    svg:hover path {
+      fill: $Red-Orange;
+    }
+  }
+}

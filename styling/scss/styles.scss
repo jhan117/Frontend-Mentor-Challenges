@@ -1,3 +1,17 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
 // Colors
 $Cyan: hsl(177, 68, 64);
 $Red-Orange: hsl(12, 94, 65);
@@ -5,16 +19,13 @@ $Yellow: hsl(33, 100, 70);
 $white: hsl(20, 33, 98);
 $black: hsl(244, 23, 12);
 
-@import "1.general";
-@import "2.content";
-@import "3.design";
-@import "4.contact";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"); // font-family: 'IBM Plex Sans', sans-serif;
+
+@import "general";
+@import "content";
+@import "design";
+@import "footer";
+@import "RWD";
 
 @import "media-tablet";
 @import "media-desktop";
-
-// [내 디자인 기준]
-// ─ container: size, *padding (왼쪽만)
-// └ content: size, gap
-//     └ detail: size
-// container에 100%를 자주 쓰도록 노력하자

@@ -1,0 +1,103 @@
+#designs {
+  // for phone and premium card
+  position: relative;
+
+  // fixed hight
+  height: rem(600);
+
+  // image
+  background: url("../../assets/bg-pattern-2.svg") no-repeat;
+  background-size: rem(280) rem(420);
+  background-position: top center;
+
+  // color and shape
+  background-color: $black;
+  border-radius: rem(12);
+
+  // premium card
+  .premium-card {
+    // color and shape
+    background-color: $Red-Orange;
+    border-radius: rem(12);
+
+    // content
+    .card-content {
+      // heading
+      h2 {
+        @include font(700, rem(32), rem(40), $white);
+      }
+
+      // paragraph
+      p {
+        @include font(400, rem(18), rem(28), $white);
+      }
+    }
+
+    // cost
+    .cost {
+      @include font(700, rem(65), rem(52), $white);
+
+      // period
+      span {
+        @include font(400, rem(20), rem(32), $white);
+        letter-spacing: rem(-0.2);
+      }
+    }
+
+    // buttons
+    .download-btns {
+      // all buttons
+      a {
+        // shape
+        border-radius: rem(12);
+
+        // all texts
+        @include font(700, rem(18), rem(32), $white);
+        letter-spacing: rem(-0.18);
+        text-align: center;
+        text-decoration: none;
+
+        // all images
+        img {
+          // fixed height
+          height: rem(20);
+        }
+      }
+
+      // ios
+      .ios {
+        // color
+        background-color: $black;
+
+        // all images
+        img {
+          // fixed width
+          width: rem(17.8);
+        }
+
+        &:hover {
+          background-color: $Cyan;
+        }
+      }
+
+      // android
+      .android {
+        // color
+        background-color: $white;
+
+        // text
+        color: $black;
+
+        // all images
+        img {
+          // fixed width
+          width: rem(16.7);
+        }
+
+        &:hover {
+          background-color: $Yellow;
+        }
+      }
+    }
+  }
+}

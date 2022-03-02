@@ -1,512 +1,397 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
 }
 
 html {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
   background: url("../../assets/bg-main-mobile.png") no-repeat;
-  background-position: 0% -15rem;
+  background-position: 1.25rem -14.0625rem;
 }
 
-.content-container {
-  max-width: 100%;
-  height: 38.875rem;
-  padding: 2.5rem 0 10.375rem 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4rem;
+#main-content {
+  background: url("../../assets/logo.svg") no-repeat;
+  background-size: 9.13063rem 2rem;
+  background-position: 1.50937rem 2.49938rem;
 }
 
-.content-container img {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  height: 2rem;
-}
-
-.content-container .content {
-  max-width: 20.4375rem;
-  height: 38.875rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.25rem;
-}
-
-.content-container .content h1 {
-  max-width: 100%;
-  height: 9rem;
-  font-size: 2.5rem;
+#main-content h1 {
   font-weight: 700;
-  color: #191826;
+  font-size: 2.5rem;
   line-height: 3rem;
-  letter-spacing: -0.028125rem;
-}
-
-.content-container .content p {
-  max-width: 100%;
-  height: 9.75rem;
-  font-weight: 400;
   color: #191826;
+  letter-spacing: -0.02813rem;
+}
+
+#main-content p {
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.625rem;
+  color: #191826;
 }
 
-.design-container {
-  max-width: 100%;
-  height: 57.875rem;
+#designs {
   position: relative;
-}
-
-.design-container .background {
-  max-width: 100%;
   height: 37.5rem;
+  background: url("../../assets/bg-pattern-2.svg") no-repeat;
+  background-size: 17.5rem 26.25rem;
+  background-position: top center;
   background-color: #191826;
   border-radius: 0.75rem;
 }
 
-.design-container .background img {
-  max-width: 17.5rem;
-  height: 26.25rem;
-  position: absolute;
-  left: 3rem;
-}
-
-.design-container .phone {
-  max-width: 13.060625rem;
-  height: 26.875rem;
-  position: absolute;
-  left: 5.041875rem;
-  top: -6.125rem;
-}
-
-.design-container .premium-card {
-  max-width: 100%;
-  height: 34.125rem;
-  padding: 3rem 2.3125rem 3rem 2.25rem;
+#designs .premium-card {
   background-color: #fa7352;
   border-radius: 0.75rem;
+}
+
+#designs .premium-card .card-content h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #fcf9f8;
+}
+
+#designs .premium-card .card-content p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #fcf9f8;
+}
+
+#designs .premium-card .cost {
+  font-weight: 700;
+  font-size: 4.0625rem;
+  line-height: 3.25rem;
+  color: #fcf9f8;
+}
+
+#designs .premium-card .cost span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #fcf9f8;
+  letter-spacing: -0.0125rem;
+}
+
+#designs .premium-card .download-btns a {
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #fcf9f8;
+  letter-spacing: -0.01125rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+#designs .premium-card .download-btns a img {
+  height: 1.25rem;
+}
+
+#designs .premium-card .download-btns .ios {
+  background-color: #191826;
+}
+
+#designs .premium-card .download-btns .ios img {
+  width: 1.1125rem;
+}
+
+#designs .premium-card .download-btns .ios:hover {
+  background-color: #65e2db;
+}
+
+#designs .premium-card .download-btns .android {
+  background-color: #fcf9f8;
+  color: #191826;
+}
+
+#designs .premium-card .download-btns .android img {
+  width: 1.04375rem;
+}
+
+#designs .premium-card .download-btns .android:hover {
+  background-color: #ffba66;
+}
+
+footer {
+  background: url("../../assets/logo.svg") no-repeat;
+  background-size: 9.13063rem 2rem;
+  background-position: 1.57187rem 24.37438rem;
+}
+
+footer .footer-content p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #191826;
+}
+
+footer .footer-content p span {
+  display: block;
+  font-weight: 700;
+}
+
+footer .sns svg:hover path {
+  fill: #fa7352;
+}
+
+#main-content {
+  padding: 8.5rem 1.5rem 10.375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1.25rem;
+}
+
+#designs .phone {
+  width: 100%;
+  width: auto;
+  max-height: 26.875rem;
+  position: absolute;
+  top: -6.125rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#designs .premium-card {
   position: absolute;
   top: 23.75rem;
+  right: 0;
 }
 
-.design-container .premium-card .card-content {
-  max-width: 18.875rem;
-  height: 17.5rem;
+#designs .premium-card .card-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   gap: 0.75rem;
+  padding: 3rem 2.3125rem 1.125rem 2.25rem;
 }
 
-.design-container .premium-card .card-content h2 {
-  max-width: 100%;
-  height: 2.5rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fcf9f8;
-  line-height: 2.5rem;
-}
-
-.design-container .premium-card .card-content p {
-  max-width: 100%;
-  height: 8.75rem;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #fcf9f8;
-  line-height: 1.75rem;
-}
-
-.design-container .premium-card .card-content .subscription {
-  max-width: 10.3125rem;
-  height: 3.25rem;
-  margin-top: 1.5rem;
-  margin-left: 0.375rem;
+#designs .premium-card .cost {
+  padding: 1.125rem 10.5rem 1rem 2.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   gap: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.design-container .premium-card .card-content .subscription .dollar {
-  max-width: 4.9375rem;
-  height: 3.25rem;
-  font-size: 4.0625rem;
-  font-weight: 700;
-  color: #fcf9f8;
-  line-height: 3.25rem;
-}
-
-.design-container .premium-card .card-content .subscription .period {
-  max-width: 4.375rem;
-  height: 2rem;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #fcf9f8;
-  line-height: 2rem;
-  letter-spacing: -0.0125rem;
-}
-
-.design-container .premium-card .download-btns {
-  max-width: 18.5rem;
-  height: 8.625rem;
-  margin-left: 0.375rem;
+#designs .premium-card .download-btns {
+  padding: 1rem 2.3125rem 3rem 2.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   gap: 1rem;
 }
 
-.design-container .premium-card .download-btns .ios, .design-container .premium-card .download-btns .android {
-  max-width: 100%;
-  height: 3.8125rem;
-  background-color: #191826;
-  border-radius: 0.75rem;
+#designs .premium-card .download-btns a {
+  padding: 0.9375rem 0 0.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 0.495rem;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0.4875rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
 }
 
-.design-container .premium-card .download-btns .ios img, .design-container .premium-card .download-btns .android img {
-  max-width: 1.1125rem;
-  height: 1.25rem;
-}
-
-.design-container .premium-card .download-btns .ios p, .design-container .premium-card .download-btns .android p {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #fcf9f8;
-  letter-spacing: -0.01125rem;
-}
-
-.design-container .premium-card .download-btns .android {
-  background-color: #fcf9f8;
-  gap: 0.4875rem;
-}
-
-.design-container .premium-card .download-btns .android img {
-  max-width: 1.04375rem;
-}
-
-.design-container .premium-card .download-btns .android p {
-  color: #191826;
-}
-
-.design-container .premium-card .download-btns .ios:hover, .design-container .premium-card .download-btns .android:hover {
-  background-color: #65e2db;
-}
-
-.design-container .premium-card .download-btns .android:hover {
-  background-color: #ffba66;
+#designs .premium-card .download-btns .ios {
+  gap: 0.495rem;
 }
 
 footer {
-  max-width: 100%;
-  height: 24.8125rem;
-  padding: 4rem 0rem 5rem 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
+  padding: 28.375rem 1.5rem 5rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 4rem;
 }
 
-footer img {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  height: 2rem;
-  margin-left: 0.0625rem;
-}
-
-footer .contact-container {
-  max-width: 20.4375rem;
-  height: 11.8125rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4rem;
-}
-
-footer .contact-container p {
-  max-width: 100%;
-  height: 6.5625rem;
-  font-weight: 400;
-  color: #191826;
-  line-height: 1.625rem;
-}
-
-footer .contact-container p span {
-  font-weight: 700;
-  color: #191826;
-  line-height: 1.625rem;
-}
-
-footer .contact-container .sns {
-  max-width: 6.25rem;
-  height: 1.25rem;
+footer .sns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-footer .contact-container .sns a {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-footer .contact-container .sns .twitter {
-  height: 1.015625rem;
-}
-
-footer .contact-container .sns a:hover path {
-  fill: #FA7453;
-}
-
-@media only screen and (min-width: 23.5em) {
+@media only screen and (min-width: 37.5em) {
   body {
-    background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-tablet.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 107% -2.7828125rem, 82.5% -33.39375%;
-    background-size: 16.6875rem 25rem, auto;
+    background: url("../../assets/bg-pattern-1.svg") no-repeat, url("../../assets/bg-main-tablet.png") no-repeat;
+    background-position: top -2rem right -2.22938rem, -25rem -14.375rem;
+    background-size: 16.66688rem 25rem, auto;
   }
-  .content-container {
-    height: 48.125rem;
-    padding: 3.875rem 0 15.5625rem 2.4375rem;
-    gap: 5.9375rem;
-  }
-  .content-container .content {
-    max-width: 32.5rem;
-    height: 20.75rem;
+  #main-content {
+    background-position: 2.44687rem 3.87438rem;
+    padding: 11.8125rem 13.0625rem 15.5625rem 2.4375rem;
     gap: 1.75rem;
   }
-  .content-container .content h1 {
-    height: 12rem;
+  #main-content h1 {
     font-size: 4rem;
     line-height: 4rem;
-    letter-spacing: -0.045625rem;
+    letter-spacing: -0.04562rem;
   }
-  .content-container .content p {
-    max-width: 32.125rem;
-    height: 7rem;
+  #main-content p {
     font-size: 1.125rem;
     line-height: 1.75rem;
+    max-width: 32.125rem;
   }
-  .design-container {
-    height: 57.875rem;
-    padding-left: 2.0625rem;
-    padding-right: 2.4375rem;
+  #designs {
+    margin: 0 2.4375rem 0 2.0625rem;
+    background-position: 14.3125rem -1.9375rem;
   }
-  .design-container .background {
-    max-width: 43.5rem;
-  }
-  .design-container .background img {
-    left: 16.375rem;
-    top: -1.9375rem;
-  }
-  .design-container .phone {
-    max-width: 16.875rem;
-    height: 34.75rem;
-    left: 6.0625rem;
+  #designs .phone {
+    max-height: 34.75rem;
     top: -8.625rem;
+    left: 4rem;
+    -webkit-transform: none;
+            transform: none;
   }
-  .design-container .premium-card {
+  #designs .premium-card {
     max-width: 24.9375rem;
-    padding-left: 3rem;
-    padding-right: 3.0625rem;
-    left: 17rem;
     top: 9.375rem;
+    right: 3.625rem;
+  }
+  #designs .premium-card .card-content {
+    padding: 3rem 3rem 1.125rem 3.0625rem;
+  }
+  #designs .premium-card .cost {
+    padding: 1.125rem 5rem 1rem 3.375rem;
+  }
+  #designs .premium-card .download-btns {
+    padding: 1rem 3.0625rem 3rem 3.375rem;
   }
   footer {
-    height: 19.6875rem;
-    padding: 5.4375rem 0 5.3125rem 2.0625rem;
-  }
-  footer .contact-container {
-    max-width: 43.5rem;
-    height: 4.9375rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    background-position: 2.13437rem 11.43688rem;
+    padding: 15.4375rem 2.4375rem 5.3125rem 2.0625rem;
+    row-gap: 0;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  footer .contact-container p {
+  footer .footer-content p {
     max-width: 22.875rem;
-    height: 4.9375rem;
+  }
+  footer .footer-content p span {
+    display: inline;
   }
 }
 
-@media only screen and (min-width: 48.0625em) {
+@media only screen and (min-width: 64em) {
   body {
-    background-image: url("../../assets/bg-pattern-1.svg"), url("../../assets/bg-main-desktop.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 100% -2.75rem, 65% -16rem;
-    background-size: 19.5rem 29.25rem, auto;
+    background: url("../../assets/bg-pattern-1.svg") no-repeat, url("../../assets/bg-main-desktop.png") no-repeat;
+    background-position: top -2.5rem right, -17.5rem -17.5rem;
+    background-size: auto, auto;
   }
-  .content-container {
-    height: 53.75rem;
-    padding: 3.875rem 0 20.0625rem 10rem;
-    gap: 7.9375rem;
-  }
-  .content-container .content {
-    max-width: 63.4375rem;
-    height: 19.875rem;
+  #main-content {
+    background-position: 10.38438rem 3.87438rem;
+    padding: 13.8125rem 16.25rem 20.0625rem 10.28125rem;
+    gap: 1.75rem;
     gap: 2.5rem;
   }
-  .content-container .content h1 {
-    max-width: 63.4375rem;
-    height: 11rem;
+  #main-content h1 {
     font-size: 5.5rem;
     line-height: 5.5rem;
     letter-spacing: -0.0625rem;
   }
-  .content-container .content p {
-    max-width: 51.5625rem;
-    height: 6.375rem;
+  #main-content p {
     font-size: 1.25rem;
     line-height: 2.125rem;
+    max-width: 51.5625rem;
   }
-  .design-container {
-    height: 44.6875rem;
-    padding: 0 10.3125rem;
+  #designs {
+    margin: 0 10.3125rem;
+    background-size: auto;
+    background-position: 21rem -2.5rem;
   }
-  .design-container .background {
-    max-width: 69.375rem;
-  }
-  .design-container .background img {
-    max-width: 19.5rem;
-    height: 26.25rem;
-    left: 31.3125rem;
-    top: -2.5rem;
-  }
-  .design-container .phone {
-    max-width: 19.5rem;
-    height: 40.125rem;
-    left: 16.6875rem;
+  #designs .phone {
+    max-height: 40.125rem;
     top: -13.3125rem;
+    left: 6.375rem;
   }
-  .design-container .premium-card {
+  #designs .premium-card {
     max-width: 27.875rem;
-    height: 39.0625rem;
-    padding: 3.625rem 3.6875rem 3rem 3.375rem;
-    gap: 2.875rem;
-    left: 45.875rem;
     top: 5.625rem;
-  }
-  .design-container .premium-card .card-content {
-    max-width: 20.8125rem;
-    height: 20.9375rem;
+    right: 5.9375rem;
     gap: 1.375rem;
   }
-  .design-container .premium-card .card-content h2 {
-    height: 3.25rem;
+  #designs .premium-card .card-content {
+    padding: 3.625rem 3.6875rem 1.21875rem 3.375rem;
+  }
+  #designs .premium-card .card-content h2 {
     font-size: 2.5rem;
-    line-height: 3.25rem;
+    line-height: erm(52);
   }
-  .design-container .premium-card .card-content p {
-    height: 10.625rem;
+  #designs .premium-card .card-content p {
     font-size: 1.25rem;
-    line-height: 2.125rem;
+    line-height: erm(34);
   }
-  .design-container .premium-card .card-content .subscription {
-    margin-top: 1.0625rem;
-    margin-left: 0;
+  #designs .premium-card .cost {
+    padding: 1.21875rem 14.1875rem 1.4375rem 3.375rem;
   }
-  .design-container .premium-card .download-btns {
-    max-width: 20.8125rem;
-    margin-left: 0;
+  #designs .premium-card .download-btns {
+    padding: 1.4375rem 3.6875rem 3rem 3.375rem;
   }
   footer {
-    height: 16.0625rem;
-    padding-bottom: 5.6875rem;
-    padding-left: 10.3125rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 8.619375rem;
-  }
-  footer img {
-    margin-left: 0;
-  }
-  footer .contact-container {
-    max-width: 51.5625rem;
-    gap: 22.4375rem;
+    background-position: 10.38438rem 12.62438rem;
+    padding: 12.625rem 10.3125rem 5.6875rem 28.125rem;
   }
 }
-/*# sourceMappingURL=styles.css.map */
