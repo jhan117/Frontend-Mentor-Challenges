@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/equalizerlandingpage-juNI6TS15)
-- Live Site URL: [Add live site URL here](https://jhan117.github.io/Equalizer-landing-page/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/equalizerlandingpage-juNI6TS15)
+- Live Site URL: [Live site](https://jhan117.github.io/Equalizer-landing-page/)
 
 ## My process
 
