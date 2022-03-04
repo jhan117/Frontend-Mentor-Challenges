@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/meet-landing-page-using-grid-fO9aTRnbW)
+- Live Site URL: [Live site](https://jhan117.github.io/Meet-landing-page/)
 
 ## My process
 
