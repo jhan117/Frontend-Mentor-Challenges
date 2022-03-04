@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/huddle-landing-page-using-grid-ya17lzrsK)
+- Live Site URL: [Live site](https://jhan117.github.io/Huddle-landing-page/)
 
 ## My process
 
@@ -43,7 +43,7 @@ Started : 쉬워 보였다. grid로 반응형을 만들자라고 생각했다.
    
 **2022.03.04**
    
-Completed: 근데 로고랑 이미지 크기가 figma에 디자인 된 크기와 달라서 계산해가지고 얼추 비슷하게 한다고 애먹었다. 사실 조금 짜증났다. ㅎㅎ 그리고 코드를 깔끔하게 정돈을 못했다. 주구난방이 된 느낌...
+Completed: 근데 로고랑 이미지 크기가 figma에 디자인 된 크기와 달라서 계산해가지고 얼추 비슷하게 한다고 애먹었다. 사실 조금 짜증났다. ㅎㅎ 그리고 코드를 깔끔하게 정돈을 못했다. 주구난방이 된 느낌... 완성도가 좀 많이 떨어졌다. 나중에 다시 업데이트 할 예정.
 
 ## Author
 
