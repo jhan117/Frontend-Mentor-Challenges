@@ -1,0 +1,45 @@
+// image
+img {
+  // set margin
+  margin: rem(120) 0 0;
+}
+
+// content
+main {
+  // align h1 and p
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: rem(16);
+  justify-items: center;
+
+  // set margin
+  margin: rem(54) 0 0;
+
+  // max width
+  max-width: rem(304);
+
+  p {
+    margin-bottom: rem(8);
+  }
+
+  // button
+  .button {
+    // set padding
+    padding: rem(11) 0;
+
+    // fixed width and max height
+    width: rem(200);
+    max-height: rem(40);
+  }
+}
+
+// address
+address {
+  // align icons
+  display: flex;
+  flex-flow: row nowrap;
+  gap: rem(10);
+
+  // set margin
+  margin: rem(64) 0 rem(40);
+}

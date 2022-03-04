@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../../images/bg-mobile.svg") no-repeat, url("../../images/logo.svg") no-repeat;
+  background-position: top, 2.03125rem 1.95rem;
+  background-size: contain, 8.125rem auto;
+  background-color: #674baf;
+}
+
+img {
+  max-width: 19.3125rem;
+  max-height: 13.875rem;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: white;
+}
+
+main p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+main .button {
+  background-color: white;
+  -webkit-box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.269022);
+          box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.269022);
+  border-radius: 1.25rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #674baf;
+  text-align: center;
+  text-decoration: none;
+}
+
+main .button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+address a {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 0.0625rem solid white;
+  border-radius: 50%;
+}
+
+address a:hover {
+  border-color: #ff52c1;
+}
+
+address a:hover path {
+  fill: #ff52c1;
+}
+
+img {
+  margin: 7.5rem 0 0;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  row-gap: 1rem;
+  justify-items: center;
+  margin: 3.375rem 0 0;
+  max-width: 19rem;
+}
+
+main p {
+  margin-bottom: 0.5rem;
+}
+
+main .button {
+  padding: 0.6875rem 0;
+  width: 12.5rem;
+  max-height: 2.5rem;
+}
+
+address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0.625rem;
+  margin: 4rem 0 2.5rem;
+}
+
+@media only screen and (min-width: 64em) {
+  body {
+    background: url("../../images/bg-desktop.svg") no-repeat, url("../../images/logo.svg") no-repeat;
+    background-position: left, 4.375rem 2.75rem;
+    background-size: contain, 13.125rem auto;
+    background-color: #674baf;
+    padding: 0 5.3125rem 0 4.5625rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    justify-items: initial;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-column-gap: 3.3125rem;
+            column-gap: 3.3125rem;
+  }
+  img {
+    margin: 0;
+    max-width: initial;
+    max-height: initial;
+  }
+  main {
+    row-gap: 1.5rem;
+    justify-items: start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0;
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 32.5rem;
+  }
+  main h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+  main p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin: 0;
+  }
+  main .button {
+    -webkit-box-shadow: 0.125rem 0.25rem 0.5625rem 0.1875rem rgba(0, 0, 0, 0.258633);
+            box-shadow: 0.125rem 0.25rem 0.5625rem 0.1875rem rgba(0, 0, 0, 0.258633);
+    border-radius: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    max-height: 3.5rem;
+  }
+  address {
+    position: absolute;
+    right: 5rem;
+    bottom: 2.5rem;
+  }
+}
