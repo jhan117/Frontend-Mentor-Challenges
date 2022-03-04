@@ -1,0 +1,39 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// colors
+$heading: hsl(240, 21, 20);
+$detail: hsl(240, 10, 57);
+$white: hsl(0, 0, 98);
+
+$blue: hsl(192, 37, 48);
+$blueHover: hsl(192, 54, 64);
+$lightBlue: hsl(192, 90, 77);
+
+$purple: hsl(268, 34, 53);
+$purpleHover: hsl(268, 55, 71);
+$lightPurple: hsl(268, 100, 86);
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap'); // font-family: 'Red Hat Display', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+@import "designs";
+
+@import "RWD";
+@import "mediaTablet";
+@import "mediaDesktop";

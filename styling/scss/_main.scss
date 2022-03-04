@@ -1,0 +1,40 @@
+main {
+  // all text
+  text-align: center;
+
+  // image container
+  .images {
+    // set size
+    width: fit-content;
+    height: fit-content;
+
+    // all images
+    img {
+      display: block;
+
+      // max size
+      max-width: rem(151);
+      max-height: rem(143);
+
+      // shape
+      border-radius: rem(8);
+    }
+  }
+
+  // heading 2
+  h2 {
+    @include font(900, rem(16), rem(26), $blue);
+    letter-spacing: rem(4);
+    text-transform: uppercase;
+  }
+
+  // heading 1
+  h1 {
+    @include font(900, rem(32), rem(36), $heading);
+  }
+
+  // paragraph
+  p {
+    @include font(500, rem(16), rem(26), $detail);
+  }
+}

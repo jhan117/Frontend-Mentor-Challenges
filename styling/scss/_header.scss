@@ -1,0 +1,54 @@
+header {
+  // all text
+  text-align: center;
+
+  // heading
+  h1 {
+    @include font(900, rem(40), rem(44), $heading);
+  }
+
+  // paragraph
+  p {
+    @include font(500, rem(16), rem(26), $detail);
+  }
+
+  // download button
+  .download {
+    // fixed size
+    width: rem(193);
+
+    // color and shape
+    background-color: $blue;
+    border-radius: rem(29);
+
+    // text
+    @include font(900, rem(16), rem(26), white);
+    text-decoration: none;
+
+    // version
+    span {
+      // font color
+      color: $lightBlue;
+    }
+
+    &:hover {
+      background-color: $blueHover;
+    }
+  }
+
+  // what is it button
+  .what {
+    // fixed size
+    width: rem(139);
+
+    // text and shape
+    @extend .download;
+
+    // color
+    background-color: $purple;
+
+    &:hover {
+      background-color: $purpleHover;
+    }
+  }
+}

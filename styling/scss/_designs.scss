@@ -1,0 +1,46 @@
+div {
+  // fixed size
+  width: rem(56);
+  height: rem(140);
+
+  // for line and circle
+  position: relative;
+
+  .line {
+    // fixed size
+    width: rem(1);
+    height: rem(84);
+
+    // line
+    background-color: $detail;
+    opacity: 0.25;
+
+    // line position
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .circle {
+    // fixed size
+    width: rem(56);
+    height: rem(56);
+
+    // circle
+    border: rem(1) solid rgba(135, 135, 157, 0.25);
+    border-radius: rem(29);
+    background-color: $white;
+
+    // circle position
+    position: absolute;
+    bottom: 0;
+
+    // text
+    @include font(900, rem(16), rem(26), $detail);
+
+    // set text center
+    display: grid;
+    place-items: center;
+  }
+}
