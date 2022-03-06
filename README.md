@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-GkHPstXRA)
+- Live Site URL: [Live site](https://jhan117.github.io/Base-Apparel-coming-soon-page/)
 
 ## My process
 
