@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  background: linear-gradient(135deg, white, #fff5f5);
+  position: relative;
+}
+
+body #logo {
+  width: 6.25rem;
+  position: absolute;
+  top: 1.9375rem;
+  left: 2rem;
+}
+
+header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .m-image {
+  display: block;
+  margin: 5.25rem 0 4rem;
+}
+
+header .d-image {
+  display: none;
+}
+
+main {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2rem 4.4375rem;
+}
+
+main h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  color: #413a3a;
+  letter-spacing: 0.67688rem;
+  margin-bottom: 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main h1 span {
+  display: block;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  color: #ce9797;
+  letter-spacing: 0.67688rem;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #ce9797;
+  margin-bottom: 2rem;
+}
+
+main #email-form {
+  width: 100%;
+  max-width: 26.5625rem;
+  position: relative;
+}
+
+main #email-form form {
+  border: 0.0625rem solid rgba(206, 151, 151, 0.5);
+  border-radius: 1.75rem;
+  height: 3rem;
+}
+
+main #email-form form #email {
+  border: none;
+  display: block;
+  background-color: initial;
+  width: 15.4375rem;
+  height: 3rem;
+  padding: 0.625rem 0 0.625rem 1.5rem;
+  border-radius: 1.75rem 0 0 1.75rem;
+}
+
+main #email-form form #email::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: rgba(206, 151, 151, 0.5);
+}
+
+main #email-form form #email:-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: rgba(206, 151, 151, 0.5);
+}
+
+main #email-form form #email::-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: rgba(206, 151, 151, 0.5);
+}
+
+main #email-form form #email::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: rgba(206, 151, 151, 0.5);
+}
+
+main #email-form form #email:focus,
+main #email-form form #email :active,
+main #email-form form #email :hover {
+  outline: none;
+}
+
+main #email-form form #email:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+          box-shadow: 0 0 0 1000px transparent inset;
+}
+
+main #email-form form #email:-webkit-autofill, main #email-form form #email:-webkit-autofill:hover,
+main #email-form form #email :focus,
+main #email-form form #email :active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+main #email-form form #submit {
+  background: url("../../images/icon-arrow.svg") no-repeat, linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  background-position: center;
+  -webkit-box-shadow: 0 0.9375rem 1.25rem rgba(198, 110, 110, 0.247569);
+          box-shadow: 0 0.9375rem 1.25rem rgba(198, 110, 110, 0.247569);
+  border-radius: 1.75rem;
+  border: none;
+  cursor: pointer;
+  width: 4rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+main #email-form form #submit:hover {
+  background: url("../../images/icon-arrow.svg") no-repeat, linear-gradient(135deg, rgba(248, 191, 191, 0.5), rgba(238, 140, 140, 0.5));
+  background-position: center;
+}
+
+main #email-form #error {
+  opacity: 0;
+}
+
+main #email-form #error img {
+  position: absolute;
+  top: 0.75rem;
+  right: 4.5rem;
+}
+
+main #email-form #error p {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+  color: #f96262;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+main .error-state #error {
+  opacity: 1 !important;
+}
+
+main .error-state form {
+  border: 0.125rem solid #f96262 !important;
+}
+
+@media only screen and (min-width: 73em) {
+  body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("../../images/bg-pattern-desktop.svg") no-repeat, linear-gradient(135deg, white, #fff5f5);
+    background-position: center left, center;
+    background-size: cover, auto;
+  }
+  body #logo {
+    width: initial;
+    top: 4.05687rem;
+    left: 10.3125rem;
+  }
+  header {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+  header .m-image {
+    display: none;
+    margin: 0;
+  }
+  header .d-image {
+    display: block;
+  }
+  main {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    text-align: left;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    margin: 0;
+    padding: 14.625rem 0 8.125rem 10.3125rem;
+  }
+  main h1 {
+    font-size: 4rem;
+    line-height: 4.4375rem;
+    letter-spacing: 1.0825rem;
+    margin-bottom: 2rem;
+    max-width: 27.75rem;
+    height: 12rem;
+  }
+  main h1 span {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 1.0825rem;
+  }
+  main p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+    max-width: 27.75rem;
+  }
+  main #email-form {
+    max-width: 27.8125rem;
+  }
+  main #email-form form {
+    height: 3.5rem;
+  }
+  main #email-form form #email {
+    width: 21.5625rem;
+    height: 3.5rem;
+    padding: 0.875rem 0 0.875rem 2rem;
+  }
+  main #email-form form #email::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  main #email-form form #email:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  main #email-form form #email::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  main #email-form form #email::placeholder {
+    font-size: 1rem;
+  }
+  main #email-form form #submit {
+    width: 6.25rem;
+    height: 3.5rem;
+  }
+  main #email-form #error img {
+    top: 1rem;
+    right: 8rem;
+  }
+  main #email-form #error p {
+    line-height: 1.75rem;
+    margin-top: 0.25rem;
+    padding-left: 2rem;
+  }
+}

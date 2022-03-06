@@ -1,0 +1,145 @@
+main {
+  text-align: center;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  margin: 0 rem(32) rem(71);
+
+  // heading
+  h1 {
+    text-transform: uppercase;
+    span {
+      display: block;
+      @include font(300, rem(40), rem(42), $detail);
+      letter-spacing: rem(10.83);
+    }
+
+    @include font(600, rem(40), rem(42), $heading);
+    letter-spacing: rem(10.83);
+
+    margin-bottom: rem(16);
+
+    height: fit-content;
+  }
+
+  // detail
+  p {
+    @include font(400, rem(14), rem(22), $detail);
+
+    margin-bottom: rem(32);
+  }
+
+  // form container
+  #email-form {
+    width: 100%;
+    max-width: rem(425);
+
+    position: relative;
+
+    // form
+    form {
+      border: rem(1) solid hsla(0, 36%, 70%, 0.5);
+      border-radius: rem(28);
+
+      height: rem(48);
+
+      // email
+      #email {
+        border: none;
+        display: block;
+        background-color: initial;
+
+        width: rem(247);
+        height: rem(48);
+
+        padding: rem(10) 0 rem(10) rem(24);
+        border-radius: rem(28) 0 0 rem(28);
+
+        &::placeholder {
+          font-family: "Josefin Sans", sans-serif;
+          @include font(400, rem(14), rem(28), hsla(0, 36%, 70%, 0.5));
+        }
+
+        &:focus,
+        :active,
+        :hover {
+          outline: none;
+        }
+
+        // for autocomplete
+        // Change the transparent to any color
+        &:-webkit-autofill {
+          box-shadow: 0 0 0 1000px transparent inset;
+        }
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        :focus,
+        :active {
+          transition: background-color 5000s ease-in-out 0s;
+        }
+      }
+
+      // submit
+      #submit {
+        background: url("../../images/icon-arrow.svg") no-repeat,
+          linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        background-position: center;
+
+        box-shadow: 0 rem(15) rem(20) rgba(198, 110, 110, 0.247569);
+        border-radius: rem(28);
+
+        border: none;
+        cursor: pointer;
+
+        width: rem(64);
+        height: rem(48);
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &:hover {
+          background: url("../../images/icon-arrow.svg") no-repeat,
+            linear-gradient(
+              135deg,
+              hsla(0, 80%, 86%, 0.5),
+              hsla(0, 74%, 74%, 0.5)
+            );
+          background-position: center;
+        }
+      }
+    }
+
+    // error
+    #error {
+      opacity: 0;
+
+      img {
+        position: absolute;
+        top: rem(12);
+        right: rem(72);
+      }
+
+      p {
+        @include font(400, rem(13), rem(13), $SoftRed);
+
+        margin-bottom: 0;
+        margin-top: rem(8);
+
+        text-align: left;
+
+        padding-left: rem(24);
+      }
+    }
+  }
+
+  // error state
+  .error-state #error {
+    opacity: 1 !important;
+  }
+  .error-state form {
+    border: rem(2) solid $SoftRed !important;
+  }
+}

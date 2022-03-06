@@ -1,0 +1,115 @@
+// breakpoint: 1168px
+@media only screen and (min-width: 73em) {
+  body {
+    justify-content: space-between;
+    align-items: center;
+
+    // background
+    background: url("../../images/bg-pattern-desktop.svg") no-repeat,
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-position: center left, center;
+    background-size: cover, auto;
+
+    // logo
+    #logo {
+      width: initial;
+
+      top: rem(64.91);
+      left: rem(165);
+    }
+  }
+
+  // header
+  header {
+    grid-column: 2 / 3;
+
+    // mobile image
+    .m-image {
+      display: none;
+      margin: 0;
+    }
+
+    // desktop image
+    .d-image {
+      display: block;
+    }
+  }
+
+  // main
+  main {
+    grid-row: 1 / 2;
+    text-align: left;
+    align-items: initial;
+    margin: 0;
+    padding: rem(234) 0 rem(130) rem(165);
+
+    // heading
+    h1 {
+      span {
+        font-size: rem(64);
+        line-height: rem(64);
+        letter-spacing: rem(17.32);
+      }
+
+      font-size: rem(64);
+      line-height: rem(71);
+      letter-spacing: rem(17.32);
+
+      margin-bottom: rem(32);
+
+      max-width: rem(444);
+      height: rem(192);
+    }
+
+    // detail
+    p {
+      font-size: rem(16);
+      line-height: rem(28);
+      margin-bottom: rem(40);
+
+      max-width: rem(444);
+    }
+
+    // form container
+    #email-form {
+      max-width: rem(445);
+
+      // form
+      form {
+        height: rem(56);
+
+        // email
+        #email {
+          width: rem(345);
+          height: rem(56);
+
+          padding: rem(14) 0 rem(14) rem(32);
+
+          &::placeholder {
+            font-size: rem(16);
+          }
+        }
+
+        // submit
+        #submit {
+          width: rem(100);
+          height: rem(56);
+        }
+      }
+
+      // error
+      #error {
+        img {
+          top: rem(16);
+          right: rem(128);
+        }
+
+        p {
+          line-height: rem(28);
+          margin-top: rem(4);
+          padding-left: rem(32);
+        }
+      }
+    }
+  }
+}
