@@ -1,0 +1,95 @@
+// breakpoint:
+@media only screen and (min-width: 48em) {
+  // card
+  #card {
+    // card layout
+    row-gap: rem(20);
+
+    // set size
+    max-width: rem(730);
+
+    position: relative;
+
+    // image
+    .main-img {
+      background-position: top left;
+      border-radius: rem(10) 0 0 rem(10);
+
+      // set size
+      width: rem(285);
+      height: rem(280);
+
+      // layout
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+
+      // position
+      margin-bottom: 0;
+    }
+
+    // content
+    main {
+      // layout
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+
+      // position
+      margin: rem(32) rem(40) 0;
+
+      // heading
+      h1 {
+        font-size: rem(20);
+        line-height: rem(28);
+        letter-spacing: rem(0.25);
+      }
+    }
+
+    // profile
+    footer {
+      // position
+      padding: 0 rem(40) rem(32);
+
+      position: relative;
+
+      // share link default is none
+      .share-link {
+        .design {
+          display: block;
+          width: rem(12);
+          height: rem(12);
+
+          background-color: $heading;
+
+          position: absolute;
+          bottom: rem(-6);
+          left: 50%;
+          transform: translateX(-50%);
+          transform: rotate(45deg);
+        }
+
+        top: rem(-77);
+        left: rem(265);
+
+        width: rem(248);
+        height: rem(55);
+
+        padding: rem(17.5) rem(36.5);
+
+        border-radius: rem(10);
+        box-shadow: 0 rem(10) rem(10) rgba(201, 213, 225, 0.503415);
+
+        .share {
+          position: absolute;
+          bottom: rem(-58);
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      // active link!
+      .active {
+        display: block;
+      }
+    }
+  }
+}
