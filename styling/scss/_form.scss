@@ -1,0 +1,134 @@
+#form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: rem(24);
+
+  .heading {
+    background-color: $Blue;
+    box-shadow: 0 rem(8) 0 rgba(0, 0, 0, 0.14688);
+    border-radius: rem(10);
+
+    padding: rem(18) rem(66.5);
+
+    h2 {
+      text-align: center;
+
+      @include font(700, rem(15), rem(26), white);
+      letter-spacing: rem(0.27);
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .card {
+    background-color: white;
+    box-shadow: 0 rem(8) 0 rgba(0, 0, 0, 0.14688);
+    border-radius: rem(10);
+
+    padding: rem(24);
+
+    form {
+      display: grid;
+      row-gap: rem(16);
+
+      div {
+        position: relative;
+
+        input {
+          height: rem(56);
+          width: 100%;
+          display: block;
+
+          outline: none;
+          border: rem(1) solid hsl(0, 0%, 87%);
+          border-radius: rem(5);
+
+          caret-color: $Blue;
+
+          font-family: "Poppins", sans-serif;
+          @include font(600, rem(14), rem(26), hsla(249, 10%, 26%, 0.75));
+          letter-spacing: rem(0.25);
+
+          padding: rem(15) 0 rem(15) rem(19.41);
+
+          &:focus {
+            border: rem(1) solid $Blue;
+          }
+        }
+
+        img {
+          display: none;
+
+          position: absolute;
+          top: rem(16);
+          right: rem(27);
+        }
+
+        p {
+          display: none;
+          text-align: right;
+          margin: 0;
+          margin-top: rem(6);
+
+          font-style: italic;
+          @include font(500, rem(11), rem(16), $Red);
+        }
+      }
+
+      .error img {
+        display: block;
+      }
+
+      .error p {
+        display: block;
+      }
+
+      .error input {
+        border: rem(2) solid $Red;
+        color: $Red;
+
+        &::placeholder {
+          opacity: 0;
+        }
+
+        &:focus {
+          border: rem(2) solid $Red;
+        }
+      }
+
+      #submit {
+        background-color: $Green;
+        box-shadow: inset 0 rem(-4) 0 rgba(0, 0, 0, 0.0908818);
+        border-radius: rem(5);
+
+        font-family: "Poppins", sans-serif;
+        @include font(600, rem(15), rem(26), white);
+        letter-spacing: rem(1);
+        text-transform: uppercase;
+
+        border: none;
+        cursor: pointer;
+        padding: rem(15) rem(44.5);
+
+        &:hover {
+          background-color: hsl(154, 65%, 68%);
+        }
+      }
+    }
+
+    p {
+      margin: rem(8) rem(15) 0;
+
+      text-align: center;
+
+      @include font(500, rem(11), rem(21), $GrayishBlue);
+
+      span {
+        font-weight: 700;
+        color: $Red;
+      }
+    }
+  }
+}
