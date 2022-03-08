@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 9.25rem 1.5rem 5.3125rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+}
+
+main {
+  position: relative;
+  background: url("../../images/bg-pattern-mobile.svg") no-repeat white;
+  background-position: top center;
+  -webkit-box-shadow: 0 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
+          box-shadow: 0 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
+  border-radius: 1.4375rem;
+  padding: 8.25rem 1.5rem 2rem;
+}
+
+main #mobile-image {
+  width: 14.8125rem;
+  height: 11.25rem;
+  position: absolute;
+  top: -6.75rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main #desktop-image {
+  display: none;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #1d1e35;
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+main #accordion #accordion-item button {
+  border: none;
+  outline: none;
+  background-color: initial;
+  width: 100%;
+  text-align: left;
+  display: block;
+  cursor: pointer;
+  padding-top: 0.0625rem;
+  padding-left: 0.0625rem;
+  position: relative;
+}
+
+main #accordion #accordion-item button h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: #1d1e35;
+  margin-bottom: 0.75rem;
+}
+
+main #accordion #accordion-item button img {
+  position: absolute;
+  top: 0.3625rem;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+main #accordion #accordion-item p {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #787887;
+}
+
+main #accordion #accordion-item #line {
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #e7e7e9;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main #accordion #accordion-item button.collapsed h2 {
+  font-weight: 400;
+  color: #4a4b5e;
+  margin-bottom: 0;
+  -webkit-transition: margin-bottom 0.3s ease-in;
+  transition: margin-bottom 0.3s ease-in;
+}
+
+main #accordion #accordion-item button.collapsed img {
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+main #accordion #accordion-item button.collapsed:hover h2 {
+  color: #f47c57;
+}
+
+@media only screen and (min-width: 48em) {
+  body {
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  main {
+    background: url("../../images/illustration-woman-online-desktop.svg") no-repeat, url("../../images/bg-pattern-desktop.svg") no-repeat white;
+    background-position: -5.25rem 4.375rem, -36rem -18.375rem;
+    padding: 4.0625rem 5.9375rem 5.1875rem 29.6875rem;
+  }
+  main #mobile-image {
+    display: none;
+  }
+  main #desktop-image {
+    display: initial;
+    position: absolute;
+    top: 12.8125rem;
+    left: -6rem;
+  }
+  main h1 {
+    text-align: initial;
+    margin-bottom: 2.1875rem;
+  }
+  main #accordion {
+    max-width: 21.875rem;
+  }
+  main #accordion #accordion-item button h2 {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+  }
+  main #accordion #accordion-item button img {
+    top: 0.425rem;
+    right: 1rem;
+  }
+}

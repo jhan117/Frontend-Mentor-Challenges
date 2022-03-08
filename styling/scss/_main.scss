@@ -1,0 +1,101 @@
+main {
+  position: relative;
+
+  background: url("../../images/bg-pattern-mobile.svg") no-repeat white;
+  background-position: top center;
+  box-shadow: 0 rem(50) rem(50) rem(-20) rgba(53, 18, 122, 0.497159);
+  border-radius: rem(23);
+
+  padding: rem(132) rem(24) rem(32);
+
+  #mobile-image {
+    width: rem(237);
+    height: rem(180);
+
+    position: absolute;
+    top: rem(-108);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #desktop-image {
+    display: none;
+  }
+
+  h1 {
+    @include font(700, rem(32), rem(40), $VeryDarkDesaturatedBlue);
+    text-align: center;
+    margin-bottom: rem(30);
+  }
+
+  #accordion {
+    #accordion-item {
+      button {
+        border: none;
+        outline: none;
+        background-color: initial;
+        width: 100%;
+        text-align: left;
+        display: block;
+        cursor: pointer;
+
+        padding-top: rem(1);
+        padding-left: rem(1);
+
+        position: relative;
+
+        h2 {
+          font-family: "Kumbh Sans", sans-serif;
+          @include font(700, rem(13), rem(16), $VeryDarkDesaturatedBlue);
+
+          margin-bottom: rem(12);
+        }
+
+        img {
+          position: absolute;
+          top: rem(5.8);
+          right: 0;
+
+          transform: rotate(180deg);
+          transition: transform 0.3s;
+        }
+      }
+
+      p {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+
+        @include font(400, rem(12), rem(18), $DarkGrayishBlue);
+      }
+
+      #line {
+        width: 100%;
+        height: rem(1);
+        background-color: $LightGrayishBlue;
+
+        margin-top: rem(16);
+        margin-bottom: rem(16);
+      }
+
+      button.collapsed {
+        h2 {
+          font-weight: 400;
+          color: $VeryDarkGrayishBlue;
+          margin-bottom: 0;
+          transition: margin-bottom 0.3s ease-in;
+        }
+
+        img {
+          transform: initial;
+        }
+
+        &:hover {
+          h2 {
+            color: $SoftRed;
+          }
+        }
+      }
+    }
+  }
+}

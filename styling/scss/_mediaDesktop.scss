@@ -1,0 +1,51 @@
+// breakpoint: 768px
+@media only screen and (min-width: 48em) {
+  body {
+    padding: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  main {
+    background: url("../../images/illustration-woman-online-desktop.svg")
+        no-repeat,
+      url("../../images/bg-pattern-desktop.svg") no-repeat white;
+    background-position: rem(-84) rem(70), rem(-576) rem(-294);
+
+    padding: rem(65) rem(95) rem(83) rem(475);
+
+    #mobile-image {
+      display: none;
+    }
+
+    #desktop-image {
+      display: initial;
+      position: absolute;
+      top: rem(205);
+      left: rem(-96);
+    }
+
+    h1 {
+      text-align: initial;
+      margin-bottom: rem(35);
+    }
+
+    #accordion {
+      max-width: rem(350);
+
+      #accordion-item {
+        button {
+          h2 {
+            font-size: rem(14);
+            line-height: rem(17);
+          }
+
+          img {
+            top: rem(6.8);
+            right: rem(16);
+          }
+        }
+      }
+    }
+  }
+}
