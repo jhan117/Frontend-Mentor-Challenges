@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/faq-accordion-card-tQNpBF1IR)
+- Live Site URL: [Add live site URL here](https://jhan117.github.io/FAQ-accordion-card/)
 
 ## My process
 
@@ -62,7 +62,7 @@ Completed: 음 accordion이라고 쳤더니 너무 좋은 소스가 많아서 �
    
 [HTML DOM Element nextElementSibling](https://www.w3schools.com/jsref/prop_element_nextelementsibling.asp)
    
-**Definition and Usage**
+**Definition and Usage**   
 The `nextElementSibling` property returns the next element in the same tree level. and it's read-only.
    
 **Syntax**
