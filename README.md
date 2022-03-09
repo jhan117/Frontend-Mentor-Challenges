@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-7X6O0JTV8)
+- Live Site URL: [Live site](https://jhan117.github.io/Ping-single-column-coming-soon-page/)
 
 ## My process
 
