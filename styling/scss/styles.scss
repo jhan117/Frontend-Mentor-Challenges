@@ -1,0 +1,33 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// Primary
+$Blue: hsl(223, 87%, 63%);
+
+// Secondary
+$PaleBlue: hsl(223, 100%, 88%);
+$LightRed: hsl(354, 100%, 66%);
+
+// Neutral
+$Gray: hsl(0, 0%, 59%);
+$VeryDarkBlue: hsl(209, 33%, 12%);
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"); // font-family: 'Libre Franklin', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+
+@import "mediaDesktop";

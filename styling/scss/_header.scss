@@ -1,0 +1,86 @@
+header {
+  text-align: center;
+  margin-bottom: rem(72);
+
+  h1 {
+    @include font(300, rem(22), rem(32), $Gray);
+
+    margin-bottom: rem(15);
+
+    span {
+      font-weight: 700;
+      color: $VeryDarkBlue;
+    }
+  }
+
+  p {
+    @include font(300, rem(12), rem(15), $VeryDarkBlue);
+
+    margin-bottom: rem(32);
+  }
+  
+  form {
+    display: grid;
+
+    padding: 0 rem(20);
+
+    #email {
+      border: rem(1) solid $PaleBlue;
+      box-shadow: 0 0 rem(7) rem(3) rgba(0, 0, 0, 0.0001);
+      border-radius: rem(28);
+      outline: none;
+
+      width: 100%;
+      height: rem(40);
+
+      padding: rem(10) rem(32);
+
+      font-family: "Libre Franklin", sans-serif;
+      @include font(300, rem(12), rem(20), $VeryDarkBlue);
+
+      &::placeholder {
+        font-family: "Libre Franklin", sans-serif;
+        @include font(300, rem(12), rem(20), #b8c7ed);
+      }
+    }
+
+    p {
+      display: none;
+      text-align: center;
+      margin-top: rem(2);
+      margin-bottom: rem(10);
+
+      @include font(400, rem(10), rem(20), $LightRed);
+      letter-spacing: rem(0.125);
+      font-style: italic;
+    }
+
+    #submit {
+      border: none;
+      background-color: $Blue;
+      box-shadow: 0 rem(5) rem(10) rem(2) rgba(76, 123, 243, 0.230414);
+      border-radius: rem(28);
+      cursor: pointer;
+
+      width: 100%;
+
+      padding: rem(12) 0;
+      margin-top: rem(10);
+
+      font-family: "Libre Franklin", sans-serif;
+      @include font(600, rem(12), rem(16), white);
+
+      &:hover {
+        background: hsla(223, 87%, 63%, 0.8);
+      }
+    }
+  }
+
+  .error p {
+    display: block;
+  }
+
+  .error #email {
+    border: rem(1) solid $LightRed;
+  }
+}
