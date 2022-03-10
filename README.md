@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/pod-request-access-landing-page-rqZvGEIbK)
+- Live Site URL: [Live site](https://jhan117.github.io/Pod-request-access-landing-page/)
 
 ## My process
 
