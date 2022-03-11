@@ -1,0 +1,28 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// colors
+$PaleBlue: hsl(243, 100%, 93%);
+$GrayishBlue: hsl(229, 7%, 55%);
+$DarkBlue: hsl(228, 56%, 26%);
+$VeryDarkBlue: hsl(229, 57%, 11%);
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"); // font-family: 'Raleway', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+
+@import "mediaDesktop";

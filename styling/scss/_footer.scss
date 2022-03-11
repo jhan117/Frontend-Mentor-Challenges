@@ -1,0 +1,18 @@
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  @include font(700, rem(11), auto, $PaleBlue);
+  text-align: center;
+
+  a {
+    color: $GrayishBlue;
+    text-decoration: none;
+
+    &:hover {
+      color: hsl(228, 56%, 62%);
+    }
+  }
+}
