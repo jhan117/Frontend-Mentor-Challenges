@@ -46,6 +46,10 @@ Started: 음.. accordion이라... 일단 js로 먼저 하고 branch 파서 css�
 
 Completed: 음 accordion이라고 쳤더니 너무 좋은 소스가 많아서 고민할 시간은 별로 없었다. 그래서 원리만 이해하고 내 맘대로 써봤다. 근데 고민인게 html에 div를 저렇게 많이 넣어도 괜찮을까? 없애자니 너무 구분이 없고 그렇다고 넣자니 너무 많아보이는...? 가독성을 위해서는 그냥 냅두는 게 좋을까? 찾아봤더니 다른 걸로 대신해서 쓰면 좋다는데... 흐음... 아직은 잘 모르겠다. 뭐가 적절한지를 모르겠네. 어려웠다기 보다는 transition 처음 써봐서 smooth한 효과를 위해 여러번 테스트해본다고 조금 시간을 먹었다. 무난했던...?
 
+**2022.03.11**
+   
+Updated: id 이름 똑같이 썼다고 Accessibility한테 혼났네.. ㅋㅋㅋ button은 h2 포함 안한다고 하네. 이 두개만 수정해주면 될 것 같다. 끝.
+
 ### What I learned
 
 [pure css accordion](https://codepen.io/raubaca/pen/PZzpVe)  

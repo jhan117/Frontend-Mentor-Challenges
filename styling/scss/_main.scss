@@ -29,7 +29,7 @@ main {
   }
 
   #accordion {
-    #accordion-item {
+    .accordion-item {
       button {
         border: none;
         outline: none;
@@ -44,7 +44,7 @@ main {
 
         position: relative;
 
-        h2 {
+        .header {
           font-family: "Kumbh Sans", sans-serif;
           @include font(700, rem(13), rem(16), $VeryDarkDesaturatedBlue);
 
@@ -61,7 +61,7 @@ main {
         }
       }
 
-      p {
+      .detail {
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.3s ease-out;
@@ -69,7 +69,7 @@ main {
         @include font(400, rem(12), rem(18), $DarkGrayishBlue);
       }
 
-      #line {
+      .line {
         width: 100%;
         height: rem(1);
         background-color: $LightGrayishBlue;
@@ -79,7 +79,7 @@ main {
       }
 
       button.collapsed {
-        h2 {
+        .header {
           font-weight: 400;
           color: $VeryDarkGrayishBlue;
           margin-bottom: 0;
@@ -91,7 +91,7 @@ main {
         }
 
         &:hover {
-          h2 {
+          .header {
             color: $SoftRed;
           }
         }

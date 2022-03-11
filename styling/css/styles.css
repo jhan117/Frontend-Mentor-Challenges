@@ -67,7 +67,7 @@ main h1 {
   margin-bottom: 1.875rem;
 }
 
-main #accordion #accordion-item button {
+main #accordion .accordion-item button {
   border: none;
   outline: none;
   background-color: initial;
@@ -80,7 +80,7 @@ main #accordion #accordion-item button {
   position: relative;
 }
 
-main #accordion #accordion-item button h2 {
+main #accordion .accordion-item button .header {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   font-size: 0.8125rem;
@@ -89,7 +89,7 @@ main #accordion #accordion-item button h2 {
   margin-bottom: 0.75rem;
 }
 
-main #accordion #accordion-item button img {
+main #accordion .accordion-item button img {
   position: absolute;
   top: 0.3625rem;
   right: 0;
@@ -101,7 +101,7 @@ main #accordion #accordion-item button img {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-main #accordion #accordion-item p {
+main #accordion .accordion-item .detail {
   overflow: hidden;
   max-height: 0;
   -webkit-transition: max-height 0.3s ease-out;
@@ -112,7 +112,7 @@ main #accordion #accordion-item p {
   color: #787887;
 }
 
-main #accordion #accordion-item #line {
+main #accordion .accordion-item .line {
   width: 100%;
   height: 0.0625rem;
   background-color: #e7e7e9;
@@ -120,7 +120,7 @@ main #accordion #accordion-item #line {
   margin-bottom: 1rem;
 }
 
-main #accordion #accordion-item button.collapsed h2 {
+main #accordion .accordion-item button.collapsed .header {
   font-weight: 400;
   color: #4a4b5e;
   margin-bottom: 0;
@@ -128,12 +128,12 @@ main #accordion #accordion-item button.collapsed h2 {
   transition: margin-bottom 0.3s ease-in;
 }
 
-main #accordion #accordion-item button.collapsed img {
+main #accordion .accordion-item button.collapsed img {
   -webkit-transform: initial;
           transform: initial;
 }
 
-main #accordion #accordion-item button.collapsed:hover h2 {
+main #accordion .accordion-item button.collapsed:hover .header {
   color: #f47c57;
 }
 
@@ -165,11 +165,11 @@ main #accordion #accordion-item button.collapsed:hover h2 {
   main #accordion {
     max-width: 21.875rem;
   }
-  main #accordion #accordion-item button h2 {
+  main #accordion .accordion-item button .header {
     font-size: 0.875rem;
     line-height: 1.0625rem;
   }
-  main #accordion #accordion-item button img {
+  main #accordion .accordion-item button img {
     top: 0.425rem;
     right: 1rem;
   }

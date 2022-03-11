@@ -33,9 +33,9 @@
     #accordion {
       max-width: rem(350);
 
-      #accordion-item {
+      .accordion-item {
         button {
-          h2 {
+          .header {
             font-size: rem(14);
             line-height: rem(17);
           }
