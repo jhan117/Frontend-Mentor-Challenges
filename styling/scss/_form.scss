@@ -48,13 +48,17 @@
           caret-color: $Blue;
 
           font-family: "Poppins", sans-serif;
-          @include font(600, rem(14), rem(26), hsla(249, 10%, 26%, 0.75));
+          @include font(600, rem(14), rem(26), $DarkBlue);
           letter-spacing: rem(0.25);
 
           padding: rem(15) 0 rem(15) rem(19.41);
 
           &:focus {
             border: rem(1) solid $Blue;
+          }
+
+          &::placeholder {
+            opacity: 0.75;
           }
         }
 

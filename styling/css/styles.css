@@ -129,13 +129,29 @@ main {
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.625rem;
-  color: rgba(62, 60, 73, 0.75);
+  color: #3e3c49;
   letter-spacing: 0.01562rem;
   padding: 0.9375rem 0 0.9375rem 1.21313rem;
 }
 
 #form-container .card form div input:focus {
   border: 0.0625rem solid #6055a5;
+}
+
+#form-container .card form div input::-webkit-input-placeholder {
+  opacity: 0.75;
+}
+
+#form-container .card form div input:-ms-input-placeholder {
+  opacity: 0.75;
+}
+
+#form-container .card form div input::-ms-input-placeholder {
+  opacity: 0.75;
+}
+
+#form-container .card form div input::placeholder {
+  opacity: 0.75;
 }
 
 #form-container .card form div img {
@@ -254,7 +270,7 @@ main {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     max-width: 32.8125rem;
-    row-gap: 0.6875rem;
+    row-gap: 2rem;
   }
   #content h1 {
     font-size: 3.125rem;
@@ -279,11 +295,10 @@ main {
   #form-container .card form {
     row-gap: 1.25rem;
   }
-  #form-container .card form input {
+  #form-container .card form div input {
     padding-left: 2rem;
   }
   #form-container .card p {
-    margin-left: 2.90625rem;
     line-height: 1.625rem;
   }
 }

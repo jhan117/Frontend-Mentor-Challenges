@@ -24,7 +24,7 @@
 
     max-width: rem(525);
 
-    row-gap: rem(11);
+    row-gap: rem(32);
 
     h1 {
       font-size: rem(50);
@@ -48,13 +48,14 @@
 
       form {
         row-gap: rem(20);
-        input {
-          padding-left: rem(32);
+        div {
+          input {
+            padding-left: rem(32);
+          }
         }
       }
 
       p {
-        margin-left: rem(46.5);
         line-height: rem(26);
       }
     }

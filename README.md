@@ -46,6 +46,10 @@ Started: 어제 했던 거랑 유사하다. 그러나 조금 요구하는게 많
 
 Completed: 나름... 뿌듯한걸...? ㅋㅋㅋ `addEventListener`를 input에 넣었는데 안돼가지고 좀 애먹었다. form에 넣으면 되는 걸... 몰랐다... 사실 지금 써놓은 js 파일이 완전히 내가 원하는 코드인데 뭔가 잘 안되고 머릿속도 꼬여서 어디부터 시작해야 할까 애먹었다. 유튜브도 엄청 찾아보고 막 뒤져도 오류가 계속 생기길래 차근차근 종이에 어떻게 하길 원하는지 적어놓고 몇 번을 console.log로 찍고 했다. 결론은 원하는 곳에 이르렀지만 오류는 submit할 때 생기는 새로고침 때문에 일어난 일이었다... 여튼 이리 저리 해보다가 좀 많은 지식을 얻은 것 같아서 뿌듯. 아 맞다. 처음에는 console.log를 잘 안 찍었다. 어캐 해야 하는지 몰라서 일단 작성해놓으니 안되가지고 다시 지우고 어떤 값을 찍는거지? 하며 console.log로 차근히 했던게 해결할 수 있었던 방법이었다. 너무 신기했다... js에 대해서 더 알게 된 계기가 된 거 같아서 너무 좋다.
 
+**2022.03.11**
+   
+Updated: desktop에서 글자 사이 간격 조절해야 하고 그 claim 버튼 밑에 글자 위치 조절해주고 input 패딩 값도 다시 해줘야 함. input 입력 색상 변경. 등. 세부적인거 바꿈.
+
 ### What I learned
 
 [Event.preventDefault()](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)   
