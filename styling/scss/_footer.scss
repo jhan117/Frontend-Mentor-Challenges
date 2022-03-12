@@ -1,0 +1,18 @@
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  @include font(600, rem(11), auto, $Moderateviolet);
+  text-align: center;
+
+  a {
+    color: $Verydarkgrayishblue;
+    text-decoration: none;
+
+    &:hover {
+      color: $Verydarkblackishblue;
+    }
+  }
+}

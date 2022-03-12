@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 4.4375rem 1.5rem;
+  position: relative;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+main section {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem rgba(72, 85, 106, 0.247378);
+          box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem rgba(72, 85, 106, 0.247378);
+  padding: 1.625rem 2rem 2rem;
+}
+
+main section .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1.0625rem;
+          column-gap: 1.0625rem;
+}
+
+main section .profile img {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+main section .profile .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  row-gap: 0.25rem;
+}
+
+main section .profile .text .name {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+  color: white;
+}
+
+main section .profile .text .state {
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 0.6875rem;
+  color: white;
+  opacity: 0.5;
+}
+
+main section h1 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: white;
+  margin-top: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+main section .detail {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #cfcfcf;
+  opacity: 0.7;
+}
+
+main #daniel {
+  background: url("../../images/bg-pattern-quotation.svg") no-repeat #7541c8;
+  background-position: right 1.5rem top;
+}
+
+main #daniel .profile img {
+  border: 0.125rem solid #a674f1;
+}
+
+main #daniel h1 {
+  margin-top: 0.875rem;
+  margin-bottom: 2.5rem;
+}
+
+main #daniel .detail {
+  margin-right: 1rem;
+}
+
+main #jonathan {
+  background: #48556a;
+}
+
+main #jeanette, main #kira {
+  background: white;
+}
+
+main #jeanette .profile .text .name, main #kira .profile .text .name {
+  color: #48556a;
+}
+
+main #jeanette .profile .text .state, main #kira .profile .text .state {
+  color: #48556a;
+}
+
+main #jeanette h1, main #kira h1 {
+  color: #48556a;
+}
+
+main #jeanette .detail, main #kira .detail {
+  color: #48556a;
+}
+
+main #patrick {
+  background: #19212e;
+}
+
+main #patrick .profile img {
+  border: 0.125rem solid #a674f1;
+}
+
+main #patrick h1 {
+  color: #ecf2f8;
+  margin-top: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 0.6875rem;
+  line-height: auto;
+  color: #7541c8;
+  text-align: center;
+}
+
+footer a {
+  color: #48556a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #19212e;
+}
+
+@media only screen and (min-width: 50em) {
+  body {
+    padding: 10.25rem 1.5rem;
+  }
+  main {
+    -ms-grid-columns: (minmax(auto, 15.9375rem))[4];
+        grid-template-columns: repeat(4, minmax(auto, 15.9375rem));
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
+  main #daniel {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    background-position: right 5rem top;
+  }
+  main #daniel h1 {
+    margin-bottom: 1rem;
+  }
+  main #daniel .detail {
+    margin-right: 0;
+  }
+  main #jonathan {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  main #jeanette, main #kira {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    padding: 1.625rem 2rem;
+  }
+  main #jeanette h1, main #kira h1 {
+    margin-bottom: 1.5rem;
+  }
+  main #patrick {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    padding: 1.625rem 2rem;
+  }
+  main #patrick h1 {
+    margin-bottom: 1.5rem;
+  }
+  main #kira {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    padding: 1.625rem 2rem;
+  }
+  main #kira h1 {
+    margin-bottom: 1.5rem;
+  }
+}
