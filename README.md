@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-kIcTDOt3B)
+- Live Site URL: [Live site](https://jhan117.github.io/Testimonials-grid-section/)
 
 ## My process
 
@@ -38,6 +38,8 @@ Users should be able to:
 Started: 디자인이 완전 야 grid 써 이건데?ㅋㅋㅋㅋ
    
 Completed: 굳 breakpoint는 그냥 글자 보일정도로 줬다. 반응형 지금까지 했던 것 중에서 제일 맘에 든다 ㅎㅎ grid 높이 값을 고정시키려다가 말았는데 고정 시키는 것보다 좋은듯...?
+   
+수정 해야 할 것들: 배경색, image에 border 있는 친구들 padding-left 값 조절, jonathan 본문 글자색, patrick 본문 넓이
 
 ### Built with
 
