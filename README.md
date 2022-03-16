@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-2q6kOTV-w)
+- Live Site URL: [Live site](https://jhan117.github.io/Huddle-landing-page-with-alternating-feature-blocks/)
 
 ## My process
 
@@ -42,7 +42,7 @@ Started:
 
 Completed: 이게 3일이나 걸릴 건 아니지만... 다른 것도 하고 느긋하게 한다고 지금까지 왔다. 이번에 Font Awesome 에서 사용법을 배웠는데 svg로 불러오는 것보다 훨씬 편했다... 진작 읽어볼걸... 아 그리고 안 묶고 해봤는데 좀 맘에 안들어서 묶어야 한다... 그래! 묶자...!
    
-need to be fixed:
+need to be fixed: 퀄리티 선넘네... 별론데...? 다음에 싹다 갈아엎어야 할듯 너무 대충 만들었다...
 
 ### Built with
 
