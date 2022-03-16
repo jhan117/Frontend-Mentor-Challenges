@@ -1,0 +1,83 @@
+header {
+  grid-row: 1 / 2;
+
+  background: url("../../images/bg-hero-mobile.svg") no-repeat $VeryPaleCyan;
+  background-size: 100% rem(657);
+  background-position: top center;
+
+  display: grid;
+  row-gap: rem(80);
+
+  #header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    padding: rem(24) rem(16) 0;
+
+    img {
+      height: rem(16);
+    }
+    button {
+      width: rem(96);
+      height: rem(24);
+
+      background: white;
+      box-shadow: rem(0) rem(2) rem(7) rgba(0, 0, 0, 0.0954201);
+      border-radius: rem(12);
+
+      @include font(700, rem(10), rem(14), $VeryDarkCyan);
+
+      &:hover {
+        color: $GrayishBlue;
+      }
+    }
+  }
+
+  section {
+    text-align: center;
+
+    display: grid;
+    justify-items: center;
+    grid-template-rows: auto rem(24) auto rem(32) auto rem(56) auto rem(37);
+
+    height: fit-content;
+
+    h1 {
+      grid-row: 1 / 2;
+
+      margin: 0 rem(47.5);
+
+      @include font(600, rem(24), rem(36), $VeryDarkCyan);
+    }
+    p {
+      grid-row: 3 / 4;
+
+      margin: 0 rem(35.5);
+
+      @include font(400, rem(16), rem(24), $VeryDarkCyan);
+    }
+    button {
+      grid-row: 5 / 6;
+
+      width: rem(240);
+      height: rem(40);
+
+      background: $Pink;
+      box-shadow: rem(2) rem(3) rem(6) rem(1) rgba(255, 82, 193, 0.166185);
+      border-radius: rem(20);
+
+      @include font(700, rem(12), rem(16), white);
+      
+      &:hover {
+        background: $pinkHover;
+      }
+    }
+    img {
+      grid-row: 7 / 8;
+
+      width: 100%;
+      padding: 0 rem(29.5);
+    }
+  }
+}

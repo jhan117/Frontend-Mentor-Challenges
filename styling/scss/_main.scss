@@ -1,0 +1,82 @@
+main {
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-rows: auto rem(40) auto rem(40) auto rem(120) auto;
+
+  text-align: center;
+
+  #card1,
+  #card2,
+  #card3 {
+    background: white;
+    box-shadow: rem(0) rem(0) rem(14) rgba(0, 0, 0, 0.07);
+    border-radius: rem(16);
+
+    display: grid;
+    align-content: center;
+    grid-template-rows: auto rem(24) auto rem(16) auto;
+
+    padding: 0 rem(39.9);
+    margin: 0 rem(20);
+
+    height: rem(488);
+
+    img {
+      grid-row: 1 / 2;
+      width: 100%;
+    }
+    h2 {
+      grid-row: 3 / 4;
+
+      @include font(600, rem(20), rem(30), $VeryDarkCyan);
+    }
+    p {
+      grid-row: 5 / 6;
+      @include font(400, rem(14), rem(21), $GrayishBlue);
+    }
+  }
+
+  #card1 {
+    grid-row: 1 / 2;
+  }
+  #card2 {
+    grid-row: 3 / 4;
+  }
+  #card3 {
+    grid-row: 5 / 6;
+  }
+  #card4 {
+    grid-row: 7 / 8;
+
+    background: white;
+    box-shadow: rem(0) rem(0) rem(14) rgba(0, 0, 0, 0.0710768);
+    border-radius: rem(15);
+
+    display: grid;
+    justify-items: center;
+    row-gap: rem(24);
+
+    padding: rem(41) rem(12);
+    margin: 0 rem(11.5);
+
+    z-index: 1;
+
+    h2 {
+      @include font(600, rem(18), rem(30), $VeryDarkCyan);
+    }
+    button {
+      width: rem(200);
+      height: rem(40);
+
+      background: $Pink;
+      box-shadow: rem(0) rem(3) rem(7) rgba(0, 37, 46, 0.223053);
+      border-radius: rem(20);
+
+      @include font(700, rem(10), rem(15), white);
+
+      &:hover {
+        background: $pinkHover;
+      }
+    }
+  }
+}

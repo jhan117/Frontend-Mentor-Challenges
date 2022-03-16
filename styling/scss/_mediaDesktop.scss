@@ -1,0 +1,243 @@
+@media only screen and (min-width: 48em) {
+  body {
+    grid-template-rows: auto rem(160) auto auto;
+  }
+
+  header {
+    background: url("../../images/bg-hero-desktop.svg") no-repeat $VeryPaleCyan;
+    background-size: 100% rem(718);
+    background-position: top center;
+
+    justify-content: center;
+    row-gap: rem(61);
+
+    height: rem(721);
+
+    #header {
+      padding: rem(48) rem(80) 0;
+
+      img {
+        height: rem(31);
+      }
+      button {
+        width: rem(200);
+        height: rem(48);
+
+        box-shadow: rem(0) rem(3) rem(11) rgba(0, 0, 0, 0.0954201);
+        border-radius: rem(24);
+
+        font-size: rem(14);
+        line-height: rem(19);
+      }
+    }
+
+    section {
+      text-align: left;
+      justify-items: start;
+      grid-template-rows: initial;
+      row-gap: rem(32);
+
+      padding: 0 rem(824) 0 rem(80);
+
+      position: relative;
+
+      h1 {
+        grid-row: 1 / 2;
+        margin: 0;
+
+        max-width: rem(536);
+
+        font-size: rem(40);
+        line-height: rem(60);
+      }
+      p {
+        grid-row: 2 / 3;
+        margin: 0;
+
+        max-width: rem(520);
+
+        font-size: rem(18);
+        line-height: rem(27);
+      }
+      button {
+        grid-row: 3 / 4;
+
+        width: rem(280);
+        height: rem(56);
+
+        border-radius: rem(28);
+
+        font-size: rem(14);
+        line-height: rem(19);
+      }
+      img {
+        padding: 0;
+        margin: rem(-10);
+
+        max-width: rem(700);
+
+        position: absolute;
+        top: 50%;
+        right: rem(90);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  main {
+    grid-template-rows: auto rem(40) auto rem(40) auto rem(160) auto;
+    justify-content: center;
+
+    #card1,
+    #card2,
+    #card3 {
+      text-align: left;
+
+      grid-template-rows: initial;
+      align-content: center;
+
+      row-gap: rem(16);
+
+      height: rem(440);
+      margin: 0 rem(104);
+
+      position: relative;
+      img {
+        grid-row: initial;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: rem(440);
+      }
+      h2 {
+        grid-row: 1 / 2;
+
+        font-size: rem(28);
+        line-height: rem(42);
+      }
+      p {
+        grid-row: 2 / 3;
+
+        font-size: rem(18);
+        line-height: rem(27);
+      }
+    }
+
+    #card1,
+    #card3 {
+      justify-content: start;
+      justify-items: start;
+      padding: 0 0 0 rem(120);
+
+      img {
+        right: rem(16);
+      }
+    }
+
+    #card1 {
+      p {
+        max-width: rem(488);
+      }
+    }
+    #card2 {
+      justify-content: end;
+      justify-items: start;
+      padding: 0 rem(29) 0 0;
+      p {
+        max-width: rem(499);
+      }
+      img {
+        left: rem(109);
+      }
+    }
+    #card3 {
+      p {
+        max-width: rem(477);
+      }
+    }
+
+    #card4 {
+      row-gap: rem(32);
+      font-size: rem(28);
+      line-height: rem(42);
+
+      padding: rem(54) rem(129.5);
+      margin: 0 rem(320);
+
+      h2 {
+        font-size: rem(32);
+        line-height: rem(60);
+      }
+      button {
+        width: rem(400);
+        height: rem(80);
+
+        box-shadow: rem(0) rem(6) rem(13) rgba(0, 37, 46, 0.223053);
+        border-radius: rem(40);
+
+        font-size: rem(20);
+        line-height: rem(30);
+      }
+    }
+  }
+
+  footer {
+    grid-template:
+      auto rem(32) auto rem(16) auto rem(16) auto / auto rem(130) auto rem(175)
+      auto;
+    justify-content: center;
+
+    margin-top: rem(-96);
+    padding: rem(144) rem(78) rem(64) rem(120);
+
+    svg {
+      width: rem(152);
+      height: rem(24);
+    }
+    #location {
+      p {
+        max-width: rem(339);
+      }
+    }
+    #phone {
+      grid-row: 5 / 6;
+      align-items: center;
+    }
+    #email {
+      grid-row: 7 / 8;
+      align-items: center;
+    }
+    #links {
+      grid-row: 1 / 8;
+      grid-column: 3 / 4;
+      align-content: center;
+      justify-content: space-between;
+      grid-template: auto auto auto / auto auto;
+      row-gap: rem(12);
+
+      width: rem(296);
+
+      .a2 {
+        grid-row: 2 / 3;
+      }
+      .a3 {
+        grid-row: 3 / 4;
+      }
+    }
+    #sns {
+      grid-row: 3 / 7;
+      grid-column: 5 / 6;
+      justify-self: start;
+    }
+    #copyright {
+      grid-row: 7 / 8;
+      grid-column: 5 / 6;
+      justify-self: start;
+
+      font-size: rem(12);
+      line-height: rem(18);
+    }
+  }
+}
