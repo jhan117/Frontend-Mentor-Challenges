@@ -1,0 +1,25 @@
+// font
+@mixin font($s, $l) {
+  font-size: $s;
+  line-height: $l;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+$orange: hsl(22, 88%, 52%);
+$lightOrange: hsl(22, 100%, 69%);
+$darkBlue: hsl(220, 50%, 17%);
+$lightBlue: hsl(221, 23%, 58%);
+$lightCyan: hsl(198, 28%, 93%);
+$white: hsl(0, 0%, 100%);
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap"); // font-family: 'Barlow', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "footer";

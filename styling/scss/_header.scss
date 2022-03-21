@@ -1,0 +1,15 @@
+header {
+  grid-row: 1 / 2;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: rem(23) rem(24) 0;
+
+  button {
+    background: $lightCyan;
+    color: $darkBlue;
+  }
+}
