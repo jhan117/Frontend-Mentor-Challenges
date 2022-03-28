@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site]()
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/typemaster-prelaunch-landing-page-ryxlWmJm9)
+- Live Site URL: [live site](https://jhan117.github.io/Typemaster-pre-launch-landing-page/)
 
 ## My process
 
@@ -49,7 +49,7 @@ Started: 내 생각엔 이거... 초반에 구조를 대강 잡고 큰 틀만 �
 **2022.03.28**  
 Completed: 드.. 드디어 다했다 ㅋㅋㅋㅋ 계속 미루다가... ㅋㅋㅋㅋ 결국 12 columns으로 나눠서 하는게 제일 이쁘더라~
 
-need to be fixed:
+need to be fixed: 왠지 몰라도 배경에 박스가 포함이 안됨 나중에 수정해야지 첫번째 이미지 왼쪽 글자 위치도 쪼매 올리자
 
 ### Built with
 
