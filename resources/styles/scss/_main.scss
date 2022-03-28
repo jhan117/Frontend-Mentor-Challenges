@@ -15,6 +15,7 @@ main {
 
       display: grid;
       row-gap: rem(32);
+
       padding: 0 rem(24);
 
       h1 {
@@ -33,77 +34,58 @@ main {
           background: $orange;
           color: $white;
         }
+        button:hover {
+          background: $lightOrange;
+        }
         p {
           font-weight: 700;
         }
       }
     }
     .image1 {
-      &-m {
-        grid-row: 3 / 4;
+      grid-row: 3 / 4;
 
-        margin-left: rem(24);
-        width: 100%;
-        height: rem(331);
-        object-fit: cover;
+      margin-left: rem(24);
 
-        border-radius: rem(20);
-      }
-      &-t {
-        display: none;
-      }
-      &-d {
-        display: none;
-      }
+      width: 100%;
+      height: rem(331);
+
+      background: url("../../assets/mobile/image-keyboard.jpg") no-repeat left /
+        cover;
+      border-radius: rem(20) 0 0 rem(20);
     }
     .image2-container {
       grid-row: 5 / 6;
 
-      display: grid;
-      grid-template-columns: 1fr 1.7fr;
-      column-gap: rem(2);
+      display: flex;
+      flex-flow: row nowrap;
+      column-gap: rem(24);
 
-      width: 100%;
       height: rem(193);
-      padding-right: rem(24);
+      margin-right: rem(24);
 
-      .image2 {
+      .image2-1-1 {
         width: 100%;
-        margin-left: rem(-22);
 
         background-color: $orange;
-        border-radius: rem(20);
-
-        .m {
-          width: 100%;
-          height: rem(193);
-          object-fit: cover;
-
-          mix-blend-mode: multiply;
-          opacity: 0.75;
-          border-radius: rem(20);
-        }
-        .t {
-          display: none;
-        }
-        .d {
-          display: none;
-        }
+        border-radius: 0 rem(20) rem(20) 0;
       }
-      .image3 {
-        &-m {
-          width: 100%;
-          height: rem(193);
-          object-fit: cover;
+      .image2-1-2 {
+        width: 100%;
+        height: 100%;
 
-          border-radius: rem(20);
-        }
-        &-t {
-          display: none;
-        }
-        &-d {
-          display: none;
-        }
+        background: url("../../assets/mobile/image-phone-and-keyboard.jpg")
+          no-repeat right / cover;
+        mix-blend-mode: multiply;
+        opacity: 0.75;
+        border-radius: 0 rem(20) rem(20) 0;
+      }
+      .image2-2 {
+        width: 205.6%;
+
+        background: url("../../assets/mobile/image-glass-and-keyboard.jpg")
+          no-repeat right / cover;
+        border-radius: rem(20);
       }
     }
     .cont1-section2 {
@@ -130,7 +112,6 @@ main {
 
     padding: 0 rem(24);
 
-    // default
     section {
       display: grid;
       grid-template-rows: auto rem(48) auto rem(24) auto;
@@ -158,10 +139,14 @@ main {
       h3 {
         grid-row: 3 / 4;
         @include font(rem(24), rem(28));
+
+        height: fit-content;
       }
       p {
         grid-row: 5 / 6;
         @include font(rem(16), rem(26));
+
+        height: fit-content;
       }
     }
   }

@@ -1,0 +1,117 @@
+// breakpoint: 640px
+@media only screen and (min-width: 40em) {
+  body {
+    grid-template-rows: auto rem(62) auto rem(142) auto;
+  }
+
+  button {
+    width: rem(175);
+    height: rem(58);
+  }
+
+  header {
+    padding: rem(40) rem(39.5) 0;
+  }
+
+  main {
+    row-gap: rem(142);
+    #content1 {
+      column-gap: rem(69);
+      grid-template: auto rem(40) auto rem(72) auto / 1.181fr 1fr;
+      .cont1-section1 {
+        row-gap: 0;
+        grid-template-rows: auto rem(34) auto rem(39) auto;
+        align-content: center;
+
+        padding: 0;
+        margin: 0 0 0 rem(39.5);
+        max-width: rem(339);
+
+        p {
+          grid-row: 3 / 4;
+        }
+        div {
+          grid-row: 5 / 6;
+          column-gap: rem(37);
+        }
+      }
+      .image1 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+        margin-left: 0;
+
+        height: rem(425);
+
+        background: url("../../assets/tablet/image-keyboard.jpg") no-repeat left /
+          cover;
+      }
+      .image2-container {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+
+        height: rem(320);
+        margin: 0 rem(39.5);
+
+        column-gap: rem(30);
+        .image2-1-1 {
+          border-radius: rem(20);
+        }
+        .image2-1-2 {
+          background: url("../../assets/tablet/image-phone-and-keyboard.jpg")
+            no-repeat right / cover;
+          border-radius: rem(20);
+        }
+        .image2-2 {
+          width: 207.934%;
+
+          background: url("../../assets/tablet/image-glass-and-keyboard.jpg")
+            no-repeat right / cover;
+        }
+      }
+      .cont1-section2 {
+        grid-row: 5 / 6;
+        grid-column: 1 / 3;
+
+        grid-template-columns: repeat(2, auto);
+        column-gap: rem(36);
+        align-items: center;
+
+        padding: 0 rem(39.5);
+
+        text-align: left;
+
+        h2 {
+          padding: 0;
+
+          max-width: rem(255);
+        }
+        p {
+          padding: 0;
+        }
+      }
+    }
+    #content2 {
+      grid-template: auto auto / auto auto;
+      justify-content: left;
+      row-gap: rem(72);
+      column-gap: rem(69);
+
+      padding: 0;
+      margin: 0 0 0 rem(39.5);
+
+      section {
+        grid-template-rows: auto rem(40) auto rem(24) auto;
+        justify-items: left;
+
+        text-align: left;
+
+        max-width: rem(281);
+      }
+    }
+  }
+
+  footer {
+    padding-bottom: rem(43);
+  }
+}
