@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+header,
+main,
+footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+}
+
+@media only screen and (min-width: 40em) {
+  body {
+    -webkit-column-gap: 0.625rem;
+            column-gap: 0.625rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  body {
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
+}

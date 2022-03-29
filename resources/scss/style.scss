@@ -1,0 +1,46 @@
+// font styles
+@mixin fontStyle($s) {
+  @if $s == hxl {
+    font: 700, rem(72) / rem(78);
+    letter-spacing: rem(-1);
+  } @else if $s == hl {
+    font: 700, rem(48) / rem(56);
+    letter-spacing: rem(-0.5);
+  } @else if $s == hm {
+    font: 700, rem(18) / rem(32);
+    letter-spacing: rem(-0.2);
+  } @else if $s == hs {
+    font: 400, rem(16) / rem(26);
+    letter-spacing: rem(2.5);
+  } @else if $s == q {
+    font: 400, rem(20) / rem(35);
+  } @else if $s == b {
+    font: 400, rem(18) / rem(32);
+  } @else {
+    font: 400, rem(15) / rem(32);
+  }
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+$darkBlue: #172339;
+$grey: #49566d;
+$cream: #f3ede7;
+$creamWhite: #faf8f6;
+$purple: #a060ff;
+$magnet: #cb30e3;
+$orange: #ffa84e;
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+
+@import "mediaTablet";
+@import "mediaDesktop";
