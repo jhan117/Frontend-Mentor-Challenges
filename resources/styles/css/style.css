@@ -404,7 +404,7 @@ footer p span {
     -ms-grid-rows: auto 5.1875rem auto 8rem auto;
         grid-template-rows: auto 5.1875rem auto 8rem auto;
     padding: 0 10.3125rem;
-    background: url("/resources/assets/shared/pattern-square.svg") no-repeat, url("/resources/assets/shared/pattern-square.svg") no-repeat;
+    background: url("./resources/assets/shared/pattern-square.svg") no-repeat, url("./resources/assets/shared/pattern-square.svg") no-repeat;
     background-position: top 12.25rem right -7.5rem, top 59.375rem left -7.5rem;
   }
   header {
