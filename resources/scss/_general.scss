@@ -1,12 +1,25 @@
+html {
+  font-family: "Epilogue", sans-serif;
+}
+
 body {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template: repeat(3, auto) / repeat(12, 1fr);
+  row-gap: rem(56);
+
+  padding: rem(24) rem(16);
+
+  background: $creamWhite;
 }
 
 header,
 main,
 footer {
   grid-column: 1 / 13;
+}
+
+button {
+  border-radius: rem(6);
 }
 
 @media only screen and (min-width: 40em) {

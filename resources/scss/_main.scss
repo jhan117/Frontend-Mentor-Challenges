@@ -1,0 +1,53 @@
+main {
+  section {
+    display: grid;
+    grid-template-rows: auto rem(8.32) auto auto rem(32) auto rem(32) auto;
+    img {
+      height: rem(19);
+
+      transform: translateX(rem(154));
+    }
+
+    h1 {
+      &:nth-child(2) {
+        grid-row: 3 / 4;
+      }
+      &:nth-child(3) {
+        grid-row: 4 / 5;
+      }
+
+      @include fontStyle(hl, 38, 44);
+      color: $darkBlue;
+      span {
+        font-weight: 400;
+      }
+    }
+    p {
+      grid-row: 6 / 7;
+
+      margin-bottom: rem(32);
+
+      @include fontStyle(s, 16, 28);
+      color: $grey;
+    }
+    button {
+      grid-row: 8 / 9;
+
+      padding: rem(14.5) rem(31.5);
+
+      width: rem(256);
+
+      @include fontStyle(hxl, 18, 32);
+      color: $creamWhite;
+      background: $darkBlue;
+    }
+    button:hover {
+      background: linear-gradient(
+        135deg,
+        $purple 0%,
+        $magnet 49.21%,
+        $orange 100%
+      );
+    }
+  }
+}

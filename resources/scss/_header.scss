@@ -1,0 +1,20 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    padding: rem(12) rem(16);
+
+    width: rem(184);
+
+    @include fontStyle(hm, 14, 24);
+    color: $darkBlue;
+    border: rem(1) solid $darkBlue;
+  }
+  button:hover {
+    color: $creamWhite;
+    background: $darkBlue;
+  }
+}
