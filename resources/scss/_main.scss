@@ -33,8 +33,6 @@ main {
     p {
       grid-row: 6 / 7;
 
-      margin-bottom: rem(32);
-
       @include fontStyle(s, 16, 28);
       color: $grey;
     }
@@ -131,8 +129,9 @@ main {
       height: rem(40);
     }
 
-    h2, .section-content {
-      margin-bottom: rem(40)
+    h2,
+    .section-content {
+      margin-bottom: rem(40);
     }
 
     h2 {
@@ -147,14 +146,15 @@ main {
     }
 
     .section-content {
+      padding: 0 rem(16);
+
       @include fontStyle(s, 18, 32);
       letter-spacing: rem(0.09);
       color: $cream;
-
-      padding: 0 rem(16);
     }
 
-    h3, .role {
+    h3,
+    .role {
       text-transform: uppercase;
     }
 
