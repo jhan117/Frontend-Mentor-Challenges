@@ -4,7 +4,7 @@ html {
 
 body {
   display: grid;
-  grid-template: repeat(3, auto) / repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
   row-gap: rem(56);
 
   padding: rem(24) rem(16);
@@ -12,20 +12,8 @@ body {
   background: $creamWhite;
 }
 
-header,
-main,
-footer {
-  grid-column: 1 / 13;
-}
-
 button {
   border-radius: rem(6);
-}
-
-@media only screen and (min-width: 40em) {
-  body {
-    column-gap: rem(10);
-  }
 }
 
 @media only screen and (min-width: 64em) {
