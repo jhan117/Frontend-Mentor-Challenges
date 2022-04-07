@@ -67,7 +67,7 @@ main {
 
     background: url("../../assets/image-hero-landscape@2x.webp") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     border-radius: rem(15);
   }
 
@@ -112,18 +112,19 @@ main {
     border-radius: rem(15);
 
     .image-jeremy {
-      width: 100%;
       height: rem(402);
 
       position: absolute;
       top: rem(-181);
+      left: 50%;
+      transform: translateX(-50%);
 
-      background: url("../../assets/image-jeremy-small@2x.webp") no-repeat;
-      background-size: contain;
-      background-position: center;
+      background: url("../../assets/pattern-blur.svg") no-repeat;
+      background-position: center bottom rem(-60);
+      background-size: rem(100);
     }
 
-    img {
+    .image-line2 {
       margin: rem(261) 0 rem(37);
 
       width: fit-content;

@@ -10,11 +10,7 @@ This is a solution to the [Suite landing page challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -27,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./preview.jpg)
 
 ### Links
 
@@ -43,15 +39,9 @@ Users should be able to:
   - SCSS
 - Mobile-first workflow
 
-### What I learned
-
-### Continued development
-
-### Useful resources
+개인적으로 RWD 이게 제일 마음에 든다. RWD는 grid로 12 columns 이용했음.
 
 ## Author
 
 - Frontend Mentor - [@2001Kaye](https://www.frontendmentor.io/profile/jhan117)
 - GitHub - [@2001Kaye](https://github.com/jhan117)
-
-## Acknowledgments

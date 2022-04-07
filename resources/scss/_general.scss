@@ -15,9 +15,3 @@ body {
 button {
   border-radius: rem(6);
 }
-
-@media only screen and (min-width: 64em) {
-  body {
-    column-gap: rem(30);
-  }
-}

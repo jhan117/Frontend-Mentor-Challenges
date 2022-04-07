@@ -11,10 +11,12 @@
   img {
     height: rem(32);
   }
+
   p {
     @include fontStyle(s, 15, 32);
     color: $grey;
   }
+
   .sns {
     display: flex;
     flex-flow: row nowrap;

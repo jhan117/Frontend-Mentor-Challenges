@@ -1,12 +1,13 @@
 @media only screen and (min-width: 40em) {
   body {
-    row-gap: rem(78);
+    row-gap: rem(79);
 
     padding: rem(40) rem(39.5);
   }
 
   header {
     margin: 0;
+    margin-top: rem(-1);
 
     button {
       padding: rem(12) rem(24);
@@ -61,8 +62,7 @@
 
       background: url("../../assets/image-hero-portrait@2x.webp") no-repeat;
       background-size: cover;
-      background-position: center;
-      border-radius: rem(15);
+      background-position: center bottom;
     }
 
     footer {
@@ -82,12 +82,14 @@
 
       height: rem(684);
 
+      .image-jeremy {
+        background-size: rem(300);
+      }
+
       .section-content {
-        padding: 0;
+        padding: 0 rem(58);
         margin-left: auto;
         margin-right: auto;
-
-        max-width: rem(573);
       }
     }
   }
@@ -98,7 +100,7 @@
     justify-content: space-between;
     align-items: center;
 
-    margin: rem(-6) rem(-39.5) rem(32);
+    margin: rem(-7) rem(-39.5) rem(32);
 
     img {
       margin-left: rem(39.5);
