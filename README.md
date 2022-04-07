@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site]()
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/suite-landing-page-using-grid-12-columns-BJS4UEnX9)
+- Live Site URL: [live site](https://jhan117.github.io/Suite-landing-page/)
 
 ## My process
 
@@ -40,6 +40,8 @@ Users should be able to:
 - Mobile-first workflow
 
 개인적으로 RWD 이게 제일 마음에 든다. RWD는 grid로 12 columns 이용했음.
+---
+로고 크기 줄이고, header 버튼 색깔 조정해야 함.
 
 ## Author
 
