@@ -39,8 +39,8 @@ Users should be able to:
   - SCSS
 - Mobile-first workflow
 
-개인적으로 RWD 이게 제일 마음에 든다. RWD는 grid로 12 columns 이용했음.   
-로고 크기 줄이고, header 버튼 색깔 조정해야 함.
+개인적으로 RWD 이게 제일 마음에 든다. RWD는 grid로 12 columns 이용했음.  
+~~로고 크기 줄이고, header 버튼 색깔 조정해야 함.~~
 
 ## Author
 

@@ -32,7 +32,7 @@ header {
 }
 
 header img {
-  height: 2rem;
+  height: 1.5625rem;
 }
 
 header button {
@@ -44,6 +44,7 @@ header button {
   line-height: 1.5rem;
   color: #172339;
   border: 0.0625rem solid #172339;
+  background: inherit;
 }
 
 header button:hover {
@@ -270,7 +271,7 @@ main article .role {
 }
 
 #footer img {
-  height: 2rem;
+  height: 1.5625rem;
 }
 
 #footer p {
