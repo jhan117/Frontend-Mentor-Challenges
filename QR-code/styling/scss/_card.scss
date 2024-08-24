@@ -1,0 +1,63 @@
+.card {
+    // fixed size
+    width: rem(320);
+    height: rem(497);
+
+    // card padding
+    padding: rem(16) rem(16) rem(40);
+
+    // card background
+    background-color: $white;
+    box-shadow: 0 rem(25) rem(25) rgba(0, 0, 0, 0.0476518);
+    border-radius: rem(20);
+
+    // make flex
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+
+    // image
+    img {
+        // fixed size
+        width: rem(288);
+        height: rem(288);
+
+        // shape
+        border-radius: rem(10);
+    }
+
+    // content
+    .content {
+        // fixed size
+        width: rem(288);
+        height: rem(129);
+
+        // make flex
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+        align-items: center;
+
+        // set text align
+        text-align: center;
+
+        // header
+        h1 {
+            // fixed size
+            height: rem(56);
+
+            // font
+            @include font (700, rem(22), rem(28), $darkBlue);
+        }
+
+        // detail
+        p {
+            // fixed size
+            width: rem(256);
+            height: rem(57);
+
+            // font
+            @include font (400, rem(15), rem(19), $grayishBlue);
+        }
+    }
+}

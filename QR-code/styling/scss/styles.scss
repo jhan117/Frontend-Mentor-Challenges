@@ -1,0 +1,25 @@
+// Colors
+$white: hsl(0, 0%, 100%);
+$lightGray: hsl(212, 45%, 89%);
+$grayishBlue: hsl(220, 15%, 55%);
+$darkBlue: hsl(218, 44%, 22%);
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+// font-family: 'Outfit', sans-serif;
+
+// font
+@mixin font ($w, $s, $l, $c) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+    color: $c;
+}
+
+// px to rem
+@function rem ($px) {
+    $remValue : ($px / 16) + rem;
+    @return $remValue;
+}
+
+@import 'general';
+@import 'card';
