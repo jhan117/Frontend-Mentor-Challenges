@@ -1,0 +1,30 @@
+body {
+  display: grid;
+  grid-template-rows: auto rem(64) auto rem(96) auto;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: $darkBlue;
+}
+
+button {
+  font-weight: 700;
+  @include font(rem(16), rem(26));
+  text-transform: uppercase;
+
+  width: rem(150);
+  height: rem(48);
+
+  border: none;
+  cursor: pointer;
+  border-radius: rem(8);
+}
+
+p {
+  font-weight: 500;
+  color: $lightBlue;
+}

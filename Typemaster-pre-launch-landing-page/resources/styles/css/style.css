@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 4rem auto 6rem auto;
+      grid-template-rows: auto 4rem auto 6rem auto;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #162441;
+}
+
+button {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  width: 9.375rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+p {
+  font-weight: 500;
+  color: #7b8bad;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.4375rem 1.5rem 0;
+}
+
+header button {
+  background: #e8eff2;
+  color: #162441;
+}
+
+header button:hover {
+  background: #162441;
+  color: white;
+}
+
+main {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 6.9375rem;
+}
+
+main #content1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 4rem auto 1.5rem auto 4.6875rem auto;
+      grid-template-rows: auto 4rem auto 1.5rem auto 4.6875rem auto;
+  overflow: hidden;
+}
+
+main #content1 .cont1-section1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+main #content1 .cont1-section1 h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+main #content1 .cont1-section1 p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+main #content1 .cont1-section1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+main #content1 .cont1-section1 div button {
+  background: #f06819;
+  color: white;
+}
+
+main #content1 .cont1-section1 div button:hover {
+  background: #ff9b61;
+}
+
+main #content1 .cont1-section1 div p {
+  font-weight: 700;
+}
+
+main #content1 .image1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  margin-left: 1.5rem;
+  width: 100%;
+  height: 20.6875rem;
+  background: url("../../assets/mobile/image-keyboard.jpg") no-repeat left/cover;
+  border-radius: 1.25rem 0 0 1.25rem;
+}
+
+main #content1 .image2-container {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  height: 12.0625rem;
+  margin-right: 1.5rem;
+}
+
+main #content1 .image2-container .image2-1-1 {
+  width: 100%;
+  background-color: #f06819;
+  border-radius: 0 1.25rem 1.25rem 0;
+}
+
+main #content1 .image2-container .image2-1-2 {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/mobile/image-phone-and-keyboard.jpg") no-repeat right/cover;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  border-radius: 0 1.25rem 1.25rem 0;
+}
+
+main #content1 .image2-container .image2-2 {
+  width: 205.6%;
+  background: url("../../assets/mobile/image-glass-and-keyboard.jpg") no-repeat right/cover;
+  border-radius: 1.25rem;
+}
+
+main #content1 .cont1-section2 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7 / 8;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
+  text-align: center;
+}
+
+main #content1 .cont1-section2 h2 {
+  padding: 0 3.75rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+main #content1 .cont1-section2 p {
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+main #content2 {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 4rem;
+  padding: 0 1.5rem;
+}
+
+main #content2 section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 3rem auto 1.5rem auto;
+      grid-template-rows: auto 3rem auto 1.5rem auto;
+  justify-items: center;
+  text-align: center;
+}
+
+main #content2 section .icon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  background: #f06819;
+  border-radius: 1rem;
+  position: relative;
+}
+
+main #content2 section .icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #content2 section h3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main #content2 section p {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+  padding-bottom: 3.125rem;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+footer p span {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 40em) {
+  body {
+    -ms-grid-rows: auto 3.875rem auto 8.875rem auto;
+        grid-template-rows: auto 3.875rem auto 8.875rem auto;
+  }
+  button {
+    width: 10.9375rem;
+    height: 3.625rem;
+  }
+  header {
+    padding: 2.5rem 2.46875rem 0;
+  }
+  main {
+    row-gap: 8.875rem;
+  }
+  main #content1 {
+    -webkit-column-gap: 4.3125rem;
+            column-gap: 4.3125rem;
+    -ms-grid-rows: auto 2.5rem auto 4.5rem auto;
+    -ms-grid-columns: 1.181fr 1fr;
+        grid-template: auto 2.5rem auto 4.5rem auto/1.181fr 1fr;
+  }
+  main #content1 .cont1-section1 {
+    row-gap: 0;
+    -ms-grid-rows: auto 2.125rem auto 2.4375rem auto;
+        grid-template-rows: auto 2.125rem auto 2.4375rem auto;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+    margin: 0 0 0 2.46875rem;
+    max-width: 21.1875rem;
+  }
+  main #content1 .cont1-section1 p {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  main #content1 .cont1-section1 div {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+    -webkit-column-gap: 2.3125rem;
+            column-gap: 2.3125rem;
+  }
+  main #content1 .image1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    margin-left: 0;
+    height: 26.5625rem;
+    background: url("../../assets/tablet/image-keyboard.jpg") no-repeat left/cover;
+  }
+  main #content1 .image2-container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    height: 20rem;
+    margin: 0 2.46875rem;
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
+  main #content1 .image2-container .image2-1-1 {
+    border-radius: 1.25rem;
+  }
+  main #content1 .image2-container .image2-1-2 {
+    background: url("../../assets/tablet/image-phone-and-keyboard.jpg") no-repeat right/cover;
+    border-radius: 1.25rem;
+  }
+  main #content1 .image2-container .image2-2 {
+    width: 207.934%;
+    background: url("../../assets/tablet/image-glass-and-keyboard.jpg") no-repeat right/cover;
+  }
+  main #content1 .cont1-section2 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 2.25rem;
+            column-gap: 2.25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2.46875rem;
+    text-align: left;
+  }
+  main #content1 .cont1-section2 h2 {
+    padding: 0;
+    max-width: 15.9375rem;
+  }
+  main #content1 .cont1-section2 p {
+    padding: 0;
+  }
+  main #content2 {
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template: auto auto / auto auto;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    row-gap: 4.5rem;
+    -webkit-column-gap: 4.3125rem;
+            column-gap: 4.3125rem;
+    padding: 0;
+    margin: 0 0 0 2.46875rem;
+  }
+  main #content2 section {
+    -ms-grid-rows: auto 2.5rem auto 1.5rem auto;
+        grid-template-rows: auto 2.5rem auto 1.5rem auto;
+    justify-items: left;
+    text-align: left;
+    max-width: 17.5625rem;
+  }
+  footer {
+    padding-bottom: 2.6875rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  body {
+    -ms-grid-rows: auto 5.1875rem auto 8rem auto;
+        grid-template-rows: auto 5.1875rem auto 8rem auto;
+    padding: 0 10.3125rem;
+    background: url("./resources/assets/shared/pattern-square.svg") no-repeat, url("./resources/assets/shared/pattern-square.svg") no-repeat;
+    background-position: top 12.25rem right -7.5rem, top 59.375rem left -7.5rem;
+  }
+  header {
+    padding: 0;
+    margin: 3.4375rem 0 0;
+  }
+  main {
+    row-gap: 10.5rem;
+  }
+  main #content1 {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (30rem)[2];
+        grid-template-rows: repeat(2, 30rem);
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+    row-gap: 1.875rem;
+    margin: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #content1 .cont1-section1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
+    -ms-grid-rows: auto 1.5rem auto 2.5rem auto;
+        grid-template-rows: auto 1.5rem auto 2.5rem auto;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0;
+    max-width: 27.8125rem;
+  }
+  main #content1 .cont1-section1 h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  main #content1 .cont1-section1 > p {
+    font-size: 1.125rem;
+  }
+  main #content1 .cont1-section1 div {
+    -webkit-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+  }
+  main #content1 .image1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7 / 13;
+    height: 30rem;
+    background: url("../../assets/desktop/image-keyboard.jpg") no-repeat left/cover;
+    border-radius: 1.25rem;
+  }
+  main #content1 .image2-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1 / 9;
+    height: 30rem;
+    margin: 0;
+  }
+  main #content1 .image2-container .image2-1-2 {
+    background: url("../../assets/desktop/image-phone-and-keyboard.jpg") no-repeat right/cover;
+  }
+  main #content1 .image2-container .image2-2 {
+    width: 166%;
+    background: url("../../assets/desktop/image-glass-and-keyboard.jpg") no-repeat right/cover;
+  }
+  main #content1 .cont1-section2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/ 3;
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
+    grid-column: 10 / 13;
+    -ms-grid-columns: initial;
+        grid-template-columns: initial;
+    row-gap: 1.6875rem;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+    max-width: 15.9375rem;
+  }
+  main #content1 .cont1-section2 h2 {
+    margin: 0;
+  }
+  main #content2 {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    row-gap: 0;
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+    margin: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #content2 section {
+    -ms-grid-rows: auto 3rem auto 1.5rem auto;
+        grid-template-rows: auto 3rem auto 1.5rem auto;
+    justify-items: left;
+    text-align: left;
+    max-width: 15.9375rem;
+  }
+  main #content2 .section1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
+  main #content2 .section2 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4 / 7;
+  }
+  main #content2 .section3 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7 / 10;
+  }
+  main #content2 .section4 {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
+    grid-column: 10 / 13;
+  }
+  footer {
+    padding-bottom: 0;
+    margin-bottom: 2.4375rem;
+  }
+}

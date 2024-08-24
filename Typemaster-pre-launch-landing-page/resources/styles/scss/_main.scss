@@ -1,0 +1,153 @@
+main {
+  grid-row: 3 / 4;
+
+  display: grid;
+  row-gap: rem(111);
+
+  #content1 {
+    display: grid;
+    grid-template-rows: auto rem(64) auto rem(24) auto rem(75) auto;
+
+    overflow: hidden;
+
+    .cont1-section1 {
+      grid-row: 1 / 2;
+
+      display: grid;
+      row-gap: rem(32);
+
+      padding: 0 rem(24);
+
+      h1 {
+        @include font(rem(48), rem(48));
+      }
+      p {
+        @include font(rem(16), rem(26));
+      }
+      div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        column-gap: rem(32);
+
+        button {
+          background: $orange;
+          color: $white;
+        }
+        button:hover {
+          background: $lightOrange;
+        }
+        p {
+          font-weight: 700;
+        }
+      }
+    }
+    .image1 {
+      grid-row: 3 / 4;
+
+      margin-left: rem(24);
+
+      width: 100%;
+      height: rem(331);
+
+      background: url("../../assets/mobile/image-keyboard.jpg") no-repeat left /
+        cover;
+      border-radius: rem(20) 0 0 rem(20);
+    }
+    .image2-container {
+      grid-row: 5 / 6;
+
+      display: flex;
+      flex-flow: row nowrap;
+      column-gap: rem(24);
+
+      height: rem(193);
+      margin-right: rem(24);
+
+      .image2-1-1 {
+        width: 100%;
+
+        background-color: $orange;
+        border-radius: 0 rem(20) rem(20) 0;
+      }
+      .image2-1-2 {
+        width: 100%;
+        height: 100%;
+
+        background: url("../../assets/mobile/image-phone-and-keyboard.jpg")
+          no-repeat right / cover;
+        mix-blend-mode: multiply;
+        opacity: 0.75;
+        border-radius: 0 rem(20) rem(20) 0;
+      }
+      .image2-2 {
+        width: 205.6%;
+
+        background: url("../../assets/mobile/image-glass-and-keyboard.jpg")
+          no-repeat right / cover;
+        border-radius: rem(20);
+      }
+    }
+    .cont1-section2 {
+      grid-row: 7 / 8;
+
+      display: grid;
+      row-gap: rem(24);
+
+      text-align: center;
+
+      h2 {
+        padding: 0 rem(60);
+        @include font(rem(32), rem(36));
+      }
+      p {
+        padding: 0 rem(24);
+        @include font(rem(16), rem(26));
+      }
+    }
+  }
+  #content2 {
+    display: grid;
+    row-gap: rem(64);
+
+    padding: 0 rem(24);
+
+    section {
+      display: grid;
+      grid-template-rows: auto rem(48) auto rem(24) auto;
+      justify-items: center;
+
+      text-align: center;
+
+      .icon {
+        grid-row: 1 / 2;
+
+        width: rem(65);
+        height: rem(65);
+
+        background: $orange;
+        border-radius: rem(16);
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      h3 {
+        grid-row: 3 / 4;
+        @include font(rem(24), rem(28));
+
+        height: fit-content;
+      }
+      p {
+        grid-row: 5 / 6;
+        @include font(rem(16), rem(26));
+
+        height: fit-content;
+      }
+    }
+  }
+}
