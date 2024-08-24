@@ -1,0 +1,110 @@
+// breakpoint 600px
+@media only screen and (min-width: 37.5em) {
+  // _general.scss
+  body {
+    background: url("../../assets/bg-pattern-1.svg") no-repeat,
+      url("../../assets/bg-main-tablet.png") no-repeat;
+    background-position: top rem(-32) right rem(-35.67), rem(-400) rem(-230);
+    background-size: rem(266.67) rem(400), auto;
+  }
+
+  // _content.scss
+  #main-content {
+    // background
+    background-position: rem(39.15) rem(61.99);
+
+    // set padding
+    padding: rem(189) rem(209) rem(249) rem(39);
+    gap: rem(28);
+
+    // heading
+    h1 {
+      // font
+      font-size: rem(64);
+      line-height: rem(64);
+      letter-spacing: rem(-0.73);
+    }
+
+    // paragraph
+    p {
+      // font
+      font-size: rem(18);
+      line-height: rem(28);
+
+      // for content line
+      max-width: rem(514);
+    }
+  }
+
+  // _design.scss
+  #designs {
+    // set margin
+    margin: 0 rem(39) 0 rem(33);
+
+    // background image
+    background-position: rem(229) rem(-31);
+
+    // phone
+    .phone {
+      max-height: rem(556);
+
+      // set position
+      top: rem(-138);
+      left: rem(64);
+      transform: none;
+    }
+
+    // premium card
+    .premium-card {
+      max-width: rem(399);
+
+      // set position
+      top: rem(150);
+      right: rem(58);
+
+      // content
+      .card-content {
+        // set padding
+        padding: rem(48) rem(48) rem(18) rem(49);
+      }
+
+      // cost
+      .cost {
+        // set padding
+        padding: rem(18) rem(80) rem(16) rem(54);
+      }
+
+      // buttons
+      .download-btns {
+        // set padding
+        padding: rem(16) rem(49) rem(48) rem(54);
+      }
+    }
+  }
+
+  // footer
+  footer {
+    // background
+    background-position: rem(34.15) rem(182.99);
+
+    // set padding
+    padding: rem(247) rem(39) rem(85) rem(33);
+
+    // for align of content and sns
+    row-gap: 0;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+
+    // content
+    .footer-content {
+      p {
+        // for line
+        max-width: rem(366);
+
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+}

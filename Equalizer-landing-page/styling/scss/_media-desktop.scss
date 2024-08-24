@@ -1,0 +1,111 @@
+// breakpoint 1024px
+@media only screen and (min-width: 64em) {
+  // _general.scss
+  body {
+    background: url("../../assets/bg-pattern-1.svg") no-repeat,
+      url("../../assets/bg-main-desktop.png") no-repeat;
+    background-position: top rem(-40) right, rem(-280) rem(-280);
+    background-size: auto, auto;
+  }
+
+  // _content.scss
+  #main-content {
+    // background
+    background-position: rem(166.15) rem(61.99);
+
+    // set padding
+    padding: rem(221) rem(260) rem(321) rem(164.5);
+    gap: rem(28);
+
+    // for align of main content
+    gap: rem(40);
+
+    // heading
+    h1 {
+      // font
+      font-size: rem(88);
+      line-height: rem(88);
+      letter-spacing: rem(-1);
+    }
+
+    // paragraph
+    p {
+      // font
+      font-size: rem(20);
+      line-height: rem(34);
+
+      // for content line
+      max-width: rem(825);
+    }
+  }
+
+  // _design.scss
+  #designs {
+    // set margin
+    margin: 0 rem(165);
+
+    // background image
+    background-size: auto;
+    background-position: rem(336) rem(-40);
+
+    // phone
+    .phone {
+      max-height: rem(642);
+
+      // set position
+      top: rem(-213);
+      left: rem(102);
+    }
+
+    // premium card
+    .premium-card {
+      max-width: rem(446);
+
+      // set position
+      top: rem(90);
+      right: rem(95);
+
+      // content
+      .card-content {
+        // set padding
+        padding: rem(58) rem(59) rem(19.5) rem(54);
+
+        // for align of card content
+        gap: rem(22);
+        
+        // heading
+        h2 {
+          font-size: rem(40);
+          line-height: rem(52);
+        }
+
+        // paragraph
+        p {
+          font-size: rem(20);
+          line-height: rem(34);
+        }
+      }
+
+      // cost
+      .cost {
+        // set padding
+        padding: rem(19.5) rem(227) rem(23) rem(54);
+      }
+
+      // buttons
+      .download-btns {
+        // set padding
+        padding: rem(23) rem(59) rem(48) rem(54);
+      }
+    }
+  }
+
+  // footer
+  footer {
+    // background
+    background-position: rem(166.15) rem(201.99);
+
+    // set padding
+    padding: rem(202) rem(165) rem(91) rem(450);
+  }
+}

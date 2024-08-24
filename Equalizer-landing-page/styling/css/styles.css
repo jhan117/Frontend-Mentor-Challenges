@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+html {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../assets/bg-main-mobile.png") no-repeat;
+  background-position: 1.25rem -14.0625rem;
+}
+
+#main-content {
+  background: url("../../assets/logo.svg") no-repeat;
+  background-size: 9.13063rem 2rem;
+  background-position: 1.50937rem 2.49938rem;
+}
+
+#main-content h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #191826;
+  letter-spacing: -0.02813rem;
+}
+
+#main-content p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #191826;
+}
+
+#designs {
+  position: relative;
+  height: 37.5rem;
+  background: url("../../assets/bg-pattern-2.svg") no-repeat;
+  background-size: 17.5rem 26.25rem;
+  background-position: top center;
+  background-color: #191826;
+  border-radius: 0.75rem;
+}
+
+#designs .premium-card {
+  background-color: #fa7352;
+  border-radius: 0.75rem;
+}
+
+#designs .premium-card .card-content h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #fcf9f8;
+}
+
+#designs .premium-card .card-content p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #fcf9f8;
+}
+
+#designs .premium-card .cost {
+  font-weight: 700;
+  font-size: 4.0625rem;
+  line-height: 3.25rem;
+  color: #fcf9f8;
+}
+
+#designs .premium-card .cost span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #fcf9f8;
+  letter-spacing: -0.0125rem;
+}
+
+#designs .premium-card .download-btns a {
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #fcf9f8;
+  letter-spacing: -0.01125rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+#designs .premium-card .download-btns a img {
+  height: 1.25rem;
+}
+
+#designs .premium-card .download-btns .ios {
+  background-color: #191826;
+}
+
+#designs .premium-card .download-btns .ios img {
+  width: 1.1125rem;
+}
+
+#designs .premium-card .download-btns .ios:hover {
+  background-color: #65e2db;
+}
+
+#designs .premium-card .download-btns .android {
+  background-color: #fcf9f8;
+  color: #191826;
+}
+
+#designs .premium-card .download-btns .android img {
+  width: 1.04375rem;
+}
+
+#designs .premium-card .download-btns .android:hover {
+  background-color: #ffba66;
+}
+
+footer {
+  background: url("../../assets/logo.svg") no-repeat;
+  background-size: 9.13063rem 2rem;
+  background-position: 1.57187rem 24.37438rem;
+}
+
+footer .footer-content p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #191826;
+}
+
+footer .footer-content p span {
+  display: block;
+  font-weight: 700;
+}
+
+footer .sns svg:hover path {
+  fill: #fa7352;
+}
+
+#main-content {
+  padding: 8.5rem 1.5rem 10.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1.25rem;
+}
+
+#designs .phone {
+  width: 100%;
+  width: auto;
+  max-height: 26.875rem;
+  position: absolute;
+  top: -6.125rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#designs .premium-card {
+  position: absolute;
+  top: 23.75rem;
+  right: 0;
+}
+
+#designs .premium-card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 0.75rem;
+  padding: 3rem 2.3125rem 1.125rem 2.25rem;
+}
+
+#designs .premium-card .cost {
+  padding: 1.125rem 10.5rem 1rem 2.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#designs .premium-card .download-btns {
+  padding: 1rem 2.3125rem 3rem 2.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+#designs .premium-card .download-btns a {
+  padding: 0.9375rem 0 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0.4875rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#designs .premium-card .download-btns .ios {
+  gap: 0.495rem;
+}
+
+footer {
+  padding: 28.375rem 1.5rem 5rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 4rem;
+}
+
+footer .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  body {
+    background: url("../../assets/bg-pattern-1.svg") no-repeat, url("../../assets/bg-main-tablet.png") no-repeat;
+    background-position: top -2rem right -2.22938rem, -25rem -14.375rem;
+    background-size: 16.66688rem 25rem, auto;
+  }
+  #main-content {
+    background-position: 2.44687rem 3.87438rem;
+    padding: 11.8125rem 13.0625rem 15.5625rem 2.4375rem;
+    gap: 1.75rem;
+  }
+  #main-content h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.04562rem;
+  }
+  #main-content p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    max-width: 32.125rem;
+  }
+  #designs {
+    margin: 0 2.4375rem 0 2.0625rem;
+    background-position: 14.3125rem -1.9375rem;
+  }
+  #designs .phone {
+    max-height: 34.75rem;
+    top: -8.625rem;
+    left: 4rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+  #designs .premium-card {
+    max-width: 24.9375rem;
+    top: 9.375rem;
+    right: 3.625rem;
+  }
+  #designs .premium-card .card-content {
+    padding: 3rem 3rem 1.125rem 3.0625rem;
+  }
+  #designs .premium-card .cost {
+    padding: 1.125rem 5rem 1rem 3.375rem;
+  }
+  #designs .premium-card .download-btns {
+    padding: 1rem 3.0625rem 3rem 3.375rem;
+  }
+  footer {
+    background-position: 2.13437rem 11.43688rem;
+    padding: 15.4375rem 2.4375rem 5.3125rem 2.0625rem;
+    row-gap: 0;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-content p {
+    max-width: 22.875rem;
+  }
+  footer .footer-content p span {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  body {
+    background: url("../../assets/bg-pattern-1.svg") no-repeat, url("../../assets/bg-main-desktop.png") no-repeat;
+    background-position: top -2.5rem right, -17.5rem -17.5rem;
+    background-size: auto, auto;
+  }
+  #main-content {
+    background-position: 10.38438rem 3.87438rem;
+    padding: 13.8125rem 16.25rem 20.0625rem 10.28125rem;
+    gap: 1.75rem;
+    gap: 2.5rem;
+  }
+  #main-content h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.0625rem;
+  }
+  #main-content p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    max-width: 51.5625rem;
+  }
+  #designs {
+    margin: 0 10.3125rem;
+    background-size: auto;
+    background-position: 21rem -2.5rem;
+  }
+  #designs .phone {
+    max-height: 40.125rem;
+    top: -13.3125rem;
+    left: 6.375rem;
+  }
+  #designs .premium-card {
+    max-width: 27.875rem;
+    top: 5.625rem;
+    right: 5.9375rem;
+  }
+  #designs .premium-card .card-content {
+    padding: 3.625rem 3.6875rem 1.21875rem 3.375rem;
+    gap: 1.375rem;
+  }
+  #designs .premium-card .card-content h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+  #designs .premium-card .card-content p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+  #designs .premium-card .cost {
+    padding: 1.21875rem 14.1875rem 1.4375rem 3.375rem;
+  }
+  #designs .premium-card .download-btns {
+    padding: 1.4375rem 3.6875rem 3rem 3.375rem;
+  }
+  footer {
+    background-position: 10.38438rem 12.62438rem;
+    padding: 12.625rem 10.3125rem 5.6875rem 28.125rem;
+  }
+}
