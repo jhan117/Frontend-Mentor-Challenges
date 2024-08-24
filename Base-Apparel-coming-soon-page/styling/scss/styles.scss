@@ -1,0 +1,27 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// Primary
+$detail: hsl(0, 36%, 70%);
+$SoftRed: hsl(0, 93%, 68%);
+
+// Neutral
+$heading: hsl(0, 6%, 24%);
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"); // font-family: 'Josefin Sans', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "mediaDesktop";

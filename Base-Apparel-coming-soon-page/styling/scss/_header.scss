@@ -1,0 +1,14 @@
+header {
+  height: fit-content;
+
+  // mobile image
+  .m-image {
+    display: block;
+    margin: rem(84) 0 rem(64);
+  }
+
+  // desktop image
+  .d-image {
+    display: none;
+  }
+}
