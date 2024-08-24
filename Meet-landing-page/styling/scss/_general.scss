@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+
+  // reset
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+html {
+  // font
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  // full screen
+  width: 100%;
+  min-height: 100vh;
+
+  // logo, images and color
+  background: url("../../assets/logo.svg") no-repeat, url("../../assets/tablet/image-hero.png") no-repeat;
+  background-position: center top rem(48), center top rem(130);
+  background-size: auto, rem(414) rem(153);
+  background-color: $white;
+}

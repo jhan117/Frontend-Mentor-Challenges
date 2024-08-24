@@ -1,0 +1,113 @@
+// body
+body {
+  // layout
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+// header
+header {
+  // layout
+  display: grid;
+  row-gap: rem(16);
+  justify-items: center;
+
+  // position
+  margin: rem(331) rem(24) rem(64);
+
+  // heading
+  h1 {
+    // position
+    margin-bottom: rem(4);
+  }
+
+  // paragraph
+  p {
+    // position
+    margin-top: rem(4);
+    margin-bottom: rem(8);
+  }
+
+  // download button
+  .download {
+    // position
+    margin-top: rem(8);
+    padding: rem(16) 0;
+  }
+
+  // what is it button
+  .what {
+    // position
+    margin-top: 0;
+    padding: rem(16) 0;
+  }
+}
+
+// main
+main {
+  // layout
+  display: flex;
+  flex-flow: column nowrap;
+  gap: rem(24);
+  align-items: center;
+
+  // position
+  margin: rem(64) rem(24) rem(64);
+
+  // image container
+  .images {
+    // layout
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: rem(24);
+    column-gap: rem(25);
+
+    // position
+    margin-bottom: rem(20);
+  }
+
+  // heading 2
+  h2 {
+    // position
+    margin-top: rem(20);
+  }
+
+  // heading 1
+  h1 {
+    // position
+    margin-bottom: rem(4);
+  }
+
+  // paragraph
+  p {
+    // position
+    margin-top: rem(4);
+  }
+}
+
+// footer
+footer {
+  // layout
+  display: grid;
+  row-gap: rem(24);
+  justify-items: center;
+
+  // position
+  margin-top: rem(112);
+  padding: rem(92) rem(24) rem(72);
+
+  // paragraph
+  p {
+    // position
+    margin-bottom: rem(4);
+  }
+
+  // button
+  a {
+    // position
+    margin-top: rem(4);
+    padding: rem(16) 0;
+  }
+}

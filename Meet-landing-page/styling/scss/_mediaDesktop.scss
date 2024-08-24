@@ -1,0 +1,135 @@
+// breakpoint: 960px
+@media only screen and (min-width: 69.375em) {
+  // _general.scss
+  body {
+    // logo, images
+    background: url("../../assets/logo.svg") no-repeat,
+      url("../../assets/desktop/image-hero-left.png") no-repeat,
+      url("../../assets/desktop/image-hero-right.png") no-repeat;
+    background-position: center top rem(80), rem(-32) rem(169),
+      right rem(-32) top rem(224);
+    background-size: auto, auto, auto;
+  }
+
+  // _header.scss
+  header {
+    // layout
+    row-gap: rem(32);
+
+    // position
+    margin: rem(216) rem(497.5) rem(117);
+
+    // heading
+    h1 {
+      // text
+      font-size: rem(64);
+      line-height: rem(64);
+
+      // position
+      margin-bottom: rem(1);
+    }
+
+    // paragraph
+    p {
+      // text
+      font-size: rem(18);
+
+      // position
+      margin-top: rem(1);
+      margin-bottom: 0;
+    }
+
+    // download button
+    .download {
+      // position
+      margin-top: 0;
+    }
+  }
+
+  // _main.scss
+  main {
+    // position
+    margin: rem(64) rem(165) rem(72);
+
+    .images {
+      // position
+      margin-bottom: rem(32);
+
+      // layout
+      row-gap: rem(29);
+      column-gap: rem(30);
+
+      // all images
+      img {
+        // max size
+        max-width: rem(255);
+        max-height: rem(242);
+      }
+    }
+
+    // heading 2
+    h2 {
+      // position
+      margin-top: rem(32);
+    }
+
+    p {
+      // text
+      font-size: rem(18);
+
+      // max size
+      max-width: rem(540);
+    }
+  }
+
+  // _footer.scss
+  footer {
+    // fixed height
+    height: rem(308);
+
+    // all text
+    text-align: left;
+
+    // layout
+    grid-template-columns: repeat(3, auto);
+    column-gap: rem(92);
+    align-items: center;
+    align-content: center;
+
+    // position
+    padding: rem(116) rem(165) rem(104);
+
+    .footer-image {
+      height: rem(308);
+
+      // background
+      background: url("../../assets/desktop/image-footer.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    // heading 1
+    h1 {
+      // max size
+      max-width: rem(350);
+
+      // position
+      margin-right: rem(33);
+    }
+
+    p {
+      // max size
+      max-width: rem(350);
+
+      // position
+      margin-bottom: 0;
+    }
+
+    a {
+      // text
+      text-align: center;
+
+      // position
+      margin-top: 0;
+    }
+  }
+}

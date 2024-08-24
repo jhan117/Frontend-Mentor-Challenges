@@ -1,0 +1,139 @@
+// breakpoint: 500px
+@media only screen and (min-width: 31.25em) {
+  // _general.scss
+  body {
+    // logo, images
+    background-position: center top rem(48), center top rem(140);
+    background-size: auto, rem(820) rem(303);
+  }
+
+  // _header.scss
+  header {
+    // layout
+    row-gap: rem(24);
+    column-gap: rem(16);
+
+    // position
+    margin: rem(515) rem(155.5) rem(80);
+
+    // heading
+    h1 {
+      // text
+      font-size: rem(48);
+      line-height: rem(48);
+
+      // position
+      margin-bottom: 0;
+
+      // layout
+      grid-column: 1 / 3;
+    }
+
+    // paragraph
+    p {
+      // position
+      margin-top: 0;
+      margin-bottom: rem(4);
+
+      // layout
+      grid-column: 1 / 3;
+    }
+
+    // download button
+    .download {
+      // position
+      margin-top: rem(4);
+      margin-left: rem(54.5);
+
+      // layout
+      grid-column: 1 / 2;
+    }
+
+    // what is it button
+    .what {
+      // position
+      margin-left: 0;
+      margin-right: rem(54.5);
+
+      // layout
+      grid-column: 2 / 3;
+    }
+  }
+
+  // _main.scss
+  main {
+    // layout
+    gap: rem(16);
+
+    // position
+    margin: rem(67) rem(39.5) rem(80);
+
+    .images {
+      // position
+      margin-bottom: rem(16);
+
+      // layout
+      row-gap: rem(10);
+      column-gap: rem(11);
+
+      // all images
+      img {
+        // max size
+        max-width: rem(164);
+        max-height: rem(156);
+      }
+    }
+
+    // heading 2
+    h2 {
+      // position
+      margin-top: rem(16);
+    }
+
+    // heading 1
+    h1 {
+      // text
+      font-size: rem(40);
+      line-height: rem(44);
+
+      // max size
+      max-width: rem(445);
+
+      // position
+      margin-bottom: rem(8);
+    }
+
+    p {
+      // max size
+      max-width: rem(573);
+
+      // position
+      margin-top: rem(8);
+    }
+  }
+
+  // _footer.scss
+  footer {
+    // layout
+    row-gap: rem(32);
+
+    // position
+    padding: rem(92) rem(97.5) rem(66);
+
+    .footer-image {
+      // background
+      background: url("../../assets/tablet/image-footer.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    // heading 1
+    h1 {
+      // text
+      font-size: rem(40);
+      line-height: rem(44);
+
+      // max size
+      max-width: rem(457);
+    }
+  }
+}
