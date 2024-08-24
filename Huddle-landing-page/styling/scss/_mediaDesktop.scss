@@ -1,0 +1,87 @@
+// breakpoint: 768px
+@media only screen and (min-width: 64em) {
+  body {
+    // background
+    background: url("../../images/bg-desktop.svg") no-repeat,
+      url("../../images/logo.svg") no-repeat;
+
+    // logo
+    background-position: left, rem(70) rem(44);
+    background-size: contain, rem(210) auto;
+    background-color: $Violet;
+
+    // set padding
+    padding: 0 rem(85) 0 rem(73);
+
+    // layout
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: initial;
+    justify-items: initial;
+    align-content: center;
+    align-items: flex-start;
+    column-gap: rem(53);
+  }
+
+  // image
+  img {
+    // set margin
+    margin: 0;
+
+    max-width: initial;
+    max-height: initial;
+  }
+
+  // content
+  main {
+    // align h1 and p
+    row-gap: rem(24);
+    justify-items: start;
+    align-content: center;
+
+    // set margin
+    margin: 0;
+    margin-top: rem(32);
+
+    // all text
+    text-align: left;
+
+    // max width
+    max-width: rem(520);
+
+    // heading
+    h1 {
+      font-size: rem(40);
+      line-height: rem(60);
+    }
+
+    // paragraph
+    p {
+      font-size: rem(18);
+      line-height: rem(27);
+
+      // set margin
+      margin: 0;
+    }
+
+    // button
+    .button {
+      // shape and color
+      box-shadow: rem(2) rem(4) rem(9) rem(3) rgba(0, 0, 0, 0.258633);
+      border-radius: rem(28);
+
+      // text
+      font-size: rem(18);
+      line-height: rem(27);
+
+      // set max
+      max-height: rem(56);
+    }
+  }
+
+  // address
+  address {
+    position: absolute;
+    right: rem(80);
+    bottom: rem(40);
+  }
+}

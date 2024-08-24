@@ -1,0 +1,26 @@
+address {
+  // all sns
+  a {
+    // set size
+    width: rem(28);
+    height: rem(28);
+
+    // center svg
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    // shape
+    border: rem(1) solid white;
+    border-radius: 50%;
+
+    // action
+    &:hover {
+      border-color: #ff52c1;
+    }
+
+    &:hover path {
+      fill: #ff52c1;
+    }
+  }
+}

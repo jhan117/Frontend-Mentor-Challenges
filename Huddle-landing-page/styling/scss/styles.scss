@@ -1,0 +1,27 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// Primary
+$Violet: hsl(257, 40%, 49%);
+$SoftMagenta: hsl(300, 69%, 71%);
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"); // font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); // font-family: 'Open Sans', sans-serif;
+
+@import "general";
+@import "content";
+@import "address";
+@import "RWD";
+@import "mediaDesktop";

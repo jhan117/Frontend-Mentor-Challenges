@@ -1,0 +1,42 @@
+// image
+img {
+  // max size
+  max-width: rem(309);
+  max-height: rem(222);
+}
+
+// content
+main {
+  // all text
+  text-align: center;
+
+  // heading
+  h1 {
+    @include font(600, rem(24), rem(36), white);
+  }
+
+  // paragraph
+  p {
+    font-family: "Open Sans", sans-serif;
+    @include font(400, rem(16), rem(24), white);
+  }
+
+  // button
+  .button {
+    // shape and color
+    background-color: white;
+    box-shadow: rem(1) rem(3) rem(5) rgba(0, 0, 0, 0.269022);
+    border-radius: rem(20);
+
+    // text
+    @include font(400, rem(12), rem(18), $Violet);
+    text-align: center;
+    text-decoration: none;
+
+    // action
+    &:hover {
+      background-color: $SoftMagenta;
+      color: white;
+    }
+  }
+}
