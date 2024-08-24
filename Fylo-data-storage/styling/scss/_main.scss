@@ -1,0 +1,116 @@
+main {
+  background: $DarkBlue;
+  box-shadow: 0 rem(75) rem(100) rem(30) rgba(0, 0, 0, 0.24776);
+  border-radius: rem(10);
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: rem(16);
+
+  width: 100%;
+  height: fit-content;
+  padding: rem(32) rem(32) rem(52);
+
+  position: relative;
+
+  h1 {
+    text-align: center;
+
+    @include font(400, rem(14), rem(16), $PaleBlue);
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  #storage-container {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: rem(10);
+
+    .design-container {
+      background: hsla(229, 57%, 11%, 0.5);
+      border-radius: rem(10);
+
+      height: rem(20);
+      padding: rem(3);
+
+      .rectangle {
+        background: linear-gradient(
+          90deg,
+          hsl(6, 100%, 80%) 0%,
+          hsl(335, 100%, 65%) 100%
+        );
+        border-radius: rem(8);
+
+        width: 81.5%;
+        height: rem(14);
+
+        position: relative;
+
+        .circle {
+          width: rem(10);
+          height: rem(10);
+          background: white;
+          border-radius: 50%;
+
+          position: absolute;
+          top: 50%;
+          right: rem(2);
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+
+      p {
+        @include font(700, rem(12), rem(14), $PaleBlue);
+      }
+    }
+  }
+
+  #left {
+    background: white;
+    box-shadow: 0 rem(75) rem(100) rem(-30) rgba(0, 0, 0, 0.24776);
+    border-radius: rem(10);
+
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: rem(9);
+    align-items: center;
+
+    width: rem(179);
+    height: fit-content;
+    padding: rem(16) rem(24);
+
+    position: absolute;
+    left: 50%;
+    bottom: rem(-36);
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    .left-num {
+      width: rem(67);
+
+      @include font(700, rem(40), rem(40), $VeryDarkBlue);
+    }
+
+    .left-text {
+      width: rem(55);
+
+      @include font(700, rem(12), rem(14), $VeryDarkBlue);
+      letter-spacing: rem(1);
+
+      opacity: 0.5;
+    }
+
+    .left-design {
+      display: none;
+    }
+  }
+}

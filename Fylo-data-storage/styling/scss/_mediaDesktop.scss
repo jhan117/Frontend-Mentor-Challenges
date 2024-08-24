@@ -1,0 +1,55 @@
+// breakpoint: 920px
+@media only screen and (min-width: 57.5em) {
+  body {
+    column-gap: rem(30);
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: rem(289) 0 rem(310);
+
+    background: url("../../images/bg-desktop.png") no-repeat $VeryDarkBlue;
+    background-size: 100% rem(420);
+    background-position: bottom;
+  }
+
+  header {
+    max-width: rem(350);
+  }
+
+  main {
+    max-width: rem(540);
+
+    padding: rem(40) rem(39.5);
+
+    h1 {
+      text-align: left;
+    }
+
+    #storage-container {
+      row-gap: rem(8);
+    }
+
+    #left {
+      border-radius: rem(10) rem(10) 0 rem(10);
+
+      left: initial;
+      bottom: initial;
+      transform: initial;
+      top: rem(-47);
+      right: rem(40);
+
+      .left-design {
+        display: block;
+
+        width: 0;
+        height: 0;
+        border-bottom: rem(22) solid transparent;
+        border-right: rem(22) solid white;
+
+        position: absolute;
+        right: 0;
+        bottom: rem(-22);
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+header {
+  background: $DarkBlue;
+  box-shadow: 0 rem(75) rem(100) rem(30) rgba(0, 0, 0, 0.24776);
+  border-radius: rem(10) rem(100) rem(10) rem(10);
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: rem(33);
+
+  width: 100%;
+  height: fit-content;
+  padding: rem(40) 0 rem(40) rem(41);
+
+  img {
+    display: block;
+    max-width: rem(135);
+  }
+
+  #icons-container {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: rem(16);
+
+    div {
+      background: $VeryDarkBlue;
+      border-radius: rem(10);
+
+      width: rem(48);
+      height: rem(48);
+
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
