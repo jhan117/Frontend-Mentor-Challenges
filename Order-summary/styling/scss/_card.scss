@@ -1,0 +1,138 @@
+.card {
+    // card shape and color
+    box-shadow: 0 rem(40) rem(40) rem(-20) rgba(13, 48, 189, 0.151826);
+    border-radius: rem(20);
+    background-color: white;
+
+    // all text align
+    text-align: center;
+
+    // image
+    .heroImage {
+        // fixed height
+        height: rem(160);
+
+        // shape
+        border-radius: rem(20) rem(20) 0 0;
+
+        // background
+        background: {
+            image: url('../../images/illustration-hero.svg');
+            position: top;
+            repeat: no-repeat;
+            size: cover;
+        }
+
+        ;
+    }
+
+    // content
+    .content {
+        // make flex
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+
+        // header
+        h1 {
+            @include font (900, rem(22), rem(29), $DarkBlue);
+        }
+
+        // detail
+        p {
+            @include font (500, rem(15), rem(25), $DesaturatedBlue);
+        }
+    }
+
+    // plan
+    .planBox {
+        .plan {
+            // make flex
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: rem(50);
+
+            // color and shape
+            background-color: $VeryPaleBlue;
+            border-radius: rem(11);
+
+            .front {
+                // make flex
+                display: flex;
+                flex-direction: row;
+                gap: rem(20);
+
+                // plan text
+                div {
+                    // make flex
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(3);
+
+                    // name
+                    .name {
+                        @include font (900, rem(14), rem(19), $DarkBlue);
+                    }
+
+                    // price
+                    .price {
+                        @include font (500, rem(14), rem(19), $DesaturatedBlue);
+                    }
+                }
+            }
+
+            // change
+            a {
+                @include font (700, rem(13), rem(17), $BrightBlue);
+
+                &:hover {
+                    text-decoration: none;
+                    color: hsla(245, 83%, 68%, 1);
+                }
+            }
+        }
+    }
+
+    // button
+    .button {
+
+        // text
+        a {
+            display: block;
+
+            // fixed height and padding
+            height: rem(50);
+            padding: rem(15) 0;
+
+            // background shape and color
+            background-color: $BrightBlue;
+            border-radius: rem(11);
+            box-shadow: 0px rem(20) rem(20) rgba(56, 42, 225, 0.190291);
+
+            // font
+            @include font (900, rem(15), rem(20), white);
+            text-decoration: none;
+
+            &:hover {
+                background-color: #766CF1;
+            }
+        }
+    }
+
+    // cancel
+    .cancel {
+
+        // text
+        a {
+            // font
+            @include font (900, rem(15), rem(20), $DesaturatedBlue);
+            text-decoration: none;
+
+            &:hover {
+                color: $DarkBlue;
+            }
+        }
+    }
+}

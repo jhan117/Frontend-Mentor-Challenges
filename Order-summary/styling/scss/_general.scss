@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    // full screen
+    width: 100%;
+    min-height: 100vh;
+
+    // center
+    display: grid;
+    place-content: center;
+
+    // background
+    background: {
+        image: url('../../images/pattern-background-mobile.svg');
+        color: $PaleBlue;
+        repeat: no-repeat;
+        size: contain;
+        position: top;
+    };
+}
+
+// attribution
+footer {
+    // set center
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    // font
+    @include font (700, rem(11), auto, $DarkBlue);
+    text-align: center;
+
+    // set link color
+    a {
+        color: $DesaturatedBlue;
+        text-decoration: none;
+
+        &:hover {
+            color: hsl(20, 15%, 55%);
+        }
+    }
+}

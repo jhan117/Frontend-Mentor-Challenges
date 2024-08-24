@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-image: url("../../images/pattern-background-mobile.svg");
+  background-color: #e0e8ff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: auto;
+  color: #1f2f56;
+  text-align: center;
+}
+
+footer a {
+  color: #7280a7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #9d877b;
+}
+
+.card {
+  -webkit-box-shadow: 0 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
+          box-shadow: 0 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
+  border-radius: 1.25rem;
+  background-color: white;
+  text-align: center;
+}
+
+.card .heroImage {
+  height: 10rem;
+  border-radius: 1.25rem 1.25rem 0 0;
+  background-image: url("../../images/illustration-hero.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.card .content h1 {
+  font-weight: 900;
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+  color: #1f2f56;
+}
+
+.card .content p {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #7280a7;
+}
+
+.card .planBox .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3.125rem;
+  background-color: #f5f7ff;
+  border-radius: 0.6875rem;
+}
+
+.card .planBox .plan .front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.25rem;
+}
+
+.card .planBox .plan .front div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.1875rem;
+}
+
+.card .planBox .plan .front div .name {
+  font-weight: 900;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #1f2f56;
+}
+
+.card .planBox .plan .front div .price {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #7280a7;
+}
+
+.card .planBox .plan a {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.0625rem;
+  color: #3829e0;
+}
+
+.card .planBox .plan a:hover {
+  text-decoration: none;
+  color: #756af1;
+}
+
+.card .button a {
+  display: block;
+  height: 3.125rem;
+  padding: 0.9375rem 0;
+  background-color: #3829e0;
+  border-radius: 0.6875rem;
+  -webkit-box-shadow: 0px 1.25rem 1.25rem rgba(56, 42, 225, 0.190291);
+          box-shadow: 0px 1.25rem 1.25rem rgba(56, 42, 225, 0.190291);
+  font-weight: 900;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+.card .button a:hover {
+  background-color: #766CF1;
+}
+
+.card .cancel a {
+  font-weight: 900;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #7280a7;
+  text-decoration: none;
+}
+
+.card .cancel a:hover {
+  color: #1f2f56;
+}
+
+@media only screen and (min-width: 64em) {
+  body {
+    background-image: url("../../images/pattern-background-desktop.svg");
+  }
+  .card .heroImage {
+    height: 13.75rem;
+  }
+  .card .content {
+    gap: 1.0625rem;
+  }
+  .card .content h1 {
+    font-size: 1.75rem;
+    line-height: 2.3125rem;
+  }
+  .card .content p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  .card .planBox .plan {
+    gap: 5.875rem;
+  }
+  .card .planBox .plan .front div {
+    gap: 0.375rem;
+  }
+  .card .planBox .plan .front div .name {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .card .planBox .plan .front div .price {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .card .planBox .plan a {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  max-width: 20.4375rem;
+}
+
+.card .heroImage {
+  width: 100%;
+}
+
+.card .content {
+  width: 100%;
+  padding: 2rem 2rem 0.75rem;
+}
+
+.card .planBox {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+}
+
+.card .planBox .plan {
+  width: 100%;
+  padding: 1.03125rem 1rem;
+}
+
+.card .button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+}
+
+.card .cancel {
+  width: 100%;
+  padding: 0.75rem 7.21875rem 2rem;
+}
+
+@media only screen and (min-width: 64em) {
+  .card {
+    max-width: 28.125rem;
+  }
+  .card .content {
+    padding: 2.8125rem 3rem 0.625rem;
+  }
+  .card .planBox {
+    padding: 0.625rem 3rem 1rem;
+  }
+  .card .planBox .plan {
+    padding: 1.5625rem 1.5rem;
+  }
+  .card .button {
+    padding: 1rem 3rem;
+  }
+  .card .cancel {
+    padding: 1rem 11.0625rem 3rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
