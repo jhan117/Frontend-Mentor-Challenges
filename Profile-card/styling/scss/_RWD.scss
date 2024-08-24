@@ -1,0 +1,52 @@
+// For mobile:
+.card {
+    // RWD with grid
+    display: grid;
+
+    // set max width
+    max-width: rem(326);
+
+    // hero image
+    .heroImg {
+        // RWD
+        width: 100%;
+    }
+
+    // content
+    .content {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(72) rem(95.5) rem(24);
+    }
+
+    // stats
+    .stats {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(24) rem(52) rem(24) rem(41);
+    }
+}
+
+// For Desktop, breakpoint:768px
+@media only screen and (min-width: 48em) {
+    .card {
+        // set max width
+        max-width: rem(350);
+
+        // content
+        .content {
+            // set padding
+            padding: rem(72) rem(107.5) rem(28);
+        }
+
+        // stats
+        .stats {
+            // set padding
+            padding: rem(24) rem(54) rem(24) rem(47);
+        }
+    }
+}

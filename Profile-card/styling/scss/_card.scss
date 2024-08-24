@@ -1,0 +1,123 @@
+.card {
+    // Set the card shape and color
+    background-color: white;
+    box-shadow: 0 rem(50) rem(100) rem(-20) rgba(8, 70, 94, 0.504835);
+    border-radius: rem(15);
+
+    // all text align
+    text-align: center;
+
+    // For profile image
+    position: relative;
+
+    // hero image
+    .heroImg {
+        // Fixed height
+        height: rem(140);
+
+        // Set the card background pattern
+        background: url('../../images/bg-pattern-card.svg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: rem(15) rem(15) 0 0;
+    }
+
+    // profile image
+    img {
+        // Fixed size
+        width: rem(96);
+        height: rem(96);
+
+        // make border
+        border: rem(5) solid white;
+        border-radius: 50%;
+
+        // set position
+        position: absolute;
+        left: 50%;
+        top: rem(92);
+        transform: translateX(-50%);
+    }
+
+    // content
+    .content {
+        // make flex
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        // name and age
+        div {
+            display: flex;
+            flex-direction: row;
+
+            // Fixed size
+            width: rem(135);
+            height: rem(23);
+
+            // for age
+            position: relative;
+
+            // text align
+            text-align: left;
+
+            // header
+            h1 {
+                // font
+                @include font (700, rem(18), rem(22), $VeryDarkDesaturatedBlue);
+
+                // set position
+                position: absolute;
+                bottom: 0;
+            }
+
+            // age
+            p {
+                // font
+                @include font (400, rem(18), rem(18), $DarkGrayishBlue);
+
+                // set position
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+
+        // city
+        .city {
+            @include font (400, rem(14), rem(17), $DarkGrayishBlue);
+        }
+    }
+
+    // line
+    .line {
+        // Fixed height
+        height: rem(1);
+
+        // color
+        background-color: $DarkGray;
+    }
+
+    // stats
+    .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        // text
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: rem(9);
+
+            .number {
+                @include font (700, rem(18), rem(18), $VeryDarkDesaturatedBlue);
+            }
+
+            .head {
+                @include font (400, rem(10), rem(12), $DarkGrayishBlue);
+                letter-spacing: rem(1.5);
+            }
+        }
+    }
+}

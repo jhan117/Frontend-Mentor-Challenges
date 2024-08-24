@@ -1,0 +1,29 @@
+// Colors
+// Primary
+$DarkCyan: hsl(185, 75%, 39%);
+$VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+$DarkGrayishBlue: hsl(227, 10%, 46%);
+
+// Neutral
+$DarkGray: hsl(228, 9%, 92%);
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+// font-family: 'Kumbh Sans', sans-serif;
+
+@mixin font ($w, $s, $l, $c) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+    color: $c;
+}
+
+// px to rem
+@function rem ($px) {
+    $remValue : ($px / 16) + rem;
+    @return $remValue;
+}
+
+@import 'general';
+@import 'card';
+@import 'mediaDesktop';
+@import 'RWD';
