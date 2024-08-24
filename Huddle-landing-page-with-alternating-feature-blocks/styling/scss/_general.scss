@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+
+  // reset
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+html,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+#copyright {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  // full screen
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto rem(59) auto auto;
+}
+
+img,
+button,
+a,
+svg,
+i {
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

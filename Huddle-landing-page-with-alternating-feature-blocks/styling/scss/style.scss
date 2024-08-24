@@ -1,0 +1,34 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// Primary
+
+$Pink: hsl(322, 100%, 66%);
+$pinkHover: hsl(322, 100%, 80%);
+
+// Neutral
+
+$VeryPaleCyan: hsl(193, 100%, 96%);
+$VeryDarkCyan: hsl(192, 100%, 9%);
+$GrayishBlue: hsl(208, 11%, 55%);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"); // font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"); // font-family: 'Open Sans', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+
+@import "mediaDesktop";
