@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+
+  // reset
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  // full screen
+  width: 100%;
+  min-height: 100vh;
+
+  padding: rem(88) rem(24) rem(68);
+
+  background: url("../../images/bg-intro-mobile.png") no-repeat $Red;
+  background-position: top center;
+}
+
+main {
+  display: grid;
+  row-gap: rem(64);
+}

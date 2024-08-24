@@ -1,0 +1,16 @@
+#content {
+  text-align: center;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: rem(16);
+
+  h1 {
+    @include font(700, rem(28), rem(36), white);
+    letter-spacing: rem(-0.29);
+  }
+
+  p {
+    @include font(500, rem(16), rem(26), white);
+  }
+}
