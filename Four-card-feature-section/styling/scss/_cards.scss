@@ -1,0 +1,69 @@
+// cards
+#cards {
+    // Selects card group
+    div {
+        // card shape and color
+        background-color: white;
+        box-shadow: 0 rem(15) rem(30) rem(-11) rgba(131, 166, 210, 0.5);
+        border-radius: rem(8);
+
+        // for border
+        position: relative;
+        overflow: hidden;
+
+        // all border top
+        &::after {
+            content: '';
+            // set position
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            // fixed height
+            width: 100%;
+            height: rem(3.55);
+        }
+
+        // make flex for content
+        display: flex;
+        flex-direction: column;
+        gap: rem(1);
+
+        // all card header
+        h1 {
+            @include font (600, rem(20), rem(30), $VeryDarkBlue);
+        }
+
+        // all card detail
+        p {
+            @include font (400, rem(13), rem(23), $VeryDarkBlue);
+            letter-spacing: rem(0.09);
+
+            opacity: 0.5;
+        }
+
+        // all card image
+        img {
+            // fixed size
+            height: rem(57);
+
+            // position
+            position: absolute;
+            bottom: rem(25);
+            right: rem(25);
+        }
+    }
+
+    .card1::after {
+        background-color: $Cyan;
+    }
+    .card2::after {
+        background-color: $Red;
+    }
+    .card3::after {
+        background-color: $Orange;
+    }
+    .card4::after {
+        background-color: $Blue;
+    }
+}

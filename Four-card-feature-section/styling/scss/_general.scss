@@ -1,0 +1,67 @@
+// Selects all elements
+* {
+    box-sizing: border-box;
+
+    // reset
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+// Selects html
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+// Selects body
+body {
+    // full screen
+    width: 100%;
+    min-height: 100vh;
+
+    // color
+    background-color: $VeryLightGray;
+
+    // For footer
+    position: relative;
+}
+
+// Selects main
+main {
+    // make grid
+    display: grid;
+    row-gap: rem(76);
+    justify-items: center;
+}
+
+// footer
+footer {
+    // bottom center
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    // font
+    @include font (600, rem(11), auto, $VeryDarkBlue);
+
+    // text align
+    text-align: center;
+
+    // set link color
+    a {
+        color: $GrayishBlue;
+        text-decoration: none;
+
+        &:hover {
+            color: hsl(29, 6%, 66%);
+        }
+    }
+}

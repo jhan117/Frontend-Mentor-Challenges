@@ -1,0 +1,59 @@
+// breakpoint 1024px
+@media only screen and (min-width: 64em) {
+
+    // Selects main
+    main {
+        // grid
+        row-gap: rem(64);
+    }
+
+    // content
+    #content {
+
+        // Selects header group
+        div {
+            // flex
+            gap: 0;
+
+            // all header
+            h1,
+            h2 {
+                font-size: rem(36);
+                line-height: rem(54);
+                letter-spacing: rem(0.25);
+            }
+
+            // For detail design...
+            h2 {
+                margin-top: rem(-6);
+            }
+        }
+    }
+
+    // cards
+    #cards {
+
+        // Selects card group
+        div {
+
+            // all border top
+            &::after {
+                // Fixed height
+                height: rem(4);
+            }
+
+            // flex
+            gap: rem(6);
+
+            // all card image
+            img {
+                // fixed size
+                height: rem(64);
+
+                // position
+                bottom: rem(32);
+                right: rem(32);
+            }
+        }
+    }
+}
