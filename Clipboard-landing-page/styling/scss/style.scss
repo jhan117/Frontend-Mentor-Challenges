@@ -1,0 +1,30 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// Primary
+$StrongCyan: hsl(171, 66%, 44%);
+$LightBlue: hsl(233, 100%, 69%);
+
+// Neutral
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"); // font-family: 'Bai Jamjuree', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+
+@import "mediaDesktop";

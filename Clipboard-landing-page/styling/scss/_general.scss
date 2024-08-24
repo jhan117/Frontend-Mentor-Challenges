@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+
+  // reset
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+img, button, a, svg {
+  display: block;
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  // full screen
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto rem(160) auto rem(170) auto;
+
+  background: url("../../images/bg-header-mobile.png") no-repeat;
+  background-size: 100% rem(363);
+  background-position: top center;
+}
+
+// all text
+section {
+  text-align: center;
+  display: grid;
+}
+h1 {
+  @include font(600, rem(32), rem(40), $DarkGrayishBlue);
+  letter-spacing: rem(-0.52);
+}
+h2 {
+  @include font(600, rem(28), rem(35), $DarkGrayishBlue);
+  letter-spacing: rem(-0.46);
+}
+h3 {
+  @include font(600, rem(24), rem(30), $DarkGrayishBlue);
+  letter-spacing: rem(-0.39);
+}
+p {
+  @include font(400, rem(16), rem(26), $GrayishBlue);
+  letter-spacing: rem(0.12);
+}
+
+// all buttons
+.button-container {
+  display: grid;
+  row-gap: rem(24);
+  column-gap: rem(16);
+
+  button {
+    border: none;
+    cursor: pointer;
+    border-radius: rem(28);
+
+    padding: rem(13) 0;
+
+    font-family: "Bai Jamjuree", sans-serif;
+    @include font(600, rem(18), rem(30), white);
+    letter-spacing: rem(0.5);
+  }
+
+  .ios-button {
+    background: $StrongCyan;
+    box-shadow: 0 rem(10) rem(20) rgba(137, 229, 199, 0.503305),
+      inset 0 rem(-3) 0 rgba(0, 0, 0, 0.151333);
+
+    &:hover {
+      background: hsla(171, 66%, 44%, 0.75);
+    }
+  }
+  .mac-button {
+    background: $LightBlue;
+    box-shadow: 0 rem(10) rem(20) rgba(0, 0, 0, 0.0988035),
+      inset 0 rem(-3) 0 rgba(0, 0, 0, 0.151333);
+
+    &:hover {
+      background: hsla(233, 100%, 69%, 0.75);
+    }
+  }
+}

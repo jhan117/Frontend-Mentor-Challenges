@@ -1,0 +1,26 @@
+header {
+  grid-row: 1 / 2;
+  display: grid;
+  justify-items: center;
+  row-gap: rem(64);
+
+  padding: rem(123) rem(32) 0;
+
+  // logo
+  // content
+  section {
+    grid-template-rows: auto rem(16) auto rem(48) auto;
+
+    // text
+    h1 {
+      grid-row: 1 / 2;
+    }
+    p {
+      grid-row: 3 / 4;
+    }
+    // button
+    .button-container {
+      grid-row: 5 / 6;
+    }
+  }
+}

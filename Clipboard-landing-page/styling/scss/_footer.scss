@@ -1,0 +1,60 @@
+footer {
+  grid-row: 5 / 6;
+  display: grid;
+  place-items: center;
+  row-gap: rem(48);
+
+  padding: rem(51.5) 0;
+
+  background: hsla(201, 11%, 66%, 0.1);
+
+  // logo + links
+  #logo-and-links {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    row-gap: rem(40);
+
+    // logo
+    img {
+      width: rem(55);
+      height: rem(55);
+    }
+    // links
+    #link-container {
+      display: grid;
+      justify-items: center;
+      row-gap: rem(20);
+
+      // all links
+      a {
+        text-decoration: none;
+        text-align: center;
+        @include font(400, rem(18), rem(30), $DarkGrayishBlue);
+        letter-spacing: rem(0.14);
+
+        width: rem(160);
+
+        &:hover {
+          color: $StrongCyan;
+        }
+      }
+    }
+  }
+
+  // sns
+  #sns-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: rem(40);
+
+    width: fit-content;
+
+    a {
+      &:hover path {
+        fill: $StrongCyan;
+      }
+    }
+  }
+}

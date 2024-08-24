@@ -1,0 +1,141 @@
+main {
+  grid-row: 3 / 4;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto rem(186) auto rem(130) auto rem(131) auto rem(170) auto;
+
+  padding: 0 rem(32);
+
+  // first content
+  #track-container {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: auto rem(65) auto rem(56) auto;
+
+    // content
+    .track-header {
+      grid-row: 1 / 2;
+      row-gap: rem(16);
+    }
+    // image
+    img {
+      grid-row: 3 / 4;
+      width: 100%;
+    }
+    // detail
+    #track-detail {
+      grid-row: 5 / 6;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: rem(48);
+
+      // all detail
+      section {
+        row-gap: rem(10);
+      }
+    }
+  }
+
+  // second content
+  #access-container {
+    grid-row: 3 / 4;
+    display: grid;
+    row-gap: rem(64);
+
+    // content
+    section {
+      row-gap: rem(16);
+    }
+    // image
+    img {
+      width: 100%;
+    }
+  }
+
+  // third content
+  #workflow-container {
+    grid-row: 5 / 6;
+    display: grid;
+    row-gap: rem(90);
+
+    // content
+    section {
+      row-gap: rem(11);
+    }
+    // detail
+    #workflow-detail {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: baseline;
+      row-gap: rem(56);
+      column-gap: rem(30);
+
+      // all content of detail
+      section {
+        row-gap: rem(18);
+
+        max-width: rem(350);
+      }
+
+      // detail 1
+      .blacklist {
+        display: grid;
+        justify-items: center;
+        row-gap: rem(40);
+
+        // image
+        // content
+      }
+      // detail 2
+      .text-snippet {
+        display: grid;
+        justify-items: center;
+        row-gap: rem(44);
+
+        // image
+        // content
+      }
+      // detail 3
+      .preview {
+        display: grid;
+        justify-items: center;
+        row-gap: rem(44);
+
+        // image
+        // content
+      }
+    }
+  }
+
+  // logo
+  #logo-container {
+    grid-row: 7 / 8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+    width: rem(139);
+    height: rem(439);
+  }
+
+  // fourth content
+  #clipboard-container {
+    grid-row: 9 / 10;
+    grid-template-rows: auto rem(16) auto rem(46) auto;
+
+    // text
+    h1 {
+      grid-row: 1 / 2;
+    }
+    p {
+      grid-row: 3 / 4;
+    }
+    // button
+    .button-container {
+      grid-row: 5 / 6;
+    }
+  }
+}
