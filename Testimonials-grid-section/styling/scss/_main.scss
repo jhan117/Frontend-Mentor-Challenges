@@ -1,0 +1,121 @@
+main {
+  display: grid;
+  row-gap: rem(24);
+
+  section {
+    border-radius: rem(8);
+    box-shadow: rem(40) rem(60) rem(50) rem(-47) rgba(72, 85, 106, 0.247378);
+
+    padding: rem(26) rem(32) rem(32);
+
+    .profile {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      column-gap: rem(17);
+
+      img {
+        display: block;
+        width: rem(28);
+        height: rem(28);
+        border-radius: 50%;
+
+        box-sizing: content-box;
+      }
+
+      .text {
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: rem(4);
+
+        .name {
+          @include font(500, rem(13), rem(13), $White);
+        }
+
+        .state {
+          @include font(500, rem(11), rem(11), $White);
+          opacity: 0.5;
+        }
+      }
+    }
+
+    h1 {
+      @include font(600, rem(20), rem(24), $White);
+
+      margin-top: rem(18);
+      margin-bottom: rem(16);
+    }
+    .detail {
+      @include font(500, rem(13), rem(18), $Lightgray);
+      opacity: 0.7;
+    }
+  }
+
+  #daniel {
+    background: url("../../images/bg-pattern-quotation.svg") no-repeat
+      $Moderateviolet;
+    background-position: right rem(24) top;
+
+    .profile {
+      img {
+        border: rem(2) solid hsl(264, 82%, 70%);
+      }
+    }
+
+    h1 {
+      margin-top: rem(14);
+      margin-bottom: rem(40);
+    }
+    .detail {
+      margin-right: rem(16);
+    }
+  }
+
+  #jonathan {
+    background: $Verydarkgrayishblue;
+  }
+
+  #jeanette {
+    background: $White;
+
+    .profile {
+      .text {
+        .name {
+          color: $Verydarkgrayishblue;
+        }
+
+        .state {
+          color: $Verydarkgrayishblue;
+        }
+      }
+    }
+
+    h1 {
+      color: $Verydarkgrayishblue;
+    }
+    .detail {
+      color: $Verydarkgrayishblue;
+    }
+  }
+
+  #patrick {
+    background: $Verydarkblackishblue;
+
+    .profile {
+      img {
+        border: rem(2) solid hsl(264, 82%, 70%);
+      }
+    }
+
+    h1 {
+      color: $Lightgrayishblue;
+
+      margin-top: rem(14);
+      margin-bottom: rem(16);
+    }
+  }
+
+  #kira {
+    @extend #jeanette;
+  }
+}
