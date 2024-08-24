@@ -1,0 +1,31 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// Primary
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+
+// Neutral
+$TransparentWhite: hsla(0, 0%, 100%, 0.75); // paragraphs
+$VeryLightGray: hsl(0, 0%, 95%); // background, headings, buttons
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"); // font-family: 'Lexend Deca', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap"); // font-family: 'Big Shoulders Display', cursive;
+
+@import "general";
+@import "cards";
+@import "RWD";
+@import "mediaDesktop";

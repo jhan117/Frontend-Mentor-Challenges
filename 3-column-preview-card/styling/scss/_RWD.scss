@@ -1,0 +1,54 @@
+// For cards layout
+main {
+  // auto - cards layout
+  display: grid;
+
+  // set width and padding
+  max-width: rem(327);
+  padding: rem(88) 0;
+
+  // it has extend
+  // SEDANS
+  #sedans-card {
+    // main layout
+    grid-row: 1 / 4;
+    grid-column: 1 / 2; // extend
+
+    // set padding - extend but the bottom is different.
+    padding: rem(123) rem(47.5) rem(932) rem(48.5);
+
+    // make gap - content: extend
+    display: flex;
+    flex-flow: column nowrap;
+    gap: rem(25);
+
+    // button - extend
+    a {
+      // set padding
+      padding: rem(11) 0 rem(12) 0;
+
+      &:hover {
+        // set padding cuz border
+        padding: rem(9) 0 rem(10) 0;
+      }
+    }
+  }
+
+  // SUVS
+  #suvs-card {
+    // main layout
+    grid-row: 2 / 3;
+
+    // set padding bottom
+    padding-bottom: rem(48);
+  }
+
+  // LUXURY
+  #luxury-card {
+    // main layout
+    grid-row: 3 / 4;
+
+    // set padding bottom
+    padding-bottom: rem(48);
+  }
+}

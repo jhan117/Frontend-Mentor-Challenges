@@ -1,0 +1,54 @@
+// breakpoint is 1024px
+@media only screen and (min-width: 64em) {
+  // For cards layout
+  main {
+    // 3 columns - cards layout (_RWD.scss)
+    grid-template-columns: repeat(3, 1fr);
+
+    // set width and padding (_RWD.scss)
+    max-width: rem(920);
+    padding: rem(171) 0 rem(129) 0;
+
+    // SEDANS
+    #sedans-card {
+      // extend (_cards.scss)
+      background-position: top rem(48) left rem(48);
+
+      // main layout (_RWD.scss)
+      grid-row: 1 / 1; // extend
+      grid-column: 1 / 4;
+
+      // set padding - extend (_RWD.scss)
+      padding-right: rem(47.5);
+      padding-bottom: rem(48);
+
+      // paragraph
+      // For a sedans card with long width
+      p {
+        max-width: rem(212);
+      }
+
+      // button - extend
+      a {
+        // set margin
+        // For the space between text and button
+        margin-top: rem(58);
+      }
+    }
+
+    // SUVS
+    #suvs-card {
+      // main layout (_RWD.scss)
+      grid-column: 2 / 3;
+    }
+
+    // LUXURY
+    #luxury-card {
+      // main layout (_RWD.scss)
+      grid-column: 3 / 4;
+
+      // shape (_cards.scss)
+      border-radius: 0 rem(8) rem(8) 0;
+    }
+  }
+}

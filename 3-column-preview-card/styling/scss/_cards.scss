@@ -1,0 +1,80 @@
+// SEDANS
+#sedans-card {
+  // car image
+  background: url("../../images/icon-sedans.svg") no-repeat;
+  background-position: top rem(48) left rem(49);
+
+  // color and shape
+  background-color: $BrightOrange;
+  border-radius: rem(8);
+
+  // heading
+  h1 {
+    font-family: "Big Shoulders Display", cursive;
+    @include font(700, rem(40), rem(48), $VeryLightGray);
+    text-transform: uppercase;
+  }
+
+  // paragraph
+  p {
+    @include font(400, rem(15), rem(25), $TransparentWhite);
+  }
+
+  // button
+  a {
+    // font
+    @include font(400, rem(15), rem(25), $BrightOrange);
+    text-decoration: none;
+    text-align: center;
+
+    // shape and color
+    background-color: $VeryLightGray;
+    border-radius: rem(25);
+
+    // fixed size
+    width: rem(146);
+    height: rem(48);
+
+    // button active
+    &:hover {
+      border: rem(2) solid white;
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+
+// SUVS
+#suvs-card {
+  @extend #sedans-card;
+
+  // car image
+  background-image: url("../../images/icon-suvs.svg");
+
+  // color and shape
+  background-color: $DarkCyan;
+
+  // button
+  a {
+    // font
+    color: $DarkCyan;
+  }
+}
+
+// LUXURY
+#luxury-card {
+  @extend #sedans-card;
+
+  // car image
+  background-image: url("../../images/icon-luxury.svg");
+
+  // color and shape
+  background-color: $VeryDarkCyan;
+  border-radius: 0 0 rem(8) rem(8);
+
+  // button
+  a {
+    // font
+    color: $VeryDarkCyan;
+  }
+}
