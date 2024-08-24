@@ -1,0 +1,36 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+// Text
+$VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+$SoftRed: hsl(14, 88%, 65%);
+
+// Gradient
+// Background gradient:
+$SoftViolet: hsl(273, 75%, 66%);
+$SoftBlue: hsl(240, 73%, 65%);
+
+// Neutral
+// Text
+$VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+$DarkGrayishBlue: hsl(240, 6%, 50%);
+
+// Dividers
+$LightGrayishBlue: hsl(240, 5%, 91%);
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"); // font-family: 'Kumbh Sans', sans-serif;
+
+@import "general";
+@import "main";
+@import "mediaDesktop";
