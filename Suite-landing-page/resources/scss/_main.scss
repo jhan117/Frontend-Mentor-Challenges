@@ -1,0 +1,173 @@
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: rem(56);
+
+  section {
+    display: grid;
+    grid-template-rows: auto rem(8.32) auto auto rem(32) auto rem(32) auto;
+
+    img {
+      height: rem(19);
+
+      transform: translateX(rem(154));
+    }
+
+    h1 {
+      &:nth-child(2) {
+        grid-row: 3 / 4;
+      }
+
+      &:nth-child(3) {
+        grid-row: 4 / 5;
+      }
+
+      @include fontStyle(hl, 38, 44);
+      color: $darkBlue;
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    p {
+      grid-row: 6 / 7;
+
+      @include fontStyle(s, 16, 28);
+      color: $grey;
+    }
+
+    button {
+      grid-row: 8 / 9;
+
+      padding: rem(14.5) rem(31.5);
+
+      width: rem(256);
+
+      @include fontStyle(hxl, 18, 32);
+      color: $creamWhite;
+      background: $darkBlue;
+    }
+
+    button:hover {
+      background: linear-gradient(
+        135deg,
+        $purple 0%,
+        $magnet 49.21%,
+        $orange 100%
+      );
+    }
+  }
+
+  .image-hero {
+    margin-top: rem(0.68);
+
+    width: 100%;
+    height: rem(240);
+
+    background: url("../../assets/image-hero-landscape@2x.webp") no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: rem(15);
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: rem(32);
+    justify-content: center;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    p {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: rem(1);
+
+      width: 100%;
+
+      @include fontStyle(s, 48, 56);
+      font-weight: 700;
+      color: $darkBlue;
+
+      span {
+        display: block;
+
+        @include fontStyle(hs, 16, 26);
+        color: $grey;
+      }
+    }
+  }
+
+  article {
+    margin: rem(181) rem(-16) 0;
+
+    height: rem(748);
+
+    position: relative;
+
+    text-align: center;
+    background: $darkBlue;
+    border-radius: rem(15);
+
+    .image-jeremy {
+      height: rem(402);
+
+      position: absolute;
+      top: rem(-181);
+      left: 50%;
+      transform: translateX(-50%);
+
+      background: url("../../assets/pattern-blur.svg") no-repeat;
+      background-position: center bottom rem(-60);
+      background-size: rem(100);
+    }
+
+    .image-line2 {
+      margin: rem(261) 0 rem(37);
+
+      width: fit-content;
+      height: rem(40);
+    }
+
+    h2,
+    .section-content {
+      margin-bottom: rem(40);
+    }
+
+    h2 {
+      @include fontStyle(hl, 40, 48);
+      color: $creamWhite;
+
+      span {
+        font-weight: 400;
+        letter-spacing: 0;
+        color: $cream;
+      }
+    }
+
+    .section-content {
+      padding: 0 rem(16);
+
+      @include fontStyle(s, 18, 32);
+      letter-spacing: rem(0.09);
+      color: $cream;
+    }
+
+    h3,
+    .role {
+      text-transform: uppercase;
+    }
+
+    h3 {
+      @include fontStyle(hm, 18, 32);
+      color: $creamWhite;
+    }
+
+    .role {
+      @include fontStyle(hs, 16, 26);
+      color: $cream;
+    }
+  }
+}

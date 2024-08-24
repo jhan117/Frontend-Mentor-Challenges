@@ -1,0 +1,43 @@
+#footer {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  row-gap: rem(33);
+
+  margin: 0 rem(-16) rem(56);
+
+  position: relative;
+
+  img {
+    height: rem(25);
+  }
+
+  p {
+    @include fontStyle(s, 15, 32);
+    color: $grey;
+  }
+
+  .sns {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    column-gap: rem(28);
+
+    a:hover svg {
+      opacity: 0.5;
+    }
+  }
+}
+
+#footer::after {
+  content: "";
+
+  width: 100%;
+  height: rem(420);
+
+  position: absolute;
+  top: rem(-190);
+  z-index: -1;
+
+  background: $cream;
+}

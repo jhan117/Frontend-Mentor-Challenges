@@ -1,0 +1,17 @@
+html {
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: rem(56);
+
+  padding: rem(24) rem(16);
+
+  background: $creamWhite;
+}
+
+button {
+  border-radius: rem(6);
+}
