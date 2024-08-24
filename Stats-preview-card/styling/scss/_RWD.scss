@@ -1,0 +1,72 @@
+// For mobile:
+.cardContainer {
+
+    // image header
+    .background {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding-bottom: rem(20);
+    }
+
+    // content
+    .contentContainer {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(20) rem(31.5) rem(20) rem(31.5);
+    }
+
+    // stats
+    .statsContainer {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(20) rem(31.5) rem(32) rem(31.5);
+    }
+}
+
+// For Desktop: 1440px
+@media only screen and (min-width: 90em) {
+    .cardContainer {
+        // problem: Floating div have 0 height
+        // overflow: auto;
+        // overflow: hidden;
+        display: inline-block;
+        // height: rem(446);
+
+        // image header
+        .background {
+            // RWD
+            float: right;
+            width: 50%;
+
+            // set padding
+            padding-bottom: 0;
+            padding-left: rem(15);
+        }
+
+        // content
+        .contentContainer {
+            // RWD
+            float: left;
+            width: 50%;
+
+            // set padding
+            padding: rem(71) rem(80) rem(36) rem(72);
+        }
+
+        // stats
+        .statsContainer {
+            // RWD
+            float: left;
+            width: 50%;
+
+            // set padding
+            padding: rem(36) rem(114) rem(59) rem(72);
+        }
+    }
+}

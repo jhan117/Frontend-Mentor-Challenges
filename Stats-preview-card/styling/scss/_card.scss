@@ -1,0 +1,86 @@
+// card
+.cardContainer {
+    // card color and shape, shadow
+    background-color: $cardBG;
+    box-shadow: 0 rem(20) rem(20) rem(-10) rgba(23, 25, 41, 0.203087);
+    border-radius: rem(8);
+
+    // image header
+    .background {
+        // shape and color
+        border-radius: rem(8) rem(8) 0 0;
+        background-color: $accent;
+        background-clip: content-box;
+
+        // image
+        .imgContainer {
+            // set height
+            height: rem(240);
+
+            // image
+            background: url("../../images/image-header-mobile.jpg") no-repeat top;
+            background-size: cover;
+
+            // color blend
+            mix-blend-mode: multiply;
+            opacity: 0.75;
+        }
+    }
+
+    // content
+    .contentContainer {
+        // content of main frame
+        display: flex;
+        flex-flow: column nowrap;
+        gap: rem(16);
+        text-align: center;
+        align-items: center;
+
+        // header
+        h1 {
+            // set font
+            @include font ($mainH-S, rem(28), 700, rem(32));
+
+            // set color
+            span {
+                color: $accent;
+            }
+        }
+
+        // detail
+        .detail {
+            // set font
+            @include font ($mainP, rem(15), 400, rem(25));
+        }
+    }
+
+    // stats
+    .statsContainer {
+        // content of stats frame
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+        align-items: center;
+        text-align: center;
+
+        div {
+            // content of detail
+            display: flex;
+            flex-direction: column;
+            gap: rem(2);
+
+            .Number {
+                // set font
+                @include font ($mainH-S, rem(24), 700, rem(29));
+            }
+
+            .Head {
+                // set font
+                font-family: 'Lexend Deca', sans-serif;
+                @include font ($statH, rem(12), 400, rem(25));
+                letter-spacing: rem(1);
+                text-transform: uppercase;
+            }
+        }
+    }
+}

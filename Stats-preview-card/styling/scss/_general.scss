@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+// font-family: 'Lexend Deca', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    // full screen
+    width: 100%;
+    min-height: 100vh;
+
+    // Background color
+    background-color: $mainBG;
+
+    // set center
+    padding: rem(88) rem(24);
+}

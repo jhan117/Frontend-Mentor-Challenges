@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #090b1a;
+  padding: 5.5rem 1.5rem;
+}
+
+.cardContainer {
+  background-color: #1b1938;
+  -webkit-box-shadow: 0 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
+          box-shadow: 0 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
+  border-radius: 0.5rem;
+}
+
+.cardContainer .background {
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #aa5cdb;
+  background-clip: content-box;
+}
+
+.cardContainer .background .imgContainer {
+  height: 15rem;
+  background: url("../../images/image-header-mobile.jpg") no-repeat top;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+.cardContainer .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer .contentContainer h1 {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.cardContainer .contentContainer h1 span {
+  color: #aa5cdb;
+}
+
+.cardContainer .contentContainer .detail {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+.cardContainer .statsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.cardContainer .statsContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.125rem;
+}
+
+.cardContainer .statsContainer div .Number {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8125rem;
+}
+
+.cardContainer .statsContainer div .Head {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 90em) {
+  body {
+    padding: 11.0625rem 10.3125rem;
+  }
+  .cardContainer .background {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .cardContainer .background .imgContainer {
+    height: 27.875rem;
+    background-image: url("../../images/image-header-desktop.jpg");
+  }
+  .cardContainer .contentContainer {
+    gap: 1.5625rem;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cardContainer .contentContainer h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .cardContainer .contentContainer .detail {
+    max-width: 23.375rem;
+  }
+  .cardContainer .statsContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-column-gap: 3.75rem;
+            column-gap: 3.75rem;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    text-align: left;
+  }
+}
+
+.cardContainer .background {
+  width: 100%;
+  padding-bottom: 1.25rem;
+}
+
+.cardContainer .contentContainer {
+  width: 100%;
+  padding: 1.25rem 1.96875rem 1.25rem 1.96875rem;
+}
+
+.cardContainer .statsContainer {
+  width: 100%;
+  padding: 1.25rem 1.96875rem 2rem 1.96875rem;
+}
+
+@media only screen and (min-width: 90em) {
+  .cardContainer {
+    display: inline-block;
+  }
+  .cardContainer .background {
+    float: right;
+    width: 50%;
+    padding-bottom: 0;
+    padding-left: 0.9375rem;
+  }
+  .cardContainer .contentContainer {
+    float: left;
+    width: 50%;
+    padding: 4.4375rem 5rem 2.25rem 4.5rem;
+  }
+  .cardContainer .statsContainer {
+    float: left;
+    width: 50%;
+    padding: 2.25rem 7.125rem 3.6875rem 4.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
