@@ -1,0 +1,57 @@
+form {
+  grid-row: 4 / 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 100%;
+  height: fit-content;
+  padding: 0 rem(24);
+
+  margin-bottom: rem(94);
+
+  #email {
+    border: none;
+    outline: none;
+    background-color: $input;
+    border-radius: rem(28);
+
+    width: 100%;
+
+    padding: rem(9) rem(32);
+    margin-bottom: rem(8);
+
+    font-family: "Chivo", sans-serif;
+    @include font(700, rem(14), rem(28), $white);
+
+    &::placeholder {
+      font-family: "Chivo", sans-serif;
+      @include font(700, rem(14), rem(28), $white);
+      opacity: 0.5;
+    }
+  }
+
+  p {
+    display: none;
+    padding: 0 rem(32);
+
+    @include font(700, rem(12), rem(14), hsl(0, 96%, 61%));
+  }
+
+  #submit {
+    cursor: pointer;
+    border: none;
+    background-color: $header;
+    border-radius: rem(28);
+
+    padding: rem(9) 0;
+    margin-top: rem(8);
+
+    font-family: "Chivo", sans-serif;
+    @include font(700, rem(14), rem(28), $submit);
+
+    &:hover {
+      background-color: hsl(157, 100%, 85%);
+    }
+  }
+}

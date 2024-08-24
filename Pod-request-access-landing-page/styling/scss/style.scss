@@ -1,0 +1,32 @@
+// font
+@mixin font($w, $s, $l, $c) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $l;
+  color: $c;
+}
+
+// px to rem
+@function rem($px) {
+  $remValue: ($px / 16) + rem;
+  @return $remValue;
+}
+
+$header: hsl(157, 74%, 62%);
+$white: hsl(0, 0%, 100%);
+$detail: hsl(225, 40%, 83%);
+
+$input: hsl(225, 26%, 23%);
+$submit: hsl(224, 35%, 11%);
+$footer: hsl(225, 21%, 45%);
+
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"); // font-family: 'Chivo', sans-serif;
+
+@import "general";
+@import "header";
+@import "main";
+@import "form";
+@import "footer";
+
+@import "mediaTablet";
+@import "mediaDesktop";

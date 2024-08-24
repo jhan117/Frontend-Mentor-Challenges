@@ -1,0 +1,35 @@
+// breakpoint: 1024px
+@media only screen and (min-width: 64em) {
+  body {
+    padding-left: rem(165);
+
+    background-position: bottom rem(78) right;
+  }
+
+  body::before {
+    background: url("../../assets/desktop/image-host.jpg") no-repeat;
+    background-position: center right;
+  }
+
+  header {
+    margin-top: rem(102);
+    margin-bottom: rem(103);
+  }
+
+  main {
+    row-gap: rem(24);
+
+    margin-right: rem(58);
+
+    h1 {
+      font-size: rem(52);
+      line-height: rem(62);
+
+      margin-top: rem(88);
+    }
+  }
+
+  footer {
+    margin-bottom: rem(130);
+  }
+}
