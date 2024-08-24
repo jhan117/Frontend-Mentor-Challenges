@@ -1,0 +1,44 @@
+footer {
+  #sns {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: rem(11);
+    justify-content: center;
+
+    margin-bottom: rem(27);
+
+    a {
+      width: rem(31);
+      height: rem(31);
+      border-radius: 50%;
+      border: rem(1) solid hsla(223, 87%, 63%, 0.15);
+
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        path {
+          fill: $Blue;
+        }
+      }
+
+      &:hover {
+        border: initial;
+        background-color: $Blue;
+      }
+
+      &:hover path {
+        fill: white;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    @include font(300, rem(10), rem(12), $Gray);
+  }
+}

@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+
+  // reset
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+html {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  // full screen
+  width: 100%;
+  min-height: 100vh;
+
+  padding: rem(137) rem(27.5) rem(37);
+
+  // logo
+  background: url("../../images/logo.svg") no-repeat;
+  background-position: top rem(80) center;
+  background-size: rem(50) auto;
+}

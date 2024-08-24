@@ -1,0 +1,12 @@
+main {
+  margin-bottom: rem(116);
+
+  display: grid;
+  place-content: center;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: rem(640);
+  }
+}
