@@ -1,0 +1,18 @@
+#content {
+  // content all text align
+  text-align: center;
+  
+  // header
+  h1 {
+    // font
+    @include font(700, rem(32), rem(32), $VeryDarkMagenta);
+    letter-spacing: rem(-1.14);
+  }
+
+  // detail
+  p {
+    // font
+    @include font(500, rem(15), rem(25), $DarkGrayishMagenta);
+    letter-spacing: rem(-0.5);
+  }
+}

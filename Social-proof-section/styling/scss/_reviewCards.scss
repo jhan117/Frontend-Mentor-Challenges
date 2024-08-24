@@ -1,0 +1,41 @@
+#reviewCards {
+  // all card
+  .card {
+    // shape and color
+    background-color: $VeryDarkMagenta;
+    border-radius: rem(8);
+
+    // all profile
+    div {
+      // all images
+      img {
+        // Fixed size
+        width: rem(40);
+        height: rem(40);
+
+        // shape
+        border-radius: 50%;
+      }
+
+      // all headers
+      h2 {
+        // font
+        @include font(700, rem(13), rem(15), $White);
+
+        // all buyer
+        span {
+          display: block;
+          // font
+          @include font(400, rem(13), rem(15), $SoftPink);
+        }
+      }
+    }
+
+    // all detail
+    p {
+      // font
+      @include font(500, rem(13), rem(22), $White);
+      letter-spacing: rem(-0.23);
+    }
+  }
+}
