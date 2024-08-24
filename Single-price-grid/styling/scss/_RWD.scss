@@ -1,0 +1,72 @@
+// card frame 1
+#card-frame1 {
+  // set width and padding
+  max-width: rem(311);
+
+  .content1 {
+    // set padding
+    padding: rem(28) rem(24) rem(32);
+
+    // for align of content1
+    display: flex;
+    flex-flow: column nowrap;
+    gap: rem(16);
+
+    // heading
+    h1 {
+      // set margin
+      margin-bottom: rem(8);
+    }
+  }
+
+  // card frame 2
+  .card-frame2 {
+    display: grid;
+    width: 100%;
+
+    // content
+    .content2 {
+      // set padding
+      padding: rem(24);
+
+      // for align of content2
+      display: flex;
+      flex-flow: column nowrap;
+      gap: rem(4);
+
+      // heading
+      h3 {
+        margin-bottom: rem(14);
+      }
+
+      // cost
+      .cost {
+        // for align of cost
+        display: flex;
+        flex-flow: row nowrap;
+        gap: rem(11);
+        align-items: center;
+      }
+
+      // detail
+      .detail {
+        margin-bottom: rem(22);
+      }
+
+      // button
+      a {
+        // set padding
+        padding: rem(15) 0 rem(14);
+      }
+    }
+
+    // card frame 3
+    .card-frame3 {
+      // content
+      .content3 {
+        // set padding
+        padding: rem(24) rem(49) rem(24) rem(24);
+      }
+    }
+  }
+}

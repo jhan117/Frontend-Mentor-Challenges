@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+html {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: #e5eff5;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: auto;
+  color: #2ab2af;
+  text-align: center;
+}
+
+footer a {
+  color: #c0df34;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #98a6bd;
+}
+
+#card-frame1 {
+  background-color: white;
+  -webkit-box-shadow: 0 0.9375rem 1.875rem rgba(0, 81, 171, 0.148847);
+          box-shadow: 0 0.9375rem 1.875rem rgba(0, 81, 171, 0.148847);
+  border-radius: 0.3125rem;
+}
+
+#card-frame1 .content1 h1 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  color: #2ab2af;
+  letter-spacing: -0.01562rem;
+}
+
+#card-frame1 .content1 h2 {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #c0df34;
+  letter-spacing: -0.01188rem;
+}
+
+#card-frame1 .content1 p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  color: #98a6bd;
+  letter-spacing: -0.01063rem;
+}
+
+#card-frame1 .card-frame2 {
+  background-color: #2ab2af;
+}
+
+#card-frame1 .card-frame2 .content2 h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: white;
+  letter-spacing: -0.01375rem;
+}
+
+#card-frame1 .card-frame2 .content2 .cost {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.3125rem;
+  color: white;
+  letter-spacing: -0.025rem;
+}
+
+#card-frame1 .card-frame2 .content2 .cost span {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: white;
+  letter-spacing: -0.0125rem;
+  opacity: 0.5;
+}
+
+#card-frame1 .card-frame2 .content2 .detail {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: white;
+  letter-spacing: -0.0125rem;
+}
+
+#card-frame1 .card-frame2 .content2 a {
+  background-color: #c0df34;
+  -webkit-box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.0973011);
+          box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.0973011);
+  border-radius: 0.3125rem;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: white;
+  letter-spacing: -0.0125rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+#card-frame1 .card-frame2 .content2 a:hover {
+  opacity: 0.5;
+}
+
+#card-frame1 .card-frame2 .card-frame3 .content3 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1.125rem;
+}
+
+#card-frame1 .card-frame2 .card-frame3 .content3 h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: white;
+  letter-spacing: -0.01375rem;
+}
+
+#card-frame1 .card-frame2 .card-frame3 .content3 p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: white;
+  letter-spacing: -0.01063rem;
+  opacity: 0.75;
+}
+
+#card-frame1 .card-frame2 .card-frame3 .content3::after {
+  content: "";
+  background-color: white;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#card-frame1 {
+  max-width: 19.4375rem;
+}
+
+#card-frame1 .content1 {
+  padding: 1.75rem 1.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+#card-frame1 .content1 h1 {
+  margin-bottom: 0.5rem;
+}
+
+#card-frame1 .card-frame2 {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+}
+
+#card-frame1 .card-frame2 .content2 {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 0.25rem;
+}
+
+#card-frame1 .card-frame2 .content2 h3 {
+  margin-bottom: 0.875rem;
+}
+
+#card-frame1 .card-frame2 .content2 .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0.6875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#card-frame1 .card-frame2 .content2 .detail {
+  margin-bottom: 1.375rem;
+}
+
+#card-frame1 .card-frame2 .content2 a {
+  padding: 0.9375rem 0 0.875rem;
+}
+
+#card-frame1 .card-frame2 .card-frame3 .content3 {
+  padding: 1.5rem 3.0625rem 1.5rem 1.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+  #card-frame1 {
+    max-width: 39.6875rem;
+  }
+  #card-frame1 .content1 {
+    padding: 2.5rem;
+    gap: 0.6875rem;
+  }
+  #card-frame1 .content1 h1 {
+    margin-bottom: 0.8125rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.01875rem;
+  }
+  #card-frame1 .content1 h2 {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    letter-spacing: -0.01375rem;
+  }
+  #card-frame1 .content1 p {
+    font-size: 1rem;
+    letter-spacing: -0.0125rem;
+  }
+  #card-frame1 .card-frame2 .content2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    padding: 2.5rem;
+    padding-bottom: 2.4375rem;
+    width: 19.875rem;
+  }
+  #card-frame1 .card-frame2 .card-frame3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    width: 19.875rem;
+  }
+  #card-frame1 .card-frame2 .card-frame3 .content3 {
+    padding: 2.5rem;
+  }
+}
