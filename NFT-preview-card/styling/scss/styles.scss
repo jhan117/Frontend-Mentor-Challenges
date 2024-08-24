@@ -1,0 +1,30 @@
+// Primary
+$SoftBlue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// Neutral
+$mainBG: hsl(217, 54%, 11%);
+$cardBG: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+// font
+@mixin font ($w, $s, $l, $c) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+    color: $c;
+}
+
+// px to rem
+@function rem ($px) {
+    $remValue: ($px / 16) + rem;
+    @return $remValue;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+@import 'general';
+@import 'card';
+@import 'mediaDesktop';
+@import 'RWD';

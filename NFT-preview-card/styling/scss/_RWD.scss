@@ -1,0 +1,102 @@
+// For mobile:
+.card {
+    // RWD with flex
+    display: flex;
+    flex-direction: column;
+
+    // set max-width
+    max-width: rem(327);
+
+    // set padding
+    padding: rem(24) rem(24.5);
+
+    // image
+    .imgContainer {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding-bottom: rem(12);
+
+        // main image
+        a {
+            // RWD
+            width: 100%;
+
+            // view image
+            .viewImg {
+                // RWD
+                width: 100%;
+            }
+        }
+    }
+
+    // content
+    .content {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(12) 0 rem(8);
+    }
+
+    // info
+    .info {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(8) 0 rem(16);
+    }
+
+    // line
+    .line {
+        // RWD
+        width: 100%;
+    }
+
+    // creator
+    .creator {
+        // RWD
+        width: 100%;
+
+        // set padding
+        padding: rem(16) rem(59.5) 0 0;
+    }
+}
+
+// For Desktop, breakpoint:768px
+@media only screen and (min-width: 48em) {
+    .card {
+        // set max-width
+        max-width: rem(350);
+
+        // set padding
+        padding: rem(24) rem(24) rem(32);
+
+        // image
+        .imgContainer {
+
+            // set padding
+            padding-bottom: rem(12);
+        }
+
+        // content
+        .content {
+            // set padding
+            padding: rem(12) 0;
+        }
+
+        // info
+        .info {
+            // set padding
+            padding: rem(12) 0 rem(24);
+        }
+
+        // creator
+        .creator {
+            // set padding
+            padding: rem(16) rem(72) 0 0;
+        }
+    }
+}

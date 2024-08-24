@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    // full screen
+    width: 100%;
+    min-height: 100vh;
+
+    // center
+    display: grid;
+    place-content: center;
+
+    // background color
+    background-color: $mainBG;
+}
+
+// attribution
+footer {
+    // set center
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    // font
+    @include font (700, rem(11), auto, $White);
+    text-align: center;
+
+    // set link color
+    a {
+        color: $SoftBlue;
+        text-decoration: none;
+
+        &:hover {
+            color: hsl(15, 51%, 70%);
+        }
+    }
+}

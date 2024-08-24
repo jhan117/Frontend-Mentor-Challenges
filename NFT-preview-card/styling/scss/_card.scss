@@ -1,0 +1,182 @@
+.card {
+    // background
+    background-color: $cardBG;
+    box-shadow: 0 rem(25) rem(50) rgba(0, 0, 0, 0.0952917);
+    border-radius: rem(15);
+
+    // image container
+    .imgContainer {
+
+        // main image
+        a {
+            // fixed height
+            height: rem(278);
+            display: block;
+
+            // image
+            background-image: url('../../images/image-equilibrium.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            // shape
+            border-radius: rem(8);
+
+            // for view image
+            position: relative;
+
+            // overlay
+            .overlay {
+                // fixed height
+                height: rem(278);
+
+                // background and shape
+                border-radius: rem(8);
+                background-color: $Cyan;
+
+                // set opacity
+                opacity: 0;
+            }
+
+            // view image
+            .viewImg {
+                // fixed height
+                height: rem(278);
+
+                // background
+                background-image: url('../../images/icon-view.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+
+                // set center
+                position: absolute;
+                top: 0;
+
+                // set opacity
+                opacity: 0;
+            }
+
+            &:hover .overlay {
+                opacity: 0.5;
+            }
+
+            &:hover .viewImg {
+                opacity: 1;
+            }
+        }
+    }
+
+    // content
+    .content {
+        // make flex
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+
+        // header
+        a {
+            text-decoration: none;
+
+            // font
+            h1 {
+                @include font (600, rem(22), rem(28), $White);
+            }
+
+            &:hover h1 {
+                color: $Cyan;
+            }
+        }
+
+        // detail
+        p {
+            @include font (300, rem(18), rem(26), $SoftBlue);
+        }
+    }
+
+    // info
+    .info {
+        // make flex
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        // cost
+        .cost {
+            // make flex
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: rem(6.48);
+
+            // text
+            p {
+                @include font (600, rem(15), rem(19), $Cyan);
+            }
+        }
+
+        // left time
+        .leftTime {
+            // make flex
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: rem(7.7);
+
+            // text
+            p {
+                @include font (400, rem(15), rem(19), $SoftBlue);
+            }
+        }
+    }
+
+    // line
+    .line {
+        // fixed height
+        height: rem(1);
+
+        // color
+        background-color: $line;
+        background-clip: content-box;
+    }
+
+    // creator
+    .creator {
+        // make flex
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: rem(16);
+
+        // avatar image
+        img {
+            // set size
+            width: rem(31);
+            height: rem(31);
+
+            // border
+            border: 1px solid $White;
+            border-radius: 50%;
+        }
+
+        // text
+        p {
+            // make flex
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: rem(5);
+
+            @include font (400, rem(15), rem(19), $SoftBlue);
+
+            // name
+            a {
+                @include font (400, rem(15), rem(19), $White);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $Cyan;
+            }
+        }
+    }
+}
